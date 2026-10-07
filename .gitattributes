@@ -1,0 +1,6 @@
+# Preserve literal patch context and the unmodified license text.
+*.patch -whitespace
+LICENSE -whitespace
+*.sh text eol=lf
+*.c text eol=lf
+*.md text eol=lf

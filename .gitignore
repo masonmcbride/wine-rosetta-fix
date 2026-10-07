@@ -1,0 +1,22 @@
+# Separate upstream/downstream source checkouts and local artifacts
+/wine/
+/winecx/
+/local/
+**/engine-*/
+**/build-*/
+**/bottle*/
+**/probe-prefix*/
+**/logs/
+**/evidence/
+*.exe
+*.dll
+*.dylib
+*.so
+*.log
+*.tar.gz
+*.zip
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
