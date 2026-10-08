@@ -1,7 +1,14 @@
 #!/bin/bash
 # SPDX-License-Identifier: LGPL-2.1-or-later
 set -euo pipefail
-: "${BO2_ENGINE:?Set BO2_ENGINE to the experimental engine directory}"
+workspace=$(cd -- "$(dirname -- "$0")/../.." && pwd)
+if [ -z "${BO2_ENGINE:-}" ] && [ -d "$workspace/bo2-local/engine" ]; then
+    BO2_ENGINE="$workspace/bo2-local/engine"
+fi
+if [ -z "${BO2_PREFIX:-}" ] && [ -d "$workspace/bo2-local/bottle" ]; then
+    BO2_PREFIX="$workspace/bo2-local/bottle"
+fi
+: "${BO2_ENGINE:?Set BO2_ENGINE to your engine directory}"
 : "${BO2_PREFIX:?Set BO2_PREFIX to your copied BO2 bottle directory}"
 engine=$(cd -- "$BO2_ENGINE" && pwd)
 export WINEPREFIX=$(cd -- "$BO2_PREFIX" && pwd)
@@ -14,6 +21,8 @@ fi
 export WINESERVER="$engine/bin/wineserver" WINELOADER="$engine/bin/wine64"
 export DYLD_FALLBACK_LIBRARY_PATH="$engine/lib:/usr/lib"
 export WINE_ROSETTA_EXEC_BREAKPOINTS=1
+export WINE_ROSETTA_WOW64_BREAKPOINTS=1
+export WINE_ROSETTA_CALL_WORKAROUND=1
 export WINEDLLOVERRIDES='d3d10core=n,b;d3d11=n,b;d3d12=;dxgi=n,b;winemetal=b'
 export WINEMSYNC=1 WINEESYNC=1 WINEFSYNC=0 WINEDEBUG=${WINEDEBUG:--all}
 cd "$WINEPREFIX/drive_c"

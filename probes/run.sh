@@ -2,7 +2,8 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 set -euo pipefail
 fixture=${1:?Provide a probe fixture name}
-case "$fixture" in debug-register-probe|hardware-breakpoint-probe|breakpoint-redirect-probe|single-step-probe|call-ret-step-probe) ;; *) echo 'Unknown fixture' >&2; exit 2 ;; esac
+shift
+case "$fixture" in debug-register-probe|hardware-breakpoint-probe|breakpoint-redirect-probe|single-step-probe|call-ret-step-probe|execution-breakpoint-matrix|internal-call-stack-probe) ;; *) echo 'Unknown fixture' >&2; exit 2 ;; esac
 : "${PROBE_ENGINE:?Set PROBE_ENGINE to a compatible Wine engine directory}"
 : "${PROBE_PREFIX:?Set PROBE_PREFIX to a dedicated test prefix}"
 engine=$(cd -- "$PROBE_ENGINE" && pwd)
@@ -19,6 +20,6 @@ for bits in 32 64; do
     exe="$root/local/probes/$fixture$bits.exe"
     "$compiler" -O2 -o "$exe" "$root/probes/$fixture.c"
     echo "Running $fixture ($bits-bit)"
-    "$engine/bin/wine64" "$exe" || result=1
+    "$engine/bin/wine64" "$exe" "$@" || result=1
 done
 exit "$result"

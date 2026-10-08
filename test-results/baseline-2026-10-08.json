@@ -1,0 +1,347 @@
+{
+  "engine_hashes": {
+    "wine": "698ed4f23e0abbdd3fd596e35d9cbdb8fb5ed804f92b575db7a4ae1f64dafde3",
+    "server/wineserver": "81c45d87dbace27b83111608938744c687b72bdd07ec73960684ac8ccce3fc2b",
+    "dlls/ntdll/ntdll.so": "fc2931450560dfbe3aa681f0df87cba13e5345a9a6c35936a19fd0d10d8060d6",
+    "config.status": "18f7cd3b0eb80cc0a7e70560323b46f7a408ca6565cae0fee145bf58c24b8938"
+  },
+  "runs": [
+    {
+      "args": [
+        "wine/wine",
+        "wineboot",
+        "-u"
+      ],
+      "exit": 0,
+      "output": "wine: created the configuration directory 'prefix'\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=2 action=0 multi=0 rf=0 DR0=00006FFFFFBB1164 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=1 action=0 multi=0 rf=0 DR0=00000000007E0000 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=0 action=0 multi=0 rf=0 DR0=00000000007E0002 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=1 action=1 multi=0 rf=0 DR0=00000000007E0000 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=0 action=1 multi=0 rf=0 DR0=00000000007E0002 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "1",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=1 action=2 multi=0 rf=0 DR0=00000000007E0000 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=0 action=2 multi=0 rf=0 DR0=00000000007E0002 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=1 action=0 multi=1 rf=0 DR0=00000000007E0000 DR1=00000000007E0000 DR7=5 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=0 action=0 multi=1 rf=0 DR0=00000000007E0002 DR1=00000000007E0002 DR7=5 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "1",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=1 action=3 multi=0 rf=0 DR0=00000000007E0000 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "0",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=64 location=0 action=3 multi=0 rf=0 DR0=00000000007E0002 DR1=0000000000000000 DR7=1 EFlags=200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw64.exe",
+        "2",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 location=2 action=0 multi=0 rf=1 DR0=00006FFFFFBB1164 DR1=0000000000000000 DR7=1 EFlags=10200 resumePC=00006FFFFFBB1164\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "call64.exe",
+        "0"
+      ],
+      "exit": 0,
+      "output": "bits=64 TF=0 hits=0 before=000000000021F950 callee_actual=000000000021F948 callee_context=0000000000000000 after_RET_actual=000000000021F950 expected_return=0000000140001622 expected_delta=8 actual_delta=8\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "call64.exe",
+        "1"
+      ],
+      "exit": 0,
+      "output": "bits=64 TF=1 hits=1 before=000000000021F950 callee_actual=000000000021F948 callee_context=000000000021F948 after_RET_actual=000000000021F950 expected_return=00000001400015EE expected_delta=8 actual_delta=8\nstack_bytes_at_context_SP=ee15004001000000\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=2 action=0 multi=0 rf=0 DR0=7BC8E4A0 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=1 action=0 multi=0 rf=0 DR0=008F0000 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=0 action=0 multi=0 rf=0 DR0=008F0002 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=1 action=1 multi=0 rf=0 DR0=008F0000 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=0 action=1 multi=0 rf=0 DR0=008F0002 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "1",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=1 action=2 multi=0 rf=0 DR0=008F0000 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=0 action=2 multi=0 rf=0 DR0=008F0002 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=1 action=0 multi=1 rf=0 DR0=008F0000 DR1=008F0000 DR7=5 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=0 action=0 multi=1 rf=0 DR0=008F0002 DR1=008F0002 DR7=5 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "1",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=1 action=3 multi=0 rf=0 DR0=008F0000 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "0",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 1,
+      "output": "setup bits=32 location=0 action=3 multi=0 rf=0 DR0=008F0002 DR1=00000000 DR7=1 EFlags=202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "hw32.exe",
+        "2",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 location=2 action=0 multi=0 rf=1 DR0=7BC8E4A0 DR1=00000000 DR7=1 EFlags=10202 resumePC=7BC8E4A0\nresult hits=0 worker=1\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "call32.exe",
+        "0"
+      ],
+      "exit": 0,
+      "output": "bits=32 TF=0 hits=0 before=0036FBCC callee_actual=0036FBC8 callee_context=00000000 after_RET_actual=0036FBCC expected_return=00401614 expected_delta=4 actual_delta=4\n"
+    },
+    {
+      "args": [
+        "wine/wine",
+        "call32.exe",
+        "1"
+      ],
+      "exit": 1,
+      "output": "bits=32 TF=1 hits=1 before=0036FBCC callee_actual=0036FBC4 callee_context=0036FBC4 after_RET_actual=0036FBC8 expected_return=004015E8 expected_delta=4 actual_delta=8\nstack_bytes_at_context_SP=e815400000000000\n"
+    }
+  ],
+  "temporary_source_sha256": {
+    "hw.c": "bb3366b5377d70f84400e6a7819587b37a4cd1dc9318ae5f9155e7f8785f8ec9",
+    "call.c": "24cb3958eda3e17f82d83347a34612f3405b73d1070eeac6260e167d5f2852d6"
+  }
+}

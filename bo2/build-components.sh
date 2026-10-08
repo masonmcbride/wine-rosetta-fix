@@ -8,7 +8,8 @@ set -euo pipefail
 source_dir=$(cd -- "$WINE_SOURCE" && pwd)
 runtime=$(cd -- "$RUNTIME_PAYLOAD" && pwd)
 pin=7dbc5b5322a6ef3fb04bdc643c64b188fd641149
-test "$(git -C "$source_dir" rev-parse HEAD)" = "$pin"
+git -C "$source_dir" merge-base --is-ancestor "$pin" HEAD
+source_commit=$(git -C "$source_dir" rev-parse HEAD)
 for target in "$BUILD_DIR" "$OUTPUT_ENGINE"; do
     case "$target" in /*) ;; *) echo 'Output paths must be absolute' >&2; exit 2 ;; esac
     if [ -e "$target" ]; then echo "Refusing existing output: $target" >&2; exit 1; fi
@@ -30,7 +31,8 @@ cp dlls/ntdll/ntdll.so "$OUTPUT_ENGINE/lib/wine/x86_64-unix/ntdll.so"
 cp server/wineserver "$OUTPUT_ENGINE/bin/wineserver"
 cp loader/wine "$OUTPUT_ENGINE/lib/wine/x86_64-unix/wine"
 {
-    echo "source=$pin"
+    echo "base=$pin"
+    echo "source=$source_commit"
     echo 'scope=Unix ntdll, wineserver, loader; remaining payload retained'
     cd "$OUTPUT_ENGINE"
     shasum -a 256 lib/wine/x86_64-unix/ntdll.so bin/wineserver lib/wine/x86_64-unix/wine

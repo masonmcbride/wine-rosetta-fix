@@ -1,0 +1,401 @@
+{
+  "engine": "WineCX 7dbc5b5322a6ef3fb04bdc643c64b188fd641149 plus shadow state and execution delivery",
+  "matrix": [
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=2 action=0 multi=0 RF=0 DR0=00000000007E0002 DR7=1 flags=206\nhandler code=80000004 pc=00000000007E0002 dr6=1 dr7=1 flags=10206\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=1 action=0 multi=0 RF=0 DR0=00000000007E0000 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0000 dr6=1 dr7=1 flags=10202\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=0 action=0 multi=0 RF=0 DR0=00000000007E0002 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0002 dr6=1 dr7=1 flags=10206\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=1 action=1 multi=0 RF=0 DR0=00000000007E0000 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0000 dr6=1 dr7=1 flags=10202\nresult hits=1 bad=0 worker=2\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=0 action=1 multi=0 RF=0 DR0=00000000007E0002 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0002 dr6=1 dr7=1 flags=10206\nresult hits=1 bad=0 worker=2\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "1",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=1 action=2 multi=0 RF=0 DR0=00000000007E0000 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0000 dr6=1 dr7=1 flags=10202\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=0 action=2 multi=0 RF=0 DR0=00000000007E0002 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0002 dr6=1 dr7=1 flags=10206\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=1 action=0 multi=1 RF=0 DR0=00000000007E0000 DR7=5 flags=200\nhandler code=80000004 pc=00000000007E0000 dr6=3 dr7=5 flags=10202\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=0 action=0 multi=1 RF=0 DR0=00000000007E0002 DR7=5 flags=200\nhandler code=80000004 pc=00000000007E0002 dr6=3 dr7=5 flags=10206\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "1",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=1 action=3 multi=0 RF=0 DR0=00000000007E0000 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0000 dr6=1 dr7=1 flags=10202\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "0",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=0 action=3 multi=0 RF=0 DR0=00000000007E0002 DR7=1 flags=200\nhandler code=80000004 pc=00000000007E0002 dr6=1 dr7=1 flags=10206\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix64.exe",
+        "2",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "output": "setup bits=64 initial=2 action=0 multi=0 RF=1 DR0=00000000007E0002 DR7=1 flags=10206\nresult hits=0 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "internal-call64.exe"
+      ],
+      "exit": 0,
+      "output": "bits=64 before=000000000031F990 callee=000000000031F988 after=000000000031F990 actual_delta=8 expected=8\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "hardware-breakpoint-probe64.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 8; readback=matches\nExecution count: 1; breakpoint delivery count: 1\nRESULT: breakpoint delivered\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "breakpoint-redirect-probe64.exe"
+      ],
+      "exit": 0,
+      "output": "bits=64 exceptions=2 original=0 redirected=1 secondary=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "single-step-probe64.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 8; single-step exceptions: 1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "call-ret-step-probe64.exe"
+      ],
+      "exit": 0,
+      "output": "bits=64 hits=2 before=000000000031FE60 reported=000000000031FE58 call_stack_delta=8 expected=8 return=0000000140002AB9\nafter RET=000000000031FE60 expected=000000000031FE60\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "debug-register-probe64.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 8\nself DR0=12340000 DR1=12340001 DR2=12340002 DR3=12340003 DR6=0 DR7=155\nsuspended worker DR0=12340000 DR1=12340001 DR2=12340002 DR3=12340003 DR6=0 DR7=155\nPASS resumed worker state\nPASS native to WOW64 view\nPASS WOW64 to native view\nPASS WOW64 child state after resume\nRESULT: 0 failures\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=2 action=0 multi=0 RF=0 DR0=003F0002 DR7=1 flags=216\nhandler code=80000004 pc=003F0002 dr6=1 dr7=1 flags=10216\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=1 action=0 multi=0 RF=0 DR0=003F0000 DR7=1 flags=202\nhandler code=80000004 pc=003F0000 dr6=1 dr7=1 flags=10246\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=0 action=0 multi=0 RF=0 DR0=003F0002 DR7=1 flags=202\nhandler code=80000004 pc=003F0002 dr6=1 dr7=1 flags=10216\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=1 action=1 multi=0 RF=0 DR0=003F0000 DR7=1 flags=202\nhandler code=80000004 pc=003F0000 dr6=1 dr7=1 flags=10246\nresult hits=1 bad=0 worker=2\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=0 action=1 multi=0 RF=0 DR0=003F0002 DR7=1 flags=202\nhandler code=80000004 pc=003F0002 dr6=1 dr7=1 flags=10216\nresult hits=1 bad=0 worker=2\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "1",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=1 action=2 multi=0 RF=0 DR0=003F0000 DR7=1 flags=202\nhandler code=80000004 pc=003F0000 dr6=1 dr7=1 flags=10246\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=0 action=2 multi=0 RF=0 DR0=003F0002 DR7=1 flags=202\nhandler code=80000004 pc=003F0002 dr6=1 dr7=1 flags=10216\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=1 action=0 multi=1 RF=0 DR0=003F0000 DR7=5 flags=202\nhandler code=80000004 pc=003F0000 dr6=3 dr7=5 flags=10246\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=0 action=0 multi=1 RF=0 DR0=003F0002 DR7=5 flags=202\nhandler code=80000004 pc=003F0002 dr6=3 dr7=5 flags=10216\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "1",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=1 action=3 multi=0 RF=0 DR0=003F0000 DR7=1 flags=202\nhandler code=80000004 pc=003F0000 dr6=1 dr7=1 flags=10246\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "0",
+        "3",
+        "0",
+        "0"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=0 action=3 multi=0 RF=0 DR0=003F0002 DR7=1 flags=202\nhandler code=80000004 pc=003F0002 dr6=1 dr7=1 flags=10216\nresult hits=1 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "matrix32.exe",
+        "2",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "output": "setup bits=32 initial=2 action=0 multi=0 RF=1 DR0=003F0002 DR7=1 flags=10216\nresult hits=0 bad=0 worker=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "internal-call32.exe"
+      ],
+      "exit": 0,
+      "output": "bits=32 before=0032FBF4 callee=0032FBF0 after=0032FBF4 actual_delta=4 expected=4\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "hardware-breakpoint-probe32.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 4; readback=matches\nExecution count: 1; breakpoint delivery count: 1\nRESULT: breakpoint delivered\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "breakpoint-redirect-probe32.exe"
+      ],
+      "exit": 0,
+      "output": "bits=32 exceptions=2 original=0 redirected=1 secondary=1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "single-step-probe32.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 4; single-step exceptions: 1\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "call-ret-step-probe32.exe"
+      ],
+      "exit": 1,
+      "output": "bits=32 hits=2 before=0032FEBC reported=0032FEB4 call_stack_delta=8 expected=4 return=00402A08\nafter RET=0032FEB8 expected=0032FEBC\n"
+    },
+    {
+      "args": [
+        "bo2-local/engine/bin/wine64",
+        "debug-register-probe32.exe"
+      ],
+      "exit": 0,
+      "output": "Pointer size: 4\nself DR0=12340000 DR1=12340001 DR2=12340002 DR3=12340003 DR6=0 DR7=155\nsuspended worker DR0=12340000 DR1=12340001 DR2=12340002 DR3=12340003 DR6=0 DR7=155\nPASS resumed worker state\nRESULT: 0 failures\n"
+    }
+  ],
+  "upstream_isolated_tests": [
+    {
+      "arch": "i386",
+      "exit": 0,
+      "output": "Wine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\nWine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\nWine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\nWine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\nWine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\n0020:exception: 126 tests executed (0 marked as todo, 0 as flaky, 0 failures), 0 skipped.\n"
+    },
+    {
+      "arch": "x86_64",
+      "exit": 0,
+      "output": "Wine cannot find the FreeType font library.  To enable Wine to\nuse TrueType fonts please install a version of FreeType greater than\nor equal to 2.0.5.\nhttp://www.freetype.org\n012c:exception: 155 tests executed (0 marked as todo, 0 as flaky, 0 failures), 0 skipped.\n"
+    }
+  ]
+}

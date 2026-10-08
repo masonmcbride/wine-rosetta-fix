@@ -1,0 +1,133 @@
+diff --git a/dlls/ntdll/tests/exception.c b/dlls/ntdll/tests/exception.c
+index dd77983dd52..f1e56b76616 100644
+--- a/dlls/ntdll/tests/exception.c
++++ b/dlls/ntdll/tests/exception.c
+@@ -9235,6 +9235,30 @@ static DWORD WINAPI register_check_thread(void *arg)
+     return 0;
+ }
+ 
++static DWORD WINAPI debug_register_resume_thread(void *arg)
++{
++    const CONTEXT *expected = arg;
++    CONTEXT ctx;
++    NTSTATUS status;
++
++    memset(&ctx, 0, sizeof(ctx));
++    ctx.ContextFlags = CONTEXT_DEBUG_REGISTERS;
++    status = pNtGetContextThread(GetCurrentThread(), &ctx);
++    ok(!status, "NtGetContextThread failed with %lx\n", status);
++    ok(ctx.Dr0 == expected->Dr0, "expected %Ix, got %Ix\n", (DWORD_PTR)expected->Dr0, (DWORD_PTR)ctx.Dr0);
++    ok(ctx.Dr1 == expected->Dr1, "expected %Ix, got %Ix\n", (DWORD_PTR)expected->Dr1, (DWORD_PTR)ctx.Dr1);
++    ok(ctx.Dr2 == expected->Dr2, "expected %Ix, got %Ix\n", (DWORD_PTR)expected->Dr2, (DWORD_PTR)ctx.Dr2);
++    ok(ctx.Dr3 == expected->Dr3, "expected %Ix, got %Ix\n", (DWORD_PTR)expected->Dr3, (DWORD_PTR)ctx.Dr3);
++    ok((ctx.Dr6 & 0xf00f) == expected->Dr6, "unexpected Dr6 %Ix\n", (DWORD_PTR)ctx.Dr6);
++    ok((ctx.Dr7 & ~0xdc00) == expected->Dr7, "unexpected Dr7 %Ix\n", (DWORD_PTR)ctx.Dr7);
++
++    memset(&ctx, 0, sizeof(ctx));
++    ctx.ContextFlags = CONTEXT_DEBUG_REGISTERS;
++    status = pNtSetContextThread(GetCurrentThread(), &ctx);
++    ok(!status, "NtSetContextThread failed with %lx\n", status);
++    return 0;
++}
++
+ static void test_debug_registers(void)
+ {
+     static const struct
+@@ -9317,6 +9341,35 @@ static void test_debug_registers(void)
+     ResumeThread(thread);
+     WaitForSingleObject(thread, 10000);
+     CloseHandle(thread);
++
++    if (!is_arm64ec)
++    {
++        static const CONTEXT expected =
++        {
++            .ContextFlags = CONTEXT_DEBUG_REGISTERS,
++            .Dr0 = 0x12340000,
++            .Dr1 = 0x12340001,
++            .Dr2 = 0x12340002,
++            .Dr3 = 0x12340003,
++            .Dr7 = 0x155,
++        };
++        DWORD ret;
++
++        /* State set while suspended must remain visible after the target resumes. */
++        ctx = expected;
++        thread = CreateThread(NULL, 0, debug_register_resume_thread, (void *)&expected, CREATE_SUSPENDED, NULL);
++        ok(!!thread, "CreateThread failed with %lu\n", GetLastError());
++        if (thread)
++        {
++            status = pNtSetContextThread(thread, &ctx);
++            ok(!status, "NtSetContextThread failed with %lx\n", status);
++            ret = ResumeThread(thread);
++            ok(ret != ~0u, "ResumeThread failed with %lu\n", GetLastError());
++            ret = WaitForSingleObject(thread, 10000);
++            ok(ret == WAIT_OBJECT_0, "thread did not complete, wait returned %#lx\n", ret);
++            CloseHandle(thread);
++        }
++    }
+ }
+ 
+ #if defined(__x86_64__)
+diff --git a/server/mach.c b/server/mach.c
+index ec73dc6e390..f51f52e77e7 100644
+--- a/server/mach.c
++++ b/server/mach.c
+@@ -190,8 +190,12 @@ void get_thread_context( struct thread *thread, struct context_data *context, un
+ 
+     if (is_rosetta())
+     {
+-        /* getting debug registers of a translated process is not supported cross-process, return all zeroes */
+-        memset( &context->debug, 0, sizeof(context->debug) );
++        /* Mach cannot retrieve translated hardware debug registers. Return the
++         * Windows-visible state retained on the server thread instead. */
++        if (thread->system_regs & SERVER_CTX_DEBUG_REGISTERS)
++            context->debug = thread->debug_regs;
++        else
++            memset( &context->debug, 0, sizeof(context->debug) );
+         context->flags |= SERVER_CTX_DEBUG_REGISTERS;
+         return;
+     }
+@@ -276,10 +280,10 @@ void set_thread_context( struct thread *thread, const struct context_data *conte
+ 
+     if (is_rosetta())
+     {
+-        /* Setting debug registers of a translated process is not supported cross-process
+-         * (and even in-process, setting debug registers never has the desired effect).
+-         */
+-        set_error( STATUS_UNSUCCESSFUL );
++        /* Preserve context round trips when Mach cannot install translated
++         * hardware debug registers. This does not emulate breakpoint delivery. */
++        thread->debug_regs = context->debug;
++        thread->system_regs |= SERVER_CTX_DEBUG_REGISTERS;
+         return;
+     }
+ 
+diff --git a/server/thread.c b/server/thread.c
+index bb9728f6f27..7fa27a0c689 100644
+--- a/server/thread.c
++++ b/server/thread.c
+@@ -354,6 +354,9 @@ static inline void init_thread_structure( struct thread *thread )
+     thread->teb             = 0;
+     thread->entry_point     = 0;
+     thread->system_regs     = 0;
++#ifdef __APPLE__
++    memset( &thread->debug_regs, 0, sizeof(thread->debug_regs) );
++#endif
+     thread->queue           = NULL;
+     thread->wait            = NULL;
+     thread->error           = 0;
+diff --git a/server/thread.h b/server/thread.h
+index 96c643c64f1..3881f3e342d 100644
+--- a/server/thread.h
++++ b/server/thread.h
+@@ -60,6 +60,9 @@ struct thread
+     struct list            mutex_list;    /* list of currently owned mutexes */
+     struct list            d3dkmt_mutexes;/* list of currently owned d3dkmt mutexes */
+     unsigned int           system_regs;   /* which system regs have been set */
++#ifdef __APPLE__
++    typeof(((struct context_data *)0)->debug) debug_regs; /* Rosetta system-register state */
++#endif
+     struct msg_queue      *queue;         /* message queue */
+     struct thread_wait    *wait;          /* current wait condition if sleeping */
+     struct list            system_apc;    /* queue of system async procedure calls */
