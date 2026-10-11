@@ -25,6 +25,8 @@ export WINE_ROSETTA_WOW64_BREAKPOINTS=1
 export WINE_ROSETTA_CALL_WORKAROUND=1
 export WINEDLLOVERRIDES='d3d10core=n,b;d3d11=n,b;d3d12=;dxgi=n,b;winemetal=b'
 export WINEMSYNC=1 WINEESYNC=1 WINEFSYNC=0 WINEDEBUG=${WINEDEBUG:--all}
+# Suppress MoltenVK's routine device/extension listings; retain errors.
+export MVK_CONFIG_LOG_LEVEL=${MVK_CONFIG_LOG_LEVEL:-1}
 cd "$WINEPREFIX/drive_c"
 if [ "$#" -eq 0 ]; then set -- 'C:\plutonium.exe'; fi
 exec "$engine/bin/wine64" "$@"
