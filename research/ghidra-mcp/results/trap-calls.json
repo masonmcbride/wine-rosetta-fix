@@ -1,0 +1,177 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"function\": {\n    \"name\": \"_trap_handler\",\n    \"address\": \"00038520\"\n  },\n  \"callers\": {\n    \"items\": [],\n    \"offset\": 0,\n    \"limit\": 100,\n    \"total\": 0,\n    \"has_more\": false\n  },\n  \"callees\": {\n    \"items\": [\n      {\n        \"call_site\": \"00038544\",\n        \"target\": \"000341b0\",\n        \"name\": \"_clear_alignment_flag\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038558\",\n        \"target\": \"0006facc\",\n        \"name\": \"__thread_set_tsd_base\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"000386a4\",\n        \"target\": \"00036000\",\n        \"name\": \"_wine_dbg_log\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"000387c3\",\n        \"target\": \"0006fd1e\",\n        \"name\": \"_memcpy\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"0003883b\",\n        \"target\": \"0006fd1e\",\n        \"name\": \"_memcpy\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"00038868\",\n        \"target\": \"0006fd1e\",\n        \"name\": \"_memcpy\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"0003895d\",\n        \"target\": \"00036000\",\n        \"name\": \"_wine_dbg_log\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"000389de\",\n        \"target\": \"00066e20\",\n        \"name\": \"_virtual_uninterrupted_read_memory\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038a06\",\n        \"target\": \"00066e20\",\n        \"name\": \"_virtual_uninterrupted_read_memory\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038a55\",\n        \"target\": \"00066f80\",\n        \"name\": \"_virtual_uninterrupted_write_memory\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038ae0\",\n        \"target\": \"000436a0\",\n        \"name\": \"_save_context\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038cf6\",\n        \"target\": \"000360d0\",\n        \"name\": \"_NtGetContextThread\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038d74\",\n        \"target\": \"0006facc\",\n        \"name\": \"__thread_set_tsd_base\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"00038dda\",\n        \"target\": \"00043990\",\n        \"name\": \"_setup_raise_exception\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038e82\",\n        \"target\": \"0006fd1e\",\n        \"name\": \"_memcpy\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": true\n      },\n      {\n        \"call_site\": \"00038ea4\",\n        \"target\": \"0005b580\",\n        \"name\": \"_set_thread_context\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038ee0\",\n        \"target\": \"00036000\",\n        \"name\": \"_wine_dbg_log\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      },\n      {\n        \"call_site\": \"00038ef7\",\n        \"target\": \"000435f0\",\n        \"name\": \"_leave_handler\",\n        \"ref_type\": \"UNCONDITIONAL_CALL\",\n        \"direct\": true,\n        \"external\": false\n      }\n    ],\n    \"offset\": 0,\n    \"limit\": 100,\n    \"total\": 18,\n    \"has_more\": false\n  }\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "function": {
+      "name": "_trap_handler",
+      "address": "00038520"
+    },
+    "callers": {
+      "items": [],
+      "offset": 0,
+      "limit": 100,
+      "total": 0,
+      "has_more": false
+    },
+    "callees": {
+      "items": [
+        {
+          "call_site": "00038544",
+          "target": "000341b0",
+          "name": "_clear_alignment_flag",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038558",
+          "target": "0006facc",
+          "name": "__thread_set_tsd_base",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "000386a4",
+          "target": "00036000",
+          "name": "_wine_dbg_log",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "000387c3",
+          "target": "0006fd1e",
+          "name": "_memcpy",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "0003883b",
+          "target": "0006fd1e",
+          "name": "_memcpy",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "00038868",
+          "target": "0006fd1e",
+          "name": "_memcpy",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "0003895d",
+          "target": "00036000",
+          "name": "_wine_dbg_log",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "000389de",
+          "target": "00066e20",
+          "name": "_virtual_uninterrupted_read_memory",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038a06",
+          "target": "00066e20",
+          "name": "_virtual_uninterrupted_read_memory",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038a55",
+          "target": "00066f80",
+          "name": "_virtual_uninterrupted_write_memory",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038ae0",
+          "target": "000436a0",
+          "name": "_save_context",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038cf6",
+          "target": "000360d0",
+          "name": "_NtGetContextThread",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038d74",
+          "target": "0006facc",
+          "name": "__thread_set_tsd_base",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "00038dda",
+          "target": "00043990",
+          "name": "_setup_raise_exception",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038e82",
+          "target": "0006fd1e",
+          "name": "_memcpy",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": true
+        },
+        {
+          "call_site": "00038ea4",
+          "target": "0005b580",
+          "name": "_set_thread_context",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038ee0",
+          "target": "00036000",
+          "name": "_wine_dbg_log",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        },
+        {
+          "call_site": "00038ef7",
+          "target": "000435f0",
+          "name": "_leave_handler",
+          "ref_type": "UNCONDITIONAL_CALL",
+          "direct": true,
+          "external": false
+        }
+      ],
+      "offset": 0,
+      "limit": 100,
+      "total": 18,
+      "has_more": false
+    }
+  },
+  "isError": false
+}

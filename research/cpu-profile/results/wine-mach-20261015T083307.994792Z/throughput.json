@@ -1,0 +1,36 @@
+{
+  "runs": [
+    {
+      "label": "warmup",
+      "roundtrips_per_second": 133011.9760479042,
+      "kernel_seconds": 1.39,
+      "user_seconds": 0.81
+    },
+    {
+      "label": "control1",
+      "roundtrips_per_second": 129814.8271498035,
+      "kernel_seconds": 10.38,
+      "user_seconds": 5.91
+    },
+    {
+      "label": "profile1",
+      "roundtrips_per_second": 130697.25443156071,
+      "kernel_seconds": 10.34,
+      "user_seconds": 5.99
+    },
+    {
+      "label": "profile2",
+      "roundtrips_per_second": 126696.46070785842,
+      "kernel_seconds": 10.34,
+      "user_seconds": 5.93
+    },
+    {
+      "label": "control2",
+      "roundtrips_per_second": 131173.82617382618,
+      "kernel_seconds": 10.41,
+      "user_seconds": 5.91
+    }
+  ],
+  "profile_to_control_throughput": 0.986225691659657,
+  "hashes_unchanged": true
+}

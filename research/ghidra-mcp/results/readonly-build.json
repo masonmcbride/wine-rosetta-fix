@@ -1,0 +1,10 @@
+{
+  "upstream_commit": "1e980252087b2479a21b9ca6d82d5829538651a7",
+  "protected_files": {
+    "GhidraMCP/src/ghidra_mcp/server.py": "ff91269db2fadea8809cb78525d9f35d7efcd7837e86a74c0a02d23fe9e1165a",
+    "GhidraMCP/src/ghidra_mcp/backend.py": "7e2e428bfc7fdfd13926c6baf08ad35f60bc64c816d677a2b273305134568669",
+    "GhidraMCP/src/ghidra_mcp/headless.py": "c86123440b7c950a99c431e44c8e423d2dd313fa52097048f3f1720cb2400d7a",
+    "GhidraMCP/src/ghidra_mcp/cli.py": "bba3e1cd2d17c0b28238488cb2434c7d53d5b77be668d21a6708970ff62943be",
+    "GhidraMCP/extension/build/libs/GhidraMCP.jar": "e93b54e73e2bec9dc2849e221f99ea00e2a5440179e799273b553e157fe144a9"
+  }
+}

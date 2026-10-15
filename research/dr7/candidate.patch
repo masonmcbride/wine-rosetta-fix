@@ -1,0 +1,25 @@
+--- a/dlls/ntdll/unix/signal_x86_64.c
++++ b/dlls/ntdll/unix/signal_x86_64.c
+@@ -554,12 +554,22 @@
+ static BOOL rosetta_exec_breakpoints( struct amd64_thread_data *data )
+ {
+ #ifdef __APPLE__
++#ifndef WINE_RESEARCH_BRANCHLESS_DR7
+     unsigned int i;
++#endif
+     if (!is_rosetta2 || !emulate_rosetta_exec_breakpoints) return FALSE;
+     if (is_wow64() && !emulate_rosetta_wow64_breakpoints) return FALSE;
++#ifdef WINE_RESEARCH_BRANCHLESS_DR7
++    const ULONG_PTR d = data->dr7;
++    return (!!(d & 3) & !(d & 0x000f0000)) |
++           (!!(d & 12) & !(d & 0x00f00000)) |
++           (!!(d & 48) & !(d & 0x0f000000)) |
++           (!!(d & 192) & !(d & 0xf0000000));
++#else
+     for (i = 0; i < 4; i++)
+         if (((data->dr7 >> (2 * i)) & 3) && !((data->dr7 >> (16 + 4 * i)) & 15))
+             return TRUE;
++#endif
+ #endif
+     return FALSE;
+ }

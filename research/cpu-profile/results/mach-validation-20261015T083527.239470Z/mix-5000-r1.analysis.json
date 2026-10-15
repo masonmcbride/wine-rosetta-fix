@@ -1,0 +1,141 @@
+{
+  "samples": 487,
+  "stats": {
+    "wall_seconds": 3.014394,
+    "window_user_seconds": 2.980761,
+    "window_system_seconds": 0.032321,
+    "collector_cpu_us": 20088,
+    "interval_us": 5000,
+    "samples": 487,
+    "skipped_not_running": 487,
+    "failures": 0,
+    "overflow": 0,
+    "threads": [
+      {
+        "tid": 50411,
+        "cpu_us": 2992385,
+        "first_user_us": 4165,
+        "first_system_us": 2758,
+        "last_user_us": 2976054,
+        "last_system_us": 23254,
+        "seen": 487,
+        "running": 487,
+        "samples": 487
+      },
+      {
+        "tid": 50421,
+        "cpu_us": 0,
+        "first_user_us": 1,
+        "first_system_us": 6,
+        "last_user_us": 1,
+        "last_system_us": 6,
+        "seen": 487,
+        "running": 0,
+        "samples": 0
+      }
+    ]
+  },
+  "observed_thread_cpu_us": 2992385,
+  "attributed_cpu_us": 2992385,
+  "unattributed_cpu_us": 0,
+  "unresolved_attributed_cpu_us": 0,
+  "raw_counts": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      383
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      100
+    ],
+    [
+      "thread_self_trap (in libsystem_kernel.dylib) + 10",
+      2
+    ],
+    [
+      "void (anonymous namespace)::quickSort<PropertyList::String**>(PropertyList::String**, PropertyList::String**) (in dyld) + 165",
+      1
+    ],
+    [
+      "__vfprintf (in libsystem_c.dylib) + 605",
+      1
+    ]
+  ],
+  "weighted_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      2365304
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      609425
+    ],
+    [
+      "thread_self_trap (in libsystem_kernel.dylib) + 10",
+      11995
+    ],
+    [
+      "__vfprintf (in libsystem_c.dylib) + 605",
+      5661
+    ],
+    [
+      "void (anonymous namespace)::quickSort<PropertyList::String**>(PropertyList::String**, PropertyList::String**) (in dyld) + 165",
+      0
+    ]
+  ],
+  "user_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      2349249
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      605089
+    ],
+    [
+      "thread_self_trap (in libsystem_kernel.dylib) + 10",
+      11932
+    ],
+    [
+      "__vfprintf (in libsystem_c.dylib) + 605",
+      5619
+    ],
+    [
+      "void (anonymous namespace)::quickSort<PropertyList::String**>(PropertyList::String**, PropertyList::String**) (in dyld) + 165",
+      0
+    ]
+  ],
+  "system_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      16055
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      4336
+    ],
+    [
+      "thread_self_trap (in libsystem_kernel.dylib) + 10",
+      63
+    ],
+    [
+      "__vfprintf (in libsystem_c.dylib) + 605",
+      42
+    ],
+    [
+      "void (anonymous namespace)::quickSort<PropertyList::String**>(PropertyList::String**, PropertyList::String**) (in dyld) + 165",
+      0
+    ]
+  ],
+  "per_thread": {
+    "50411": {
+      "user_us": 2971889,
+      "system_us": 20496
+    },
+    "50421": {
+      "user_us": 0,
+      "system_us": 0
+    }
+  },
+  "interpretation": "Endpoint snapshots weighted by preceding CPU deltas. Time between different functions can alias; kernel CPU is charged to a userspace context, not a kernel stack. No exact per-function-time claim."
+}

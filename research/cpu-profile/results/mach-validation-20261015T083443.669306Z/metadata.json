@@ -1,0 +1,63 @@
+{
+  "arch": "arm64",
+  "source_sha256": "063e293d60fe6c505634882f91233dac3b055e0d4325539c5a112bb39f4f6e5e",
+  "library_sha256": "d48aaaefea3032523beccd17b1c7b6ed0b09d7acefd13eecec37ac47b5629762",
+  "runs": [
+    {
+      "label": "shares-control-r0",
+      "workload": "shares",
+      "interval_us": null,
+      "expected_cool_share": 0.17708519117922294,
+      "target_cpu_seconds": 3.6332400000000002,
+      "process_cpu_seconds": 3.6353709999999997,
+      "wall_seconds": 3.148960625,
+      "binary_sha256": "2e90e156492bd67d5cf5cdb0735e96af890fd0d1b74175dd88375fac5d553b55"
+    },
+    {
+      "label": "mix-5000-r1",
+      "workload": "mix",
+      "interval_us": 5000,
+      "expected_cool_share": 0.20431255294828668,
+      "target_cpu_seconds": 3.014734,
+      "process_cpu_seconds": 3.0296600000000002,
+      "wall_seconds": 3.237879584,
+      "binary_sha256": "9a13fd78dc8922539967d98dbd45133fb7be920d6ddba2ac079d1f9ae76a6eed",
+      "samples": 490,
+      "weighted_cool_share": 0.19094786201779723,
+      "raw_cool_share": 0.19507186858316222,
+      "attributed_cpu_us": 3010679,
+      "observed_thread_cpu_us": 3010679,
+      "unresolved_cpu_us": 0,
+      "failures": 0,
+      "error": -0.013364690930489448
+    },
+    {
+      "label": "mix-5000-r2",
+      "workload": "mix",
+      "interval_us": 5000,
+      "expected_cool_share": 0.20448160410871755,
+      "target_cpu_seconds": 3.0148580000000003,
+      "process_cpu_seconds": 3.0281760000000006,
+      "wall_seconds": 3.0360310000000004,
+      "binary_sha256": "9a13fd78dc8922539967d98dbd45133fb7be920d6ddba2ac079d1f9ae76a6eed",
+      "samples": 489,
+      "weighted_cool_share": 0.21920616965070341,
+      "raw_cool_share": 0.22061855670103092,
+      "attributed_cpu_us": 3014253,
+      "observed_thread_cpu_us": 3014253,
+      "unresolved_cpu_us": 0,
+      "failures": 0,
+      "error": 0.014724565541985868
+    },
+    {
+      "label": "shares-control-r1",
+      "workload": "shares",
+      "interval_us": null,
+      "expected_cool_share": 0.17712567348138705,
+      "target_cpu_seconds": 3.63967,
+      "process_cpu_seconds": 3.6411190000000007,
+      "wall_seconds": 3.0053959159999994,
+      "binary_sha256": "2e90e156492bd67d5cf5cdb0735e96af890fd0d1b74175dd88375fac5d553b55"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"name\": \"_trap_handler\",\n  \"address\": \"00038520\",\n  \"signature\": \"undefined _trap_handler(void)\",\n  \"namespace\": \"Global\",\n  \"body_start\": \"00038520\",\n  \"body_end\": \"00038f08\",\n  \"body_size\": 2537,\n  \"calling_convention\": \"unknown\",\n  \"is_thunk\": false,\n  \"is_external\": false\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "name": "_trap_handler",
+    "address": "00038520",
+    "signature": "undefined _trap_handler(void)",
+    "namespace": "Global",
+    "body_start": "00038520",
+    "body_end": "00038f08",
+    "body_size": 2537,
+    "calling_convention": "unknown",
+    "is_thunk": false,
+    "is_external": false
+  },
+  "isError": false
+}

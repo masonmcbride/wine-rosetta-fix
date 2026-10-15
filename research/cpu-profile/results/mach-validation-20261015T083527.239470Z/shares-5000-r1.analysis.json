@@ -1,0 +1,171 @@
+{
+  "samples": 633,
+  "stats": {
+    "wall_seconds": 3.003066,
+    "window_user_seconds": 3.604869,
+    "window_system_seconds": 0.037483,
+    "collector_cpu_us": 20742,
+    "interval_us": 5000,
+    "samples": 633,
+    "skipped_not_running": 1321,
+    "failures": 0,
+    "overflow": 0,
+    "threads": [
+      {
+        "tid": 50323,
+        "cpu_us": 65,
+        "first_user_us": 4144,
+        "first_system_us": 2954,
+        "last_user_us": 4180,
+        "last_system_us": 2983,
+        "seen": 489,
+        "running": 1,
+        "samples": 1
+      },
+      {
+        "tid": 50324,
+        "cpu_us": 0,
+        "first_user_us": 1,
+        "first_system_us": 6,
+        "last_user_us": 1,
+        "last_system_us": 6,
+        "seen": 489,
+        "running": 0,
+        "samples": 0
+      },
+      {
+        "tid": 50327,
+        "cpu_us": 2971725,
+        "first_user_us": 5608,
+        "first_system_us": 15,
+        "last_user_us": 2961809,
+        "last_system_us": 15539,
+        "seen": 488,
+        "running": 488,
+        "samples": 488
+      },
+      {
+        "tid": 50328,
+        "cpu_us": 636281,
+        "first_user_us": 1516,
+        "first_system_us": 24,
+        "last_user_us": 631115,
+        "last_system_us": 6706,
+        "seen": 488,
+        "running": 144,
+        "samples": 144
+      }
+    ]
+  },
+  "observed_thread_cpu_us": 3608071,
+  "attributed_cpu_us": 3606660,
+  "unattributed_cpu_us": 1411,
+  "unresolved_attributed_cpu_us": 0,
+  "raw_counts": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      488
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      142
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 66",
+      1
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      1
+    ],
+    [
+      "__semwait_signal (in libsystem_kernel.dylib) + 10",
+      1
+    ]
+  ],
+  "weighted_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      2971725
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      627200
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      4026
+    ],
+    [
+      "__semwait_signal (in libsystem_kernel.dylib) + 10",
+      3709
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 66",
+      0
+    ]
+  ],
+  "user_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      2956201
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      620747
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      3945
+    ],
+    [
+      "__semwait_signal (in libsystem_kernel.dylib) + 10",
+      3574
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 66",
+      0
+    ]
+  ],
+  "system_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      15524
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      6453
+    ],
+    [
+      "__semwait_signal (in libsystem_kernel.dylib) + 10",
+      135
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      81
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 66",
+      0
+    ]
+  ],
+  "per_thread": {
+    "50323": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "50324": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "50327": {
+      "user_us": 2956201,
+      "system_us": 15524
+    },
+    "50328": {
+      "user_us": 628266,
+      "system_us": 6669
+    }
+  },
+  "interpretation": "Endpoint snapshots weighted by preceding CPU deltas. Time between different functions can alias; kernel CPU is charged to a userspace context, not a kernel stack. No exact per-function-time claim."
+}

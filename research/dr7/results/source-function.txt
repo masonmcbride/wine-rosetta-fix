@@ -1,0 +1,12 @@
+static BOOL rosetta_exec_breakpoints( struct amd64_thread_data *data )
+{
+#ifdef __APPLE__
+    unsigned int i;
+    if (!is_rosetta2 || !emulate_rosetta_exec_breakpoints) return FALSE;
+    if (is_wow64() && !emulate_rosetta_wow64_breakpoints) return FALSE;
+    for (i = 0; i < 4; i++)
+        if (((data->dr7 >> (2 * i)) & 3) && !((data->dr7 >> (16 + 4 * i)) & 15))
+            return TRUE;
+#endif
+    return FALSE;
+}

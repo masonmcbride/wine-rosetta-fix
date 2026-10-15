@@ -1,0 +1,6 @@
+{
+  "mcp_read_only_tools": 20,
+  "mcp_write_rejected": true,
+  "http_write_status": 404,
+  "source_and_snapshot_sha256": "c21bfbe3bcd2aea74a8143a4d69cbb7b59017adc9471e43afd08536487a77591"
+}

@@ -1,0 +1,13 @@
+{
+  "host": "macOS-15.5-arm64-arm-64bit",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)\nTarget: arm64-apple-darwin24.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "flags": "-O2 -Wall -Wextra -Werror -arch ARCH (no LTO)",
+  "seed": "0x6a09e667f3bcc909",
+  "warmup_calls": 1000000,
+  "timed_calls": 20000000,
+  "pairs": 15,
+  "source_sha256": {
+    "predicate.c": "fb1f992041709032ae90bbb8f292bf0efe8d1914a6109aed3dc63c0aed4a639b",
+    "harness.c": "4f8cc17c10820c74f536117383c2a26aa5cd7bc2211c0728ec0e00bb73ad66bf"
+  }
+}

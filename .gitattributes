@@ -4,3 +4,6 @@ LICENSE -whitespace
 *.sh text eol=lf
 *.c text eol=lf
 *.md text eol=lf
+
+# Preserve captured evidence byte-for-byte, including CRLF and logger spacing.
+research/**/results/** -text -whitespace

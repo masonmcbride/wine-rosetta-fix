@@ -1,0 +1,122 @@
+[
+  {
+    "arch": "x86_64",
+    "mode": 0,
+    "baseline_median_ns": 1.47785,
+    "candidate_median_ns": 4.1502,
+    "paired_ratio_median": 0.355306899209867,
+    "baseline_range_ns": [
+      1.4583,
+      1.52915
+    ],
+    "candidate_range_ns": [
+      4.12395,
+      4.4576
+    ]
+  },
+  {
+    "arch": "x86_64",
+    "mode": 1,
+    "baseline_median_ns": 3.2788,
+    "candidate_median_ns": 4.1384,
+    "paired_ratio_median": 0.7913444809588247,
+    "baseline_range_ns": [
+      3.13875,
+      4.03105
+    ],
+    "candidate_range_ns": [
+      4.06115,
+      4.5311
+    ]
+  },
+  {
+    "arch": "x86_64",
+    "mode": 2,
+    "baseline_median_ns": 3.25255,
+    "candidate_median_ns": 4.1639,
+    "paired_ratio_median": 0.7857496887126606,
+    "baseline_range_ns": [
+      3.1739,
+      4.38985
+    ],
+    "candidate_range_ns": [
+      4.1191,
+      4.31305
+    ]
+  },
+  {
+    "arch": "x86_64",
+    "mode": 3,
+    "baseline_median_ns": 3.41265,
+    "candidate_median_ns": 4.0924,
+    "paired_ratio_median": 0.8367950346984655,
+    "baseline_range_ns": [
+      3.355,
+      4.00355
+    ],
+    "candidate_range_ns": [
+      4.06165,
+      4.51845
+    ]
+  },
+  {
+    "arch": "arm64",
+    "mode": 0,
+    "baseline_median_ns": 0.6898,
+    "candidate_median_ns": 0.9763,
+    "paired_ratio_median": 0.7072692565650313,
+    "baseline_range_ns": [
+      0.68455,
+      0.70335
+    ],
+    "candidate_range_ns": [
+      0.9661,
+      0.99375
+    ]
+  },
+  {
+    "arch": "arm64",
+    "mode": 1,
+    "baseline_median_ns": 1.2027,
+    "candidate_median_ns": 0.9753,
+    "paired_ratio_median": 1.2208054734877936,
+    "baseline_range_ns": [
+      1.01785,
+      1.3864
+    ],
+    "candidate_range_ns": [
+      0.95675,
+      1.05105
+    ]
+  },
+  {
+    "arch": "arm64",
+    "mode": 2,
+    "baseline_median_ns": 1.17165,
+    "candidate_median_ns": 0.9767,
+    "paired_ratio_median": 1.1971492796566876,
+    "baseline_range_ns": [
+      1.02285,
+      1.3811
+    ],
+    "candidate_range_ns": [
+      0.96325,
+      0.99965
+    ]
+  },
+  {
+    "arch": "arm64",
+    "mode": 3,
+    "baseline_median_ns": 2.19755,
+    "candidate_median_ns": 0.97345,
+    "paired_ratio_median": 2.2496423462088697,
+    "baseline_range_ns": [
+      2.16895,
+      2.2646
+    ],
+    "candidate_range_ns": [
+      0.96095,
+      1.001
+    ]
+  }
+]

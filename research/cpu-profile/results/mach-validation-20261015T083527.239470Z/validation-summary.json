@@ -1,0 +1,16 @@
+[
+  {
+    "workload": "shares",
+    "interval_us": 5000,
+    "reference": 0.17689193633135836,
+    "measured": 0.1759536413116063,
+    "runs": 2
+  },
+  {
+    "workload": "mix",
+    "interval_us": 5000,
+    "reference": 0.20476319766293588,
+    "measured": 0.2031777216198664,
+    "runs": 2
+  }
+]

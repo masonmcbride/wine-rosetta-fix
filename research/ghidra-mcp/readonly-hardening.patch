@@ -1,0 +1,38 @@
+diff --git a/extension/src/main/java/com/lauriewired/ghidramcp/http/BackendHttpServer.java b/extension/src/main/java/com/lauriewired/ghidramcp/http/BackendHttpServer.java
+index 0f7cb9c..97d7523 100644
+--- a/extension/src/main/java/com/lauriewired/ghidramcp/http/BackendHttpServer.java
++++ b/extension/src/main/java/com/lauriewired/ghidramcp/http/BackendHttpServer.java
+@@ -128,7 +128,7 @@ public final class BackendHttpServer {
+ 	}
+ 
+ 	private void post(String path, Handler handler) {
+-		routes.put(path, new Route("POST", true, handler));
++		// Local research build: do not register mutation routes, even for direct HTTP clients.
+ 	}
+ 
+ 	private Address currentAddress() {
+diff --git a/src/ghidra_mcp/server.py b/src/ghidra_mcp/server.py
+index d9110fc..5cf71ea 100644
+--- a/src/ghidra_mcp/server.py
++++ b/src/ghidra_mcp/server.py
+@@ -16,8 +16,7 @@ GUI_ONLY_TOOLS = ("get_current_address", "get_current_function")
+ INSTRUCTIONS = """\
+ Tools for reverse engineering the program open in Ghidra. Call get_program_info first to confirm
+ which binary you are working on. Addresses are hex strings such as "0x401000". List tools are
+-paginated: pass offset/limit and check has_more. Prefer the address-based tools for modifications,
+-since function names can be ambiguous.
++paginated: pass offset/limit and check has_more. This local build exposes read-only analysis tools. Decompiler pseudocode is not authoritative semantics.
+ """
+ 
+ Result = dict[str, Any]
+@@ -194,6 +193,10 @@ def create_server(
+         bytes are shown as '??' and listed in `gaps`."""
+         return get("read_memory", address=address, length=length)
+ 
++    # Local research build: mutation tools are never registered.
++    # This is unconditional; environment or MCP arguments cannot re-enable them.
++    return mcp
++
+     # ---- Modifications ---------------------------------------------------------------------
+ 
+     @mcp.tool()

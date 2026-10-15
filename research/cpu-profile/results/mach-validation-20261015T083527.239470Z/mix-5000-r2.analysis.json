@@ -1,0 +1,125 @@
+{
+  "samples": 489,
+  "stats": {
+    "wall_seconds": 3.016211,
+    "window_user_seconds": 2.983929,
+    "window_system_seconds": 0.031779,
+    "collector_cpu_us": 20982,
+    "interval_us": 5000,
+    "samples": 489,
+    "skipped_not_running": 489,
+    "failures": 0,
+    "overflow": 0,
+    "threads": [
+      {
+        "tid": 50523,
+        "cpu_us": 2990001,
+        "first_user_us": 4167,
+        "first_system_us": 2629,
+        "last_user_us": 2974582,
+        "last_system_us": 22215,
+        "seen": 489,
+        "running": 489,
+        "samples": 489
+      },
+      {
+        "tid": 50524,
+        "cpu_us": 0,
+        "first_user_us": 1,
+        "first_system_us": 5,
+        "last_user_us": 1,
+        "last_system_us": 5,
+        "seen": 489,
+        "running": 0,
+        "samples": 0
+      }
+    ]
+  },
+  "observed_thread_cpu_us": 2990001,
+  "attributed_cpu_us": 2990001,
+  "unattributed_cpu_us": 0,
+  "unresolved_attributed_cpu_us": 0,
+  "raw_counts": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      388
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      98
+    ],
+    [
+      "mach_msg2_trap (in libsystem_kernel.dylib) + 10",
+      2
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 88",
+      1
+    ]
+  ],
+  "weighted_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      2378082
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      600060
+    ],
+    [
+      "mach_msg2_trap (in libsystem_kernel.dylib) + 10",
+      11859
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 88",
+      0
+    ]
+  ],
+  "user_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      2362870
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      595764
+    ],
+    [
+      "mach_msg2_trap (in libsystem_kernel.dylib) + 10",
+      11781
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 88",
+      0
+    ]
+  ],
+  "system_cpu_us": [
+    [
+      "hot_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:21)",
+      15212
+    ],
+    [
+      "cool_leaf (in calibrate-mix-x86_64) (calibrate_mix.c:24)",
+      4296
+    ],
+    [
+      "mach_msg2_trap (in libsystem_kernel.dylib) + 10",
+      78
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 88",
+      0
+    ]
+  ],
+  "per_thread": {
+    "50523": {
+      "user_us": 2970415,
+      "system_us": 19586
+    },
+    "50524": {
+      "user_us": 0,
+      "system_us": 0
+    }
+  },
+  "interpretation": "Endpoint snapshots weighted by preceding CPU deltas. Time between different functions can alias; kernel CPU is charged to a userspace context, not a kernel stack. No exact per-function-time claim."
+}

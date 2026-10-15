@@ -1,0 +1,8 @@
+{
+  "wine/dlls/ntdll/unix/signal_x86_64.c": "2cd09cb6f1becd21b128c13470974a74650aab5ee49c41b3d807c1458fb41428",
+  "bo2-local/engine/lib/wine/x86_64-unix/ntdll.so": "c21bfbe3bcd2aea74a8143a4d69cbb7b59017adc9471e43afd08536487a77591",
+  "wine-rosetta-fix/patches/0001-debug-register-state.patch": "6f1e092ce26d5390675cd5f3ab17b328c2d4fe2142d6710de790c52c6307347c",
+  "wine-rosetta-fix/patches/0002-execution-breakpoints.patch": "8030bf08167a48885c455fb7c539d7ea7e24c372e3b73f737832a3fe2ff9611f",
+  "wine-rosetta-fix/bo2/patches/0001-debug-register-state.patch": "1caf619d14b5422b57f6fc4d890d21bab53843c984b51140d19b12c44d8643a3",
+  "wine-rosetta-fix/bo2/patches/0002-execution-breakpoints.patch": "f1dcc5a2aac0eefd6c591feb464e22835baff74a0e584f35c031040ce97e397c"
+}

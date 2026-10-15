@@ -1,0 +1,19 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"items\": [],\n  \"offset\": 0,\n  \"limit\": 100,\n  \"total\": 0,\n  \"has_more\": false\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "items": [],
+    "offset": 0,
+    "limit": 100,
+    "total": 0,
+    "has_more": false
+  },
+  "isError": false
+}

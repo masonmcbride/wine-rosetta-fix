@@ -19,3 +19,14 @@ Follow the path from shadow register state to execution-breakpoint delivery, the
 BO2’s loading hang motivated the investigation; its successful map load is one integration result.
 
 [Implementation & build guide](docs/implementation.md) · [Validation evidence](test-results/validation-2026-10-08.md) · [Patches](patches/) · [Reproducers](probes/)
+
+[Optimization research study](docs/optimization-study.md): an isolated DR7
+predicate experiment with exhaustive differential checks, assembly and raw
+timings. The branchless candidate regressed under Rosetta and remains unapplied.
+A read-only Ghidra MCP pass links the compiled Wine artifact back to source;
+see [local Ghidra setup](docs/ghidra-setup.md).
+
+[Gameplay profiling research](research/cpu-profile/README.md): validated experimental
+CPU sampling, Zombies Metal trace analysis, rejected approaches, and a
+[next-session handoff](research/cpu-profile/next-session.md). No new performance
+patch is selected; the working implementation remains the baseline.

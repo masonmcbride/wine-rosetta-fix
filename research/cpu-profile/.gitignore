@@ -1,0 +1,8 @@
+/prefix/
+/tools/
+/.local-archive/
+/results/
+/build.json
+/mach-build.json
+*.exe
+*.dSYM/

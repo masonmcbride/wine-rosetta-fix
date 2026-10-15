@@ -1,0 +1,297 @@
+{
+  "hashes": {
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/mach_sampler.c": "063e293d60fe6c505634882f91233dac3b055e0d4325539c5a112bb39f4f6e5e",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/events.c": "d7bcabd528190709d19fa25acadaef59de988b30e9959266104b67661379671c",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/events.exe": "2a69a59e863e7fc7ff7cd3ec4b664abc234ec344dcd1839add7b3ebdb9f7ba5d",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/mach-sampler-x86_64.dylib": "8664e7ebdc0814c86c2045e87bf8104e3a89e116c6a0fa9199f19b9effd770af",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/lib/wine/x86_64-unix/ntdll.so": "c21bfbe3bcd2aea74a8143a4d69cbb7b59017adc9471e43afd08536487a77591"
+  },
+  "runs": [
+    {
+      "label": "warmup",
+      "host_pid": 3828,
+      "exit": 0,
+      "seconds": 2,
+      "wall_seconds": 3.272568208
+    },
+    {
+      "label": "control1",
+      "host_pid": 3852,
+      "exit": 0,
+      "seconds": 15,
+      "wall_seconds": 15.09117975
+    },
+    {
+      "label": "profile1",
+      "host_pid": 3863,
+      "exit": 0,
+      "seconds": 15,
+      "wall_seconds": 15.265056541000003,
+      "window_stats": {
+        "wall_seconds": 10.002544,
+        "window_user_seconds": 3.971013,
+        "window_system_seconds": 6.896544,
+        "collector_cpu_us": 61798,
+        "interval_us": 5000,
+        "samples": 1657,
+        "skipped_not_running": 4915,
+        "failures": 0,
+        "overflow": 0,
+        "threads": [
+          {
+            "tid": 49131,
+            "cpu_us": 5520151,
+            "first_user_us": 605969,
+            "first_system_us": 1032720,
+            "last_user_us": 2646780,
+            "last_system_us": 4512060,
+            "seen": 1643,
+            "running": 538,
+            "samples": 538
+          },
+          {
+            "tid": 49109,
+            "cpu_us": 0,
+            "first_user_us": 9352,
+            "first_system_us": 4155,
+            "last_user_us": 9352,
+            "last_system_us": 4155,
+            "seen": 1643,
+            "running": 0,
+            "samples": 0
+          },
+          {
+            "tid": 49112,
+            "cpu_us": 0,
+            "first_user_us": 67,
+            "first_system_us": 43,
+            "last_user_us": 67,
+            "last_system_us": 43,
+            "seen": 1643,
+            "running": 0,
+            "samples": 0
+          },
+          {
+            "tid": 49130,
+            "cpu_us": 5279324,
+            "first_user_us": 598556,
+            "first_system_us": 1018304,
+            "last_user_us": 2507743,
+            "last_system_us": 4388441,
+            "seen": 1643,
+            "running": 1119,
+            "samples": 1119
+          }
+        ]
+      }
+    },
+    {
+      "label": "profile2",
+      "host_pid": 3874,
+      "exit": 0,
+      "seconds": 15,
+      "wall_seconds": 15.050032875,
+      "window_stats": {
+        "wall_seconds": 10.001614,
+        "window_user_seconds": 3.921858,
+        "window_system_seconds": 6.892076,
+        "collector_cpu_us": 61590,
+        "interval_us": 5000,
+        "samples": 1647,
+        "skipped_not_running": 4921,
+        "failures": 0,
+        "overflow": 0,
+        "threads": [
+          {
+            "tid": 49255,
+            "cpu_us": 5436967,
+            "first_user_us": 604406,
+            "first_system_us": 1036060,
+            "last_user_us": 2595295,
+            "last_system_us": 4482138,
+            "seen": 1642,
+            "running": 500,
+            "samples": 500
+          },
+          {
+            "tid": 49246,
+            "cpu_us": 0,
+            "first_user_us": 9190,
+            "first_system_us": 3847,
+            "last_user_us": 9190,
+            "last_system_us": 3847,
+            "seen": 1642,
+            "running": 0,
+            "samples": 0
+          },
+          {
+            "tid": 49250,
+            "cpu_us": 0,
+            "first_user_us": 69,
+            "first_system_us": 34,
+            "last_user_us": 69,
+            "last_system_us": 34,
+            "seen": 1642,
+            "running": 0,
+            "samples": 0
+          },
+          {
+            "tid": 49254,
+            "cpu_us": 5308100,
+            "first_user_us": 579040,
+            "first_system_us": 1014113,
+            "last_user_us": 2488789,
+            "last_system_us": 4412464,
+            "seen": 1642,
+            "running": 1147,
+            "samples": 1147
+          }
+        ]
+      }
+    },
+    {
+      "label": "control2",
+      "host_pid": 3888,
+      "exit": 0,
+      "seconds": 15,
+      "wall_seconds": 15.110333542
+    }
+  ],
+  "cpu_share_validation": "see standalone Mach validation; flat endpoint attribution limits apply",
+  "sampler_build": {
+    "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)\nTarget: arm64-apple-darwin24.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "builds": [
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "arm64",
+          "-dynamiclib",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/mach_sampler.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/mach-sampler-arm64.dylib"
+        ],
+        "sha256": "d48aaaefea3032523beccd17b1c7b6ed0b09d7acefd13eecec37ac47b5629762"
+      },
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "arm64",
+          "-fno-omit-frame-pointer",
+          "-fno-optimize-sibling-calls",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/calibrate_shares.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/calibrate-shares-arm64"
+        ],
+        "sha256": "2e90e156492bd67d5cf5cdb0735e96af890fd0d1b74175dd88375fac5d553b55"
+      },
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "arm64",
+          "-fno-omit-frame-pointer",
+          "-fno-optimize-sibling-calls",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/calibrate_mix.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/calibrate-mix-arm64"
+        ],
+        "sha256": "9a13fd78dc8922539967d98dbd45133fb7be920d6ddba2ac079d1f9ae76a6eed"
+      },
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "x86_64",
+          "-dynamiclib",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/mach_sampler.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/mach-sampler-x86_64.dylib"
+        ],
+        "sha256": "8664e7ebdc0814c86c2045e87bf8104e3a89e116c6a0fa9199f19b9effd770af"
+      },
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "x86_64",
+          "-fno-omit-frame-pointer",
+          "-fno-optimize-sibling-calls",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/calibrate_shares.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/calibrate-shares-x86_64"
+        ],
+        "sha256": "08e86171ac1769bc6d3161f07751b4d2a7366af54d3c80190523a2fa8bb6f366"
+      },
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-arch",
+          "x86_64",
+          "-fno-omit-frame-pointer",
+          "-fno-optimize-sibling-calls",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/calibrate_mix.c",
+          "-o",
+          "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/calibrate-mix-x86_64"
+        ],
+        "sha256": "03c9df9915b6673142280ca3eacd57f9df3ee44600f25e6a957963ab3ee63490"
+      }
+    ],
+    "source_hashes": {
+      "mach_sampler.c": "063e293d60fe6c505634882f91233dac3b055e0d4325539c5a112bb39f4f6e5e",
+      "calibrate_shares.c": "7fbfacb96ce40c92a5775329fa83a4ecb86b1b9b4ede505888320ed6115204dd",
+      "calibrate_mix.c": "740169026c07aa4c32c356f42527786e47439d6053d8af235f9dfe0357ff3a75"
+    }
+  },
+  "environment": {
+    "WINEPREFIX": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/prefix",
+    "WINESERVER": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wineserver",
+    "WINEDEBUG": "-all",
+    "WINEMSYNC": "1",
+    "WINEESYNC": "1",
+    "WINEFSYNC": "0",
+    "WINE_ROSETTA_EXEC_BREAKPOINTS": "0",
+    "WINE_ROSETTA_WOW64_BREAKPOINTS": "0",
+    "WINE_ROSETTA_CALL_WORKAROUND": "0",
+    "DYLD_FALLBACK_LIBRARY_PATH": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/lib:/usr/lib",
+    "WINEDLLOVERRIDES": "mscoree,mshtml="
+  },
+  "hashes_after": {
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/mach_sampler.c": "063e293d60fe6c505634882f91233dac3b055e0d4325539c5a112bb39f4f6e5e",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/events.c": "d7bcabd528190709d19fa25acadaef59de988b30e9959266104b67661379671c",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/events.exe": "2a69a59e863e7fc7ff7cd3ec4b664abc234ec344dcd1839add7b3ebdb9f7ba5d",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/tools/mach-sampler-x86_64.dylib": "8664e7ebdc0814c86c2045e87bf8104e3a89e116c6a0fa9199f19b9effd770af",
+    "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/lib/wine/x86_64-unix/ntdll.so": "c21bfbe3bcd2aea74a8143a4d69cbb7b59017adc9471e43afd08536487a77591"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"items\": [\n    {\n      \"name\": \"_trap_handler\",\n      \"address\": \"00038520\"\n    }\n  ],\n  \"offset\": 0,\n  \"limit\": 100,\n  \"total\": 1,\n  \"has_more\": false\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "items": [
+      {
+        "name": "_trap_handler",
+        "address": "00038520"
+      }
+    ],
+    "offset": 0,
+    "limit": 100,
+    "total": 1,
+    "has_more": false
+  },
+  "isError": false
+}

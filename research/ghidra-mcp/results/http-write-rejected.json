@@ -1,0 +1,4 @@
+{
+  "status": 404,
+  "body": "{\"success\":false,\"error\":{\"code\":\"UNKNOWN_ENDPOINT\",\"message\":\"Unknown endpoint: /rename_function\"}}"
+}

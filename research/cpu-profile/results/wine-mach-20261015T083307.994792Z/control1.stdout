@@ -1,0 +1,2 @@
+READY pid=212 seconds=15
+PASS roundtrips=1948910 elapsed_ms=15013 kernel_100ns=103800000 user_100ns=59100000

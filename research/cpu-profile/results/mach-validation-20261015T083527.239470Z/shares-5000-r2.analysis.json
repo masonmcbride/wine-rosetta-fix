@@ -1,0 +1,155 @@
+{
+  "samples": 624,
+  "stats": {
+    "wall_seconds": 3.005162,
+    "window_user_seconds": 3.613283,
+    "window_system_seconds": 0.035339,
+    "collector_cpu_us": 19370,
+    "interval_us": 5000,
+    "samples": 624,
+    "skipped_not_running": 1322,
+    "failures": 0,
+    "overflow": 0,
+    "threads": [
+      {
+        "tid": 50597,
+        "cpu_us": 65,
+        "first_user_us": 4234,
+        "first_system_us": 2858,
+        "last_user_us": 4270,
+        "last_system_us": 2887,
+        "seen": 487,
+        "running": 1,
+        "samples": 1
+      },
+      {
+        "tid": 50598,
+        "cpu_us": 0,
+        "first_user_us": 1,
+        "first_system_us": 5,
+        "last_user_us": 1,
+        "last_system_us": 5,
+        "seen": 487,
+        "running": 0,
+        "samples": 0
+      },
+      {
+        "tid": 50600,
+        "cpu_us": 2979975,
+        "first_user_us": 4013,
+        "first_system_us": 60,
+        "last_user_us": 2968983,
+        "last_system_us": 15065,
+        "seen": 486,
+        "running": 486,
+        "samples": 486
+      },
+      {
+        "tid": 50601,
+        "cpu_us": 641395,
+        "first_user_us": 1034,
+        "first_system_us": 18,
+        "last_user_us": 636445,
+        "last_system_us": 6002,
+        "seen": 486,
+        "running": 137,
+        "samples": 137
+      }
+    ]
+  },
+  "observed_thread_cpu_us": 3621435,
+  "attributed_cpu_us": 3621370,
+  "unattributed_cpu_us": 65,
+  "unresolved_attributed_cpu_us": 0,
+  "raw_counts": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      485
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      137
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 37",
+      1
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      1
+    ]
+  ],
+  "weighted_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      2969392
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      641395
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      10583
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 37",
+      0
+    ]
+  ],
+  "user_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      2954392
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      635411
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      10578
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 37",
+      0
+    ]
+  ],
+  "system_cpu_us": [
+    [
+      "hot_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:22)",
+      15000
+    ],
+    [
+      "cool_leaf (in calibrate-shares-x86_64) (calibrate_shares.c:25)",
+      5984
+    ],
+    [
+      "DYLD-STUB$$__commpage_gettimeofday (in libsystem_c.dylib) + 0",
+      5
+    ],
+    [
+      "lsl::Allocator::AllocationMetadata::pool(bool) const (in dyld) + 37",
+      0
+    ]
+  ],
+  "per_thread": {
+    "50597": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "50598": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "50600": {
+      "user_us": 2964970,
+      "system_us": 15005
+    },
+    "50601": {
+      "user_us": 635411,
+      "system_us": 5984
+    }
+  },
+  "interpretation": "Endpoint snapshots weighted by preceding CPU deltas. Time between different functions can alias; kernel CPU is charged to a userspace context, not a kernel stack. No exact per-function-time claim."
+}

@@ -1,0 +1,3020 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"items\": [\n    {\n      \"address\": \"00038520\",\n      \"bytes\": \"55\",\n      \"instruction\": \"PUSH RBP\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038521\",\n      \"bytes\": \"4889e5\",\n      \"instruction\": \"MOV RBP,RSP\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038524\",\n      \"bytes\": \"4157\",\n      \"instruction\": \"PUSH R15\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038526\",\n      \"bytes\": \"4156\",\n      \"instruction\": \"PUSH R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038528\",\n      \"bytes\": \"4155\",\n      \"instruction\": \"PUSH R13\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003852a\",\n      \"bytes\": \"4154\",\n      \"instruction\": \"PUSH R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003852c\",\n      \"bytes\": \"53\",\n      \"instruction\": \"PUSH RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003852d\",\n      \"bytes\": \"4881ec680a0000\",\n      \"instruction\": \"SUB RSP,0xa68\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038534\",\n      \"bytes\": \"4889d3\",\n      \"instruction\": \"MOV RBX,RDX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038537\",\n      \"bytes\": \"4989f7\",\n      \"instruction\": \"MOV R15,RSI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003853a\",\n      \"bytes\": \"4989e6\",\n      \"instruction\": \"MOV R14,RSP\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003853d\",\n      \"bytes\": \"4981e60000ffff\",\n      \"instruction\": \"AND R14,-0x10000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038544\",\n      \"bytes\": \"e867bcffff\",\n      \"instruction\": \"CALL 0x000341b0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038549\",\n      \"bytes\": \"498b06\",\n      \"instruction\": \"MOV RAX,qword ptr [R14]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003854c\",\n      \"bytes\": \"4885c0\",\n      \"instruction\": \"TEST RAX,RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003854f\",\n      \"bytes\": \"7428\",\n      \"instruction\": \"JZ 0x00038579\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038551\",\n      \"bytes\": \"488bb820030000\",\n      \"instruction\": \"MOV RDI,qword ptr [RAX + 0x320]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038558\",\n      \"bytes\": \"e86f750300\",\n      \"instruction\": \"CALL 0x0006facc\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003855d\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038561\",\n      \"bytes\": \"4883b8a000000007\",\n      \"instruction\": \"CMP qword ptr [RAX + 0xa0],0x7\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038569\",\n      \"bytes\": \"750e\",\n      \"instruction\": \"JNZ 0x00038579\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003856b\",\n      \"bytes\": \"0fb70d5ef50500\",\n      \"instruction\": \"MOVZX ECX,word ptr [0x00097ad0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038572\",\n      \"bytes\": \"488988a0000000\",\n      \"instruction\": \"MOV qword ptr [RAX + 0xa0],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038579\",\n      \"bytes\": \"0f57c0\",\n      \"instruction\": \"XORPS XMM0,XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003857c\",\n      \"bytes\": \"0f2945b0\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0x50],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038580\",\n      \"bytes\": \"0f2945a0\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0x60],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038584\",\n      \"bytes\": \"0f294590\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0x70],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038588\",\n      \"bytes\": \"0f294580\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0x80],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003858c\",\n      \"bytes\": \"0f298570ffffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0x90],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038593\",\n      \"bytes\": \"0f298560ffffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003859a\",\n      \"bytes\": \"0f298550ffffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xb0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385a1\",\n      \"bytes\": \"0f298540ffffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xc0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385a8\",\n      \"bytes\": \"0f298530ffffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xd0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385af\",\n      \"bytes\": \"48c745c000000000\",\n      \"instruction\": \"MOV qword ptr [RBP + -0x40],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385b7\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385bb\",\n      \"bytes\": \"4c8b8090000000\",\n      \"instruction\": \"MOV R8,qword ptr [RAX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385c2\",\n      \"bytes\": \"4c898540ffffff\",\n      \"instruction\": \"MOV qword ptr [RBP + -0xc0],R8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385c9\",\n      \"bytes\": \"4d8b26\",\n      \"instruction\": \"MOV R12,qword ptr [R14]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385cc\",\n      \"bytes\": \"498d8c24f0020000\",\n      \"instruction\": \"LEA RCX,[R12 + 0x2f0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385d4\",\n      \"bytes\": \"4d85e4\",\n      \"instruction\": \"TEST R12,R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385d7\",\n      \"bytes\": \"490f44cc\",\n      \"instruction\": \"CMOVZ RCX,R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385db\",\n      \"bytes\": \"7438\",\n      \"instruction\": \"JZ 0x00038615\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385dd\",\n      \"bytes\": \"4180bc244203000000\",\n      \"instruction\": \"CMP byte ptr [R12 + 0x342],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385e6\",\n      \"bytes\": \"742d\",\n      \"instruction\": \"JZ 0x00038615\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385e8\",\n      \"bytes\": \"66833801\",\n      \"instruction\": \"CMP word ptr [RAX],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385ec\",\n      \"bytes\": \"7527\",\n      \"instruction\": \"JNZ 0x00038615\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385ee\",\n      \"bytes\": \"488d0dab7d0700\",\n      \"instruction\": \"LEA RCX,[0xb03a0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385f5\",\n      \"bytes\": \"48833900\",\n      \"instruction\": \"CMP qword ptr [RCX],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385f9\",\n      \"bytes\": \"0f8419070000\",\n      \"instruction\": \"JZ 0x00038d18\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000385ff\",\n      \"bytes\": \"0fb70de4f40500\",\n      \"instruction\": \"MOVZX ECX,word ptr [0x00097aea]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038606\",\n      \"bytes\": \"483988a0000000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0xa0],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003860d\",\n      \"bytes\": \"0f95c0\",\n      \"instruction\": \"SETNZ AL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038610\",\n      \"bytes\": \"e905070000\",\n      \"instruction\": \"JMP 0x00038d1a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038615\",\n      \"bytes\": \"833dc8f4050000\",\n      \"instruction\": \"CMP dword ptr [0x00097ae4],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003861c\",\n      \"bytes\": \"7410\",\n      \"instruction\": \"JZ 0x0003862e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003861e\",\n      \"bytes\": \"80795100\",\n      \"instruction\": \"CMP byte ptr [RCX + 0x51],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038622\",\n      \"bytes\": \"740a\",\n      \"instruction\": \"JZ 0x0003862e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038624\",\n      \"bytes\": \"66833801\",\n      \"instruction\": \"CMP word ptr [RAX],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038628\",\n      \"bytes\": \"0f8434030000\",\n      \"instruction\": \"JZ 0x00038962\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003862e\",\n      \"bytes\": \"4d85e4\",\n      \"instruction\": \"TEST R12,R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038631\",\n      \"bytes\": \"740a\",\n      \"instruction\": \"JZ 0x0003863d\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038633\",\n      \"bytes\": \"4d8bac2478030000\",\n      \"instruction\": \"MOV R13,qword ptr [R12 + 0x378]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003863b\",\n      \"bytes\": \"eb03\",\n      \"instruction\": \"JMP 0x00038640\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003863d\",\n      \"bytes\": \"4531ed\",\n      \"instruction\": \"XOR R13D,R13D\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038640\",\n      \"bytes\": \"4c3b05b9990400\",\n      \"instruction\": \"CMP R8,qword ptr [0x00082000]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038647\",\n      \"bytes\": \"0f95c1\",\n      \"instruction\": \"SETNZ CL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003864a\",\n      \"bytes\": \"4c3b05b7990400\",\n      \"instruction\": \"CMP R8,qword ptr [0x00082008]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038651\",\n      \"bytes\": \"0f95c2\",\n      \"instruction\": \"SETNZ DL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038654\",\n      \"bytes\": \"84d1\",\n      \"instruction\": \"TEST CL,DL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038656\",\n      \"bytes\": \"0f85af000000\",\n      \"instruction\": \"JNZ 0x0003870b\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003865c\",\n      \"bytes\": \"488d0d75bd0400\",\n      \"instruction\": \"LEA RCX,[0x843d8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038663\",\n      \"bytes\": \"488b09\",\n      \"instruction\": \"MOV RCX,qword ptr [RCX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038666\",\n      \"bytes\": \"48898890000000\",\n      \"instruction\": \"MOV qword ptr [RAX + 0x90],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003866d\",\n      \"bytes\": \"f605c8bd040008\",\n      \"instruction\": \"TEST byte ptr [0x0008443c],0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038674\",\n      \"bytes\": \"7433\",\n      \"instruction\": \"JZ 0x000386a9\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038676\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003867a\",\n      \"bytes\": \"4c8b8090000000\",\n      \"instruction\": \"MOV R8,qword ptr [RAX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038681\",\n      \"bytes\": \"448b8898000000\",\n      \"instruction\": \"MOV R9D,dword ptr [RAX + 0x98]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038688\",\n      \"bytes\": \"488d35adbd0400\",\n      \"instruction\": \"LEA RSI,[0x8443c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003868f\",\n      \"bytes\": \"488d1530dc0300\",\n      \"instruction\": \"LEA RDX,[0x762c6]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038696\",\n      \"bytes\": \"488d0d55dc0300\",\n      \"instruction\": \"LEA RCX,[0x762f2]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003869d\",\n      \"bytes\": \"bf03000000\",\n      \"instruction\": \"MOV EDI,0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386a2\",\n      \"bytes\": \"31c0\",\n      \"instruction\": \"XOR EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386a4\",\n      \"bytes\": \"e857d9ffff\",\n      \"instruction\": \"CALL 0x00036000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386a9\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386ad\",\n      \"bytes\": \"488b4048\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386b1\",\n      \"bytes\": \"488b00\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386b4\",\n      \"bytes\": \"49894570\",\n      \"instruction\": \"MOV qword ptr [R13 + 0x70],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386b8\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386bc\",\n      \"bytes\": \"488b8098000000\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x98]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386c3\",\n      \"bytes\": \"49898580000000\",\n      \"instruction\": \"MOV qword ptr [R13 + 0x80],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386ca\",\n      \"bytes\": \"31c0\",\n      \"instruction\": \"XOR EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386cc\",\n      \"bytes\": \"48833df4f3050000\",\n      \"instruction\": \"CMP qword ptr [0x00097ac8],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386d4\",\n      \"bytes\": \"0f95c0\",\n      \"instruction\": \"SETNZ AL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386d7\",\n      \"bytes\": \"c1e010\",\n      \"instruction\": \"SHL EAX,0x10\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386da\",\n      \"bytes\": \"0d01001000\",\n      \"instruction\": \"OR EAX,0x100001\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386df\",\n      \"bytes\": \"418985b4000000\",\n      \"instruction\": \"MOV dword ptr [R13 + 0xb4],EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386e6\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386ea\",\n      \"bytes\": \"4c896820\",\n      \"instruction\": \"MOV qword ptr [RAX + 0x20],R13\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386ee\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386f2\",\n      \"bytes\": \"4883404808\",\n      \"instruction\": \"ADD qword ptr [RAX + 0x48],0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386f7\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000386fb\",\n      \"bytes\": \"4881a098000000fffeffff\",\n      \"instruction\": \"AND qword ptr [RAX + 0x98],-0x101\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038706\",\n      \"bytes\": \"e9d4060000\",\n      \"instruction\": \"JMP 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003870b\",\n      \"bytes\": \"4c3b05fe980400\",\n      \"instruction\": \"CMP R8,qword ptr [0x00082010]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038712\",\n      \"bytes\": \"0f85cc010000\",\n      \"instruction\": \"JNZ 0x000388e4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038718\",\n      \"bytes\": \"488d0dc9bc0400\",\n      \"instruction\": \"LEA RCX,[0x843e8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003871f\",\n      \"bytes\": \"488b09\",\n      \"instruction\": \"MOV RCX,qword ptr [RCX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038722\",\n      \"bytes\": \"48898890000000\",\n      \"instruction\": \"MOV qword ptr [RAX + 0x90],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038729\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003872d\",\n      \"bytes\": \"488b4820\",\n      \"instruction\": \"MOV RCX,qword ptr [RAX + 0x20]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038731\",\n      \"bytes\": \"48894860\",\n      \"instruction\": \"MOV qword ptr [RAX + 0x60],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038735\",\n      \"bytes\": \"410f2985f0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2f0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003873d\",\n      \"bytes\": \"410f2985e0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2e0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038745\",\n      \"bytes\": \"410f2985d0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2d0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003874d\",\n      \"bytes\": \"410f2985c0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2c0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038755\",\n      \"bytes\": \"488d0504c80400\",\n      \"instruction\": \"LEA RAX,[0x84f60]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003875c\",\n      \"bytes\": \"488b00\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003875f\",\n      \"bytes\": \"f680ec03000002\",\n      \"instruction\": \"TEST byte ptr [RAX + 0x3ec],0x2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038766\",\n      \"bytes\": \"7418\",\n      \"instruction\": \"JZ 0x00038780\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038768\",\n      \"bytes\": \"48b90000000000000080\",\n      \"instruction\": \"MOV RCX,-0x8000000000000000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038772\",\n      \"bytes\": \"480b88d8030000\",\n      \"instruction\": \"OR RCX,qword ptr [RAX + 0x3d8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038779\",\n      \"bytes\": \"49898dc8020000\",\n      \"instruction\": \"MOV qword ptr [R13 + 0x2c8],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038780\",\n      \"bytes\": \"488b4328\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x28]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038784\",\n      \"bytes\": \"4c8b7b30\",\n      \"instruction\": \"MOV R15,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038788\",\n      \"bytes\": \"41bce0000000\",\n      \"instruction\": \"MOV R12D,0xe0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003878e\",\n      \"bytes\": \"483de8020000\",\n      \"instruction\": \"CMP RAX,0x2e8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038794\",\n      \"bytes\": \"7416\",\n      \"instruction\": \"JZ 0x000387ac\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038796\",\n      \"bytes\": \"483d28040000\",\n      \"instruction\": \"CMP RAX,0x428\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003879c\",\n      \"bytes\": \"740e\",\n      \"instruction\": \"JZ 0x000387ac\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003879e\",\n      \"bytes\": \"483d680a0000\",\n      \"instruction\": \"CMP RAX,0xa68\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387a4\",\n      \"bytes\": \"7406\",\n      \"instruction\": \"JZ 0x000387ac\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387a6\",\n      \"bytes\": \"41bcc0000000\",\n      \"instruction\": \"MOV R12D,0xc0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387ac\",\n      \"bytes\": \"4b8d3427\",\n      \"instruction\": \"LEA RSI,[R15 + R12*0x1]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387b0\",\n      \"bytes\": \"4883c61c\",\n      \"instruction\": \"ADD RSI,0x1c\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387b4\",\n      \"bytes\": \"4c8db540faffff\",\n      \"instruction\": \"LEA R14,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387bb\",\n      \"bytes\": \"bae4000000\",\n      \"instruction\": \"MOV EDX,0xe4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387c0\",\n      \"bytes\": \"4c89f7\",\n      \"instruction\": \"MOV RDI,R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387c3\",\n      \"bytes\": \"e856750300\",\n      \"instruction\": \"CALL 0x0006fd1e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387c8\",\n      \"bytes\": \"430f108427a0010000\",\n      \"instruction\": \"MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1a0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387d1\",\n      \"bytes\": \"430f108c27b0010000\",\n      \"instruction\": \"MOVUPS XMM1,xmmword ptr [R15 + R12*0x1 + 0x1b0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387da\",\n      \"bytes\": \"430f109427c0010000\",\n      \"instruction\": \"MOVUPS XMM2,xmmword ptr [R15 + R12*0x1 + 0x1c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387e3\",\n      \"bytes\": \"430f109c27d0010000\",\n      \"instruction\": \"MOVUPS XMM3,xmmword ptr [R15 + R12*0x1 + 0x1d0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387ec\",\n      \"bytes\": \"0f298570f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa90],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387f3\",\n      \"bytes\": \"0f298d80f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa80],XMM1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000387fa\",\n      \"bytes\": \"0f299590f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa70],XMM2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038801\",\n      \"bytes\": \"0f299da0f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa60],XMM3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038808\",\n      \"bytes\": \"430f108427e0010000\",\n      \"instruction\": \"MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1e0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038811\",\n      \"bytes\": \"0f2985b0f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa50],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038818\",\n      \"bytes\": \"430f108427f0010000\",\n      \"instruction\": \"MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1f0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038821\",\n      \"bytes\": \"0f2985c0f5ffff\",\n      \"instruction\": \"MOVAPS xmmword ptr [RBP + -0xa40],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038828\",\n      \"bytes\": \"498db5c0010000\",\n      \"instruction\": \"LEA RSI,[R13 + 0x1c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003882f\",\n      \"bytes\": \"488dbd24fbffff\",\n      \"instruction\": \"LEA RDI,[RBP + -0x4dc]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038836\",\n      \"bytes\": \"baa0000000\",\n      \"instruction\": \"MOV EDX,0xa0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003883b\",\n      \"bytes\": \"e8de740300\",\n      \"instruction\": \"CALL 0x0006fd1e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038840\",\n      \"bytes\": \"4b8b442710\",\n      \"instruction\": \"MOV RAX,qword ptr [R15 + R12*0x1 + 0x10]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038845\",\n      \"bytes\": \"430f100427\",\n      \"instruction\": \"MOVUPS XMM0,xmmword ptr [R15 + R12*0x1]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003884a\",\n      \"bytes\": \"410f1185c0000000\",\n      \"instruction\": \"MOVUPS xmmword ptr [R13 + 0xc0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038852\",\n      \"bytes\": \"498985d0000000\",\n      \"instruction\": \"MOV qword ptr [R13 + 0xd0],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038859\",\n      \"bytes\": \"498dbddc000000\",\n      \"instruction\": \"LEA RDI,[R13 + 0xdc]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038860\",\n      \"bytes\": \"ba84010000\",\n      \"instruction\": \"MOV EDX,0x184\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038865\",\n      \"bytes\": \"4c89f6\",\n      \"instruction\": \"MOV RSI,R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038868\",\n      \"bytes\": \"e8b1740300\",\n      \"instruction\": \"CALL 0x0006fd1e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003886d\",\n      \"bytes\": \"0f288570f5ffff\",\n      \"instruction\": \"MOVAPS XMM0,xmmword ptr [RBP + -0xa90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038874\",\n      \"bytes\": \"0f288d80f5ffff\",\n      \"instruction\": \"MOVAPS XMM1,xmmword ptr [RBP + -0xa80]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003887b\",\n      \"bytes\": \"0f289590f5ffff\",\n      \"instruction\": \"MOVAPS XMM2,xmmword ptr [RBP + -0xa70]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038882\",\n      \"bytes\": \"0f289da0f5ffff\",\n      \"instruction\": \"MOVAPS XMM3,xmmword ptr [RBP + -0xa60]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038889\",\n      \"bytes\": \"410f298560020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x260],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038891\",\n      \"bytes\": \"410f298d70020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x270],XMM1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038899\",\n      \"bytes\": \"410f299580020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x280],XMM2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388a1\",\n      \"bytes\": \"410f299d90020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x290],XMM3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388a9\",\n      \"bytes\": \"0f2885b0f5ffff\",\n      \"instruction\": \"MOVAPS XMM0,xmmword ptr [RBP + -0xa50]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388b0\",\n      \"bytes\": \"410f2985a0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2a0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388b8\",\n      \"bytes\": \"0f2885c0f5ffff\",\n      \"instruction\": \"MOVAPS XMM0,xmmword ptr [RBP + -0xa40]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388bf\",\n      \"bytes\": \"410f2985b0020000\",\n      \"instruction\": \"MOVAPS xmmword ptr [R13 + 0x2b0],XMM0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388c7\",\n      \"bytes\": \"49c785c002000003000000\",\n      \"instruction\": \"MOV qword ptr [R13 + 0x2c0],0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388d2\",\n      \"bytes\": \"f60563bb040008\",\n      \"instruction\": \"TEST byte ptr [0x0008443c],0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388d9\",\n      \"bytes\": \"0f8597fdffff\",\n      \"instruction\": \"JNZ 0x00038676\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388df\",\n      \"bytes\": \"e9c5fdffff\",\n      \"instruction\": \"JMP 0x000386a9\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388e4\",\n      \"bytes\": \"41837f0804\",\n      \"instruction\": \"CMP dword ptr [R15 + 0x8],0x4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388e9\",\n      \"bytes\": \"7577\",\n      \"instruction\": \"JNZ 0x00038962\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388eb\",\n      \"bytes\": \"4d85e4\",\n      \"instruction\": \"TEST R12,R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388ee\",\n      \"bytes\": \"7433\",\n      \"instruction\": \"JZ 0x00038923\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388f0\",\n      \"bytes\": \"488b4848\",\n      \"instruction\": \"MOV RCX,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388f4\",\n      \"bytes\": \"498d9600000100\",\n      \"instruction\": \"LEA RDX,[R14 + 0x10000]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388fb\",\n      \"bytes\": \"4839ca\",\n      \"instruction\": \"CMP RDX,RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000388fe\",\n      \"bytes\": \"770a\",\n      \"instruction\": \"JA 0x0003890a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038900\",\n      \"bytes\": \"49398c2478030000\",\n      \"instruction\": \"CMP qword ptr [R12 + 0x378],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038908\",\n      \"bytes\": \"7319\",\n      \"instruction\": \"JNC 0x00038923\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003890a\",\n      \"bytes\": \"498db658080000\",\n      \"instruction\": \"LEA RSI,[R14 + 0x858]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038911\",\n      \"bytes\": \"4839ce\",\n      \"instruction\": \"CMP RSI,RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038914\",\n      \"bytes\": \"400f97c6\",\n      \"instruction\": \"SETA SIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038918\",\n      \"bytes\": \"4839ca\",\n      \"instruction\": \"CMP RDX,RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003891b\",\n      \"bytes\": \"0f96c1\",\n      \"instruction\": \"SETBE CL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003891e\",\n      \"bytes\": \"4008f1\",\n      \"instruction\": \"OR CL,SIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038921\",\n      \"bytes\": \"7548\",\n      \"instruction\": \"JNZ 0x0003896b\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038923\",\n      \"bytes\": \"f60512bb040008\",\n      \"instruction\": \"TEST byte ptr [0x0008443c],0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003892a\",\n      \"bytes\": \"0f84af040000\",\n      \"instruction\": \"JZ 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038930\",\n      \"bytes\": \"488d3505bb0400\",\n      \"instruction\": \"LEA RSI,[0x8443c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038937\",\n      \"bytes\": \"488d1588d90300\",\n      \"instruction\": \"LEA RDX,[0x762c6]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003893e\",\n      \"bytes\": \"488d0d95d90300\",\n      \"instruction\": \"LEA RCX,[0x762da]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038945\",\n      \"bytes\": \"bf03000000\",\n      \"instruction\": \"MOV EDI,0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003894a\",\n      \"bytes\": \"31c0\",\n      \"instruction\": \"XOR EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003894c\",\n      \"bytes\": \"4881c4680a0000\",\n      \"instruction\": \"ADD RSP,0xa68\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038953\",\n      \"bytes\": \"5b\",\n      \"instruction\": \"POP RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038954\",\n      \"bytes\": \"415c\",\n      \"instruction\": \"POP R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038956\",\n      \"bytes\": \"415d\",\n      \"instruction\": \"POP R13\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038958\",\n      \"bytes\": \"415e\",\n      \"instruction\": \"POP R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003895a\",\n      \"bytes\": \"415f\",\n      \"instruction\": \"POP R15\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003895c\",\n      \"bytes\": \"5d\",\n      \"instruction\": \"POP RBP\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003895d\",\n      \"bytes\": \"e99ed6ffff\",\n      \"instruction\": \"JMP 0x00036000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038962\",\n      \"bytes\": \"4d85e4\",\n      \"instruction\": \"TEST R12,R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038965\",\n      \"bytes\": \"0f8468010000\",\n      \"instruction\": \"JZ 0x00038ad3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003896b\",\n      \"bytes\": \"4180bc244103000000\",\n      \"instruction\": \"CMP byte ptr [R12 + 0x341],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038974\",\n      \"bytes\": \"0f8459010000\",\n      \"instruction\": \"JZ 0x00038ad3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003897a\",\n      \"bytes\": \"66833801\",\n      \"instruction\": \"CMP word ptr [RAX],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003897e\",\n      \"bytes\": \"0f854f010000\",\n      \"instruction\": \"JNZ 0x00038ad3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038984\",\n      \"bytes\": \"833d69f1050000\",\n      \"instruction\": \"CMP dword ptr [0x00097af4],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003898b\",\n      \"bytes\": \"0f84d6000000\",\n      \"instruction\": \"JZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038991\",\n      \"bytes\": \"0fb70d52f10500\",\n      \"instruction\": \"MOVZX ECX,word ptr [0x00097aea]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038998\",\n      \"bytes\": \"483988a0000000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0xa0],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"0003899f\",\n      \"bytes\": \"0f85c2000000\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389a5\",\n      \"bytes\": \"6641398c2468030000\",\n      \"instruction\": \"CMP word ptr [R12 + 0x368],CX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389ae\",\n      \"bytes\": \"0f85b3000000\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389b4\",\n      \"bytes\": \"488b4048\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389b8\",\n      \"bytes\": \"4883c008\",\n      \"instruction\": \"ADD RAX,0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389bc\",\n      \"bytes\": \"4939842460030000\",\n      \"instruction\": \"CMP qword ptr [R12 + 0x360],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389c4\",\n      \"bytes\": \"0f859d000000\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389ca\",\n      \"bytes\": \"498bbc2458030000\",\n      \"instruction\": \"MOV RDI,qword ptr [R12 + 0x358]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389d2\",\n      \"bytes\": \"488db570f5ffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0xa90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389d9\",\n      \"bytes\": \"ba05000000\",\n      \"instruction\": \"MOV EDX,0x5\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389de\",\n      \"bytes\": \"e83de40200\",\n      \"instruction\": \"CALL 0x00066e20\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389e3\",\n      \"bytes\": \"4883f805\",\n      \"instruction\": \"CMP RAX,0x5\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389e7\",\n      \"bytes\": \"757e\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389e9\",\n      \"bytes\": \"80bd70f5ffffe8\",\n      \"instruction\": \"CMP byte ptr [RBP + -0xa90],0xe8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389f0\",\n      \"bytes\": \"7575\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389f2\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389f6\",\n      \"bytes\": \"488b7848\",\n      \"instruction\": \"MOV RDI,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"000389fa\",\n      \"bytes\": \"488db540faffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a01\",\n      \"bytes\": \"ba08000000\",\n      \"instruction\": \"MOV EDX,0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a06\",\n      \"bytes\": \"e815e40200\",\n      \"instruction\": \"CALL 0x00066e20\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a0b\",\n      \"bytes\": \"4883f808\",\n      \"instruction\": \"CMP RAX,0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a0f\",\n      \"bytes\": \"7556\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a11\",\n      \"bytes\": \"8b8540faffff\",\n      \"instruction\": \"MOV EAX,dword ptr [RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a17\",\n      \"bytes\": \"418b8c2458030000\",\n      \"instruction\": \"MOV ECX,dword ptr [R12 + 0x358]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a1f\",\n      \"bytes\": \"83c105\",\n      \"instruction\": \"ADD ECX,0x5\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a22\",\n      \"bytes\": \"39c8\",\n      \"instruction\": \"CMP EAX,ECX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a24\",\n      \"bytes\": \"7541\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a26\",\n      \"bytes\": \"83bd44faffff00\",\n      \"instruction\": \"CMP dword ptr [RBP + -0x5bc],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a2d\",\n      \"bytes\": \"7538\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a2f\",\n      \"bytes\": \"038571f5ffff\",\n      \"instruction\": \"ADD EAX,dword ptr [RBP + -0xa8f]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a35\",\n      \"bytes\": \"488b4b30\",\n      \"instruction\": \"MOV RCX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a39\",\n      \"bytes\": \"3b8190000000\",\n      \"instruction\": \"CMP EAX,dword ptr [RCX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a3f\",\n      \"bytes\": \"7526\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a41\",\n      \"bytes\": \"488b7948\",\n      \"instruction\": \"MOV RDI,qword ptr [RCX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a45\",\n      \"bytes\": \"4883c704\",\n      \"instruction\": \"ADD RDI,0x4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a49\",\n      \"bytes\": \"488db540faffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a50\",\n      \"bytes\": \"ba04000000\",\n      \"instruction\": \"MOV EDX,0x4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a55\",\n      \"bytes\": \"e826e50200\",\n      \"instruction\": \"CALL 0x00066f80\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a5a\",\n      \"bytes\": \"85c0\",\n      \"instruction\": \"TEST EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a5c\",\n      \"bytes\": \"7509\",\n      \"instruction\": \"JNZ 0x00038a67\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a5e\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a62\",\n      \"bytes\": \"4883404804\",\n      \"instruction\": \"ADD qword ptr [RAX + 0x48],0x4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a67\",\n      \"bytes\": \"4180bc244303000000\",\n      \"instruction\": \"CMP byte ptr [R12 + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a70\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a74\",\n      \"bytes\": \"742a\",\n      \"instruction\": \"JZ 0x00038aa0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a76\",\n      \"bytes\": \"410fb78c2450030000\",\n      \"instruction\": \"MOVZX ECX,word ptr [R12 + 0x350]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a7f\",\n      \"bytes\": \"483988a0000000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0xa0],RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a86\",\n      \"bytes\": \"7518\",\n      \"instruction\": \"JNZ 0x00038aa0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a88\",\n      \"bytes\": \"6641398c2468030000\",\n      \"instruction\": \"CMP word ptr [R12 + 0x368],CX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a91\",\n      \"bytes\": \"750d\",\n      \"instruction\": \"JNZ 0x00038aa0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a93\",\n      \"bytes\": \"41c684244303000000\",\n      \"instruction\": \"MOV byte ptr [R12 + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038a9c\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038aa0\",\n      \"bytes\": \"488b8090000000\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038aa7\",\n      \"bytes\": \"4989842458030000\",\n      \"instruction\": \"MOV qword ptr [R12 + 0x358],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038aaf\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ab3\",\n      \"bytes\": \"488b4048\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ab7\",\n      \"bytes\": \"4989842460030000\",\n      \"instruction\": \"MOV qword ptr [R12 + 0x360],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038abf\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ac3\",\n      \"bytes\": \"0fb780a0000000\",\n      \"instruction\": \"MOVZX EAX,word ptr [RAX + 0xa0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038aca\",\n      \"bytes\": \"664189842468030000\",\n      \"instruction\": \"MOV word ptr [R12 + 0x368],AX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ad3\",\n      \"bytes\": \"488db540faffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ada\",\n      \"bytes\": \"4c89f7\",\n      \"instruction\": \"MOV RDI,R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038add\",\n      \"bytes\": \"4889da\",\n      \"instruction\": \"MOV RDX,RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ae0\",\n      \"bytes\": \"e8bbab0000\",\n      \"instruction\": \"CALL 0x000436a0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ae5\",\n      \"bytes\": \"498b06\",\n      \"instruction\": \"MOV RAX,qword ptr [R14]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ae8\",\n      \"bytes\": \"4885c0\",\n      \"instruction\": \"TEST RAX,RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038aeb\",\n      \"bytes\": \"0f84a9010000\",\n      \"instruction\": \"JZ 0x00038c9a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038af1\",\n      \"bytes\": \"80b84103000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x341],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038af8\",\n      \"bytes\": \"488b4b30\",\n      \"instruction\": \"MOV RCX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038afc\",\n      \"bytes\": \"0f849c010000\",\n      \"instruction\": \"JZ 0x00038c9e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b02\",\n      \"bytes\": \"0fb711\",\n      \"instruction\": \"MOVZX EDX,word ptr [RCX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b05\",\n      \"bytes\": \"6683fa01\",\n      \"instruction\": \"CMP DX,0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b09\",\n      \"bytes\": \"0f8592010000\",\n      \"instruction\": \"JNZ 0x00038ca1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b0f\",\n      \"bytes\": \"488bb018030000\",\n      \"instruction\": \"MOV RSI,qword ptr [RAX + 0x318]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b16\",\n      \"bytes\": \"40f6c603\",\n      \"instruction\": \"TEST SIL,0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b1a\",\n      \"bytes\": \"400f94c7\",\n      \"instruction\": \"SETZ DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b1e\",\n      \"bytes\": \"f7c600000f00\",\n      \"instruction\": \"TEST ESI,0xf0000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b24\",\n      \"bytes\": \"410f95c0\",\n      \"instruction\": \"SETNZ R8B\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b28\",\n      \"bytes\": \"31d2\",\n      \"instruction\": \"XOR EDX,EDX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b2a\",\n      \"bytes\": \"4108f8\",\n      \"instruction\": \"OR R8B,DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b2d\",\n      \"bytes\": \"7541\",\n      \"instruction\": \"JNZ 0x00038b70\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b2f\",\n      \"bytes\": \"488bb8f0020000\",\n      \"instruction\": \"MOV RDI,qword ptr [RAX + 0x2f0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b36\",\n      \"bytes\": \"483bb990000000\",\n      \"instruction\": \"CMP RDI,qword ptr [RCX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b3d\",\n      \"bytes\": \"7531\",\n      \"instruction\": \"JNZ 0x00038b70\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b3f\",\n      \"bytes\": \"f6819a00000001\",\n      \"instruction\": \"TEST byte ptr [RCX + 0x9a],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b46\",\n      \"bytes\": \"7528\",\n      \"instruction\": \"JNZ 0x00038b70\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b48\",\n      \"bytes\": \"80b84303000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b4f\",\n      \"bytes\": \"741a\",\n      \"instruction\": \"JZ 0x00038b6b\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b51\",\n      \"bytes\": \"440fb78050030000\",\n      \"instruction\": \"MOVZX R8D,word ptr [RAX + 0x350]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b59\",\n      \"bytes\": \"4c3981a0000000\",\n      \"instruction\": \"CMP qword ptr [RCX + 0xa0],R8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b60\",\n      \"bytes\": \"7509\",\n      \"instruction\": \"JNZ 0x00038b6b\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b62\",\n      \"bytes\": \"4839b848030000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0x348],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b69\",\n      \"bytes\": \"7405\",\n      \"instruction\": \"JZ 0x00038b70\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b6b\",\n      \"bytes\": \"ba01000000\",\n      \"instruction\": \"MOV EDX,0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b70\",\n      \"bytes\": \"40f6c60c\",\n      \"instruction\": \"TEST SIL,0xc\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b74\",\n      \"bytes\": \"400f94c7\",\n      \"instruction\": \"SETZ DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b78\",\n      \"bytes\": \"f7c60000f000\",\n      \"instruction\": \"TEST ESI,0xf00000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b7e\",\n      \"bytes\": \"410f95c0\",\n      \"instruction\": \"SETNZ R8B\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b82\",\n      \"bytes\": \"4108f8\",\n      \"instruction\": \"OR R8B,DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b85\",\n      \"bytes\": \"753f\",\n      \"instruction\": \"JNZ 0x00038bc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b87\",\n      \"bytes\": \"488bb8f8020000\",\n      \"instruction\": \"MOV RDI,qword ptr [RAX + 0x2f8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b8e\",\n      \"bytes\": \"483bb990000000\",\n      \"instruction\": \"CMP RDI,qword ptr [RCX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b95\",\n      \"bytes\": \"752f\",\n      \"instruction\": \"JNZ 0x00038bc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b97\",\n      \"bytes\": \"f6819a00000001\",\n      \"instruction\": \"TEST byte ptr [RCX + 0x9a],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038b9e\",\n      \"bytes\": \"7526\",\n      \"instruction\": \"JNZ 0x00038bc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ba0\",\n      \"bytes\": \"80b84303000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ba7\",\n      \"bytes\": \"741a\",\n      \"instruction\": \"JZ 0x00038bc3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ba9\",\n      \"bytes\": \"440fb78050030000\",\n      \"instruction\": \"MOVZX R8D,word ptr [RAX + 0x350]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bb1\",\n      \"bytes\": \"4c3981a0000000\",\n      \"instruction\": \"CMP qword ptr [RCX + 0xa0],R8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bb8\",\n      \"bytes\": \"7509\",\n      \"instruction\": \"JNZ 0x00038bc3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bba\",\n      \"bytes\": \"4839b848030000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0x348],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bc1\",\n      \"bytes\": \"7403\",\n      \"instruction\": \"JZ 0x00038bc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bc3\",\n      \"bytes\": \"83ca02\",\n      \"instruction\": \"OR EDX,0x2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bc6\",\n      \"bytes\": \"40f6c630\",\n      \"instruction\": \"TEST SIL,0x30\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bca\",\n      \"bytes\": \"400f94c7\",\n      \"instruction\": \"SETZ DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bce\",\n      \"bytes\": \"f7c60000000f\",\n      \"instruction\": \"TEST ESI,0xf000000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bd4\",\n      \"bytes\": \"410f95c0\",\n      \"instruction\": \"SETNZ R8B\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bd8\",\n      \"bytes\": \"4108f8\",\n      \"instruction\": \"OR R8B,DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bdb\",\n      \"bytes\": \"753f\",\n      \"instruction\": \"JNZ 0x00038c1c\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bdd\",\n      \"bytes\": \"488bb800030000\",\n      \"instruction\": \"MOV RDI,qword ptr [RAX + 0x300]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038be4\",\n      \"bytes\": \"483bb990000000\",\n      \"instruction\": \"CMP RDI,qword ptr [RCX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038beb\",\n      \"bytes\": \"752f\",\n      \"instruction\": \"JNZ 0x00038c1c\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bed\",\n      \"bytes\": \"f6819a00000001\",\n      \"instruction\": \"TEST byte ptr [RCX + 0x9a],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bf4\",\n      \"bytes\": \"7526\",\n      \"instruction\": \"JNZ 0x00038c1c\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bf6\",\n      \"bytes\": \"80b84303000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bfd\",\n      \"bytes\": \"741a\",\n      \"instruction\": \"JZ 0x00038c19\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038bff\",\n      \"bytes\": \"440fb78050030000\",\n      \"instruction\": \"MOVZX R8D,word ptr [RAX + 0x350]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c07\",\n      \"bytes\": \"4c3981a0000000\",\n      \"instruction\": \"CMP qword ptr [RCX + 0xa0],R8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c0e\",\n      \"bytes\": \"7509\",\n      \"instruction\": \"JNZ 0x00038c19\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c10\",\n      \"bytes\": \"4839b848030000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0x348],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c17\",\n      \"bytes\": \"7403\",\n      \"instruction\": \"JZ 0x00038c1c\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c19\",\n      \"bytes\": \"83ca04\",\n      \"instruction\": \"OR EDX,0x4\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c1c\",\n      \"bytes\": \"40f6c6c0\",\n      \"instruction\": \"TEST SIL,0xc0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c20\",\n      \"bytes\": \"400f94c7\",\n      \"instruction\": \"SETZ DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c24\",\n      \"bytes\": \"f7c6000000f0\",\n      \"instruction\": \"TEST ESI,0xf0000000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c2a\",\n      \"bytes\": \"400f95c6\",\n      \"instruction\": \"SETNZ SIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c2e\",\n      \"bytes\": \"4008fe\",\n      \"instruction\": \"OR SIL,DIL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c31\",\n      \"bytes\": \"7547\",\n      \"instruction\": \"JNZ 0x00038c7a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c33\",\n      \"bytes\": \"488bb008030000\",\n      \"instruction\": \"MOV RSI,qword ptr [RAX + 0x308]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c3a\",\n      \"bytes\": \"483bb190000000\",\n      \"instruction\": \"CMP RSI,qword ptr [RCX + 0x90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c41\",\n      \"bytes\": \"7537\",\n      \"instruction\": \"JNZ 0x00038c7a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c43\",\n      \"bytes\": \"f6819a00000001\",\n      \"instruction\": \"TEST byte ptr [RCX + 0x9a],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c4a\",\n      \"bytes\": \"752e\",\n      \"instruction\": \"JNZ 0x00038c7a\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c4c\",\n      \"bytes\": \"80b84303000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x343],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c53\",\n      \"bytes\": \"0f84a8020000\",\n      \"instruction\": \"JZ 0x00038f01\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c59\",\n      \"bytes\": \"0fb7b850030000\",\n      \"instruction\": \"MOVZX EDI,word ptr [RAX + 0x350]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c60\",\n      \"bytes\": \"4839b9a0000000\",\n      \"instruction\": \"CMP qword ptr [RCX + 0xa0],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c67\",\n      \"bytes\": \"0f8594020000\",\n      \"instruction\": \"JNZ 0x00038f01\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c6d\",\n      \"bytes\": \"4839b048030000\",\n      \"instruction\": \"CMP qword ptr [RAX + 0x348],RSI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c74\",\n      \"bytes\": \"0f8587020000\",\n      \"instruction\": \"JNZ 0x00038f01\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c7a\",\n      \"bytes\": \"85d2\",\n      \"instruction\": \"TEST EDX,EDX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c7c\",\n      \"bytes\": \"0f848f010000\",\n      \"instruction\": \"JZ 0x00038e11\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c82\",\n      \"bytes\": \"31c9\",\n      \"instruction\": \"XOR ECX,ECX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c84\",\n      \"bytes\": \"80b85203000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x352],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c8b\",\n      \"bytes\": \"0f95c1\",\n      \"instruction\": \"SETNZ CL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c8e\",\n      \"bytes\": \"c1e10e\",\n      \"instruction\": \"SHL ECX,0xe\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c91\",\n      \"bytes\": \"89d6\",\n      \"instruction\": \"MOV ESI,EDX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c93\",\n      \"bytes\": \"31d2\",\n      \"instruction\": \"XOR EDX,EDX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c95\",\n      \"bytes\": \"e98d010000\",\n      \"instruction\": \"JMP 0x00038e27\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c9a\",\n      \"bytes\": \"488b4b30\",\n      \"instruction\": \"MOV RCX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038c9e\",\n      \"bytes\": \"0fb711\",\n      \"instruction\": \"MOVZX EDX,word ptr [RCX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ca1\",\n      \"bytes\": \"6683fa03\",\n      \"instruction\": \"CMP DX,0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ca5\",\n      \"bytes\": \"0f84f5000000\",\n      \"instruction\": \"JZ 0x00038da0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cab\",\n      \"bytes\": \"0fb7c2\",\n      \"instruction\": \"MOVZX EAX,DX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cae\",\n      \"bytes\": \"83f801\",\n      \"instruction\": \"CMP EAX,0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cb1\",\n      \"bytes\": \"0f85f0000000\",\n      \"instruction\": \"JNZ 0x00038da7\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cb7\",\n      \"bytes\": \"c78530ffffff04000080\",\n      \"instruction\": \"MOV dword ptr [RBP + -0xd0],0x80000004\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cc1\",\n      \"bytes\": \"8b8584faffff\",\n      \"instruction\": \"MOV EAX,dword ptr [RBP + -0x57c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cc7\",\n      \"bytes\": \"a900010000\",\n      \"instruction\": \"TEST EAX,0x100\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ccc\",\n      \"bytes\": \"7409\",\n      \"instruction\": \"JZ 0x00038cd7\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cce\",\n      \"bytes\": \"80bdb0faffff00\",\n      \"instruction\": \"CMP byte ptr [RBP + -0x550],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cd5\",\n      \"bytes\": \"7431\",\n      \"instruction\": \"JZ 0x00038d08\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cd7\",\n      \"bytes\": \"448bbd70faffff\",\n      \"instruction\": \"MOV R15D,dword ptr [RBP + -0x590]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cde\",\n      \"bytes\": \"c78570faffff10001000\",\n      \"instruction\": \"MOV dword ptr [RBP + -0x590],0x100010\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ce8\",\n      \"bytes\": \"488db540faffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cef\",\n      \"bytes\": \"48c7c7feffffff\",\n      \"instruction\": \"MOV RDI,-0x2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cf6\",\n      \"bytes\": \"e8d5d3ffff\",\n      \"instruction\": \"CALL 0x000360d0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038cfb\",\n      \"bytes\": \"4409bd70faffff\",\n      \"instruction\": \"OR dword ptr [RBP + -0x590],R15D\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d02\",\n      \"bytes\": \"8b8584faffff\",\n      \"instruction\": \"MOV EAX,dword ptr [RBP + -0x57c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d08\",\n      \"bytes\": \"25fffeffff\",\n      \"instruction\": \"AND EAX,0xfffffeff\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d0d\",\n      \"bytes\": \"898584faffff\",\n      \"instruction\": \"MOV dword ptr [RBP + -0x57c],EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d13\",\n      \"bytes\": \"e9ae000000\",\n      \"instruction\": \"JMP 0x00038dc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d18\",\n      \"bytes\": \"31c0\",\n      \"instruction\": \"XOR EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d1a\",\n      \"bytes\": \"4188842442030000\",\n      \"instruction\": \"MOV byte ptr [R12 + 0x342],AL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d22\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d26\",\n      \"bytes\": \"4881a098000000fffeffff\",\n      \"instruction\": \"AND qword ptr [RAX + 0x98],-0x101\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d31\",\n      \"bytes\": \"498b3e\",\n      \"instruction\": \"MOV RDI,qword ptr [R14]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d34\",\n      \"bytes\": \"4885ff\",\n      \"instruction\": \"TEST RDI,RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d37\",\n      \"bytes\": \"0f84a2000000\",\n      \"instruction\": \"JZ 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d3d\",\n      \"bytes\": \"488b4330\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d41\",\n      \"bytes\": \"488b4048\",\n      \"instruction\": \"MOV RAX,qword ptr [RAX + 0x48]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d45\",\n      \"bytes\": \"498d8e58080000\",\n      \"instruction\": \"LEA RCX,[R14 + 0x858]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d4c\",\n      \"bytes\": \"4839c1\",\n      \"instruction\": \"CMP RCX,RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d4f\",\n      \"bytes\": \"0f97c1\",\n      \"instruction\": \"SETA CL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d52\",\n      \"bytes\": \"4981c600000100\",\n      \"instruction\": \"ADD R14,0x10000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d59\",\n      \"bytes\": \"4939c6\",\n      \"instruction\": \"CMP R14,RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d5c\",\n      \"bytes\": \"0f96c2\",\n      \"instruction\": \"SETBE DL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d5f\",\n      \"bytes\": \"08ca\",\n      \"instruction\": \"OR DL,CL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d61\",\n      \"bytes\": \"80fa01\",\n      \"instruction\": \"CMP DL,0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d64\",\n      \"bytes\": \"7513\",\n      \"instruction\": \"JNZ 0x00038d79\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d66\",\n      \"bytes\": \"4939c6\",\n      \"instruction\": \"CMP R14,RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d69\",\n      \"bytes\": \"7709\",\n      \"instruction\": \"JA 0x00038d74\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d6b\",\n      \"bytes\": \"48398778030000\",\n      \"instruction\": \"CMP qword ptr [RDI + 0x378],RAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d72\",\n      \"bytes\": \"7305\",\n      \"instruction\": \"JNC 0x00038d79\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d74\",\n      \"bytes\": \"e8536d0300\",\n      \"instruction\": \"CALL 0x0006facc\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d79\",\n      \"bytes\": \"488b4328\",\n      \"instruction\": \"MOV RAX,qword ptr [RBX + 0x28]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d7d\",\n      \"bytes\": \"483de8020000\",\n      \"instruction\": \"CMP RAX,0x2e8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d83\",\n      \"bytes\": \"7410\",\n      \"instruction\": \"JZ 0x00038d95\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d85\",\n      \"bytes\": \"483d680a0000\",\n      \"instruction\": \"CMP RAX,0xa68\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d8b\",\n      \"bytes\": \"7408\",\n      \"instruction\": \"JZ 0x00038d95\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d8d\",\n      \"bytes\": \"483d28040000\",\n      \"instruction\": \"CMP RAX,0x428\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d93\",\n      \"bytes\": \"755c\",\n      \"instruction\": \"JNZ 0x00038df1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d95\",\n      \"bytes\": \"b8c8000000\",\n      \"instruction\": \"MOV EAX,0xc8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d9a\",\n      \"bytes\": \"48034330\",\n      \"instruction\": \"ADD RAX,qword ptr [RBX + 0x30]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038d9e\",\n      \"bytes\": \"eb58\",\n      \"instruction\": \"JMP 0x00038df8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038da0\",\n      \"bytes\": \"48ff8d40ffffff\",\n      \"instruction\": \"DEC qword ptr [RBP + -0xc0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038da7\",\n      \"bytes\": \"c78530ffffff03000080\",\n      \"instruction\": \"MOV dword ptr [RBP + -0xd0],0x80000003\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038db1\",\n      \"bytes\": \"c78548ffffff01000000\",\n      \"instruction\": \"MOV dword ptr [RBP + -0xb8],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dbb\",\n      \"bytes\": \"48c78550ffffff00000000\",\n      \"instruction\": \"MOV qword ptr [RBP + -0xb0],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dc6\",\n      \"bytes\": \"488d9530ffffff\",\n      \"instruction\": \"LEA RDX,[RBP + -0xd0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dcd\",\n      \"bytes\": \"488d8d40faffff\",\n      \"instruction\": \"LEA RCX,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dd4\",\n      \"bytes\": \"4c89f7\",\n      \"instruction\": \"MOV RDI,R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dd7\",\n      \"bytes\": \"4889de\",\n      \"instruction\": \"MOV RSI,RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dda\",\n      \"bytes\": \"e8b1ab0000\",\n      \"instruction\": \"CALL 0x00043990\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ddf\",\n      \"bytes\": \"4881c4680a0000\",\n      \"instruction\": \"ADD RSP,0xa68\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038de6\",\n      \"bytes\": \"5b\",\n      \"instruction\": \"POP RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038de7\",\n      \"bytes\": \"415c\",\n      \"instruction\": \"POP R12\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038de9\",\n      \"bytes\": \"415d\",\n      \"instruction\": \"POP R13\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038deb\",\n      \"bytes\": \"415e\",\n      \"instruction\": \"POP R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ded\",\n      \"bytes\": \"415f\",\n      \"instruction\": \"POP R15\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038def\",\n      \"bytes\": \"5d\",\n      \"instruction\": \"POP RBP\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038df0\",\n      \"bytes\": \"c3\",\n      \"instruction\": \"RET\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038df1\",\n      \"bytes\": \"488d05f0ec0500\",\n      \"instruction\": \"LEA RAX,[0x97ae8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038df8\",\n      \"bytes\": \"0fb700\",\n      \"instruction\": \"MOVZX EAX,word ptr [RAX]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038dfb\",\n      \"bytes\": \"663b05e6ec0500\",\n      \"instruction\": \"CMP AX,word ptr [0x00097ae8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e02\",\n      \"bytes\": \"75db\",\n      \"instruction\": \"JNZ 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e04\",\n      \"bytes\": \"8ed8\",\n      \"instruction\": \"MOV EAX,DS\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e06\",\n      \"bytes\": \"0fb705dbec0500\",\n      \"instruction\": \"MOVZX EAX,word ptr [0x00097ae8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e0d\",\n      \"bytes\": \"8ec0\",\n      \"instruction\": \"MOV EAX,ES\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e0f\",\n      \"bytes\": \"ebce\",\n      \"instruction\": \"JMP 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e11\",\n      \"bytes\": \"80b85203000000\",\n      \"instruction\": \"CMP byte ptr [RAX + 0x352],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e18\",\n      \"bytes\": \"0f84cc000000\",\n      \"instruction\": \"JZ 0x00038eea\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e1e\",\n      \"bytes\": \"b900400000\",\n      \"instruction\": \"MOV ECX,0x4000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e23\",\n      \"bytes\": \"b201\",\n      \"instruction\": \"MOV DL,0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e25\",\n      \"bytes\": \"31f6\",\n      \"instruction\": \"XOR ESI,ESI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e27\",\n      \"bytes\": \"80a585fafffffe\",\n      \"instruction\": \"AND byte ptr [RBP + -0x57b],0xfe\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e2e\",\n      \"bytes\": \"48c7c7f0bfffff\",\n      \"instruction\": \"MOV RDI,-0x4010\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e35\",\n      \"bytes\": \"4823b810030000\",\n      \"instruction\": \"AND RDI,qword ptr [RAX + 0x310]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e3c\",\n      \"bytes\": \"4809f7\",\n      \"instruction\": \"OR RDI,RSI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e3f\",\n      \"bytes\": \"4809cf\",\n      \"instruction\": \"OR RDI,RCX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e42\",\n      \"bytes\": \"4889b810030000\",\n      \"instruction\": \"MOV qword ptr [RAX + 0x310],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e49\",\n      \"bytes\": \"4889bda8faffff\",\n      \"instruction\": \"MOV qword ptr [RBP + -0x558],RDI\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e50\",\n      \"bytes\": \"c6804103000000\",\n      \"instruction\": \"MOV byte ptr [RAX + 0x341],0x0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e57\",\n      \"bytes\": \"84d2\",\n      \"instruction\": \"TEST DL,DL\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e59\",\n      \"bytes\": \"7507\",\n      \"instruction\": \"JNZ 0x00038e62\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e5b\",\n      \"bytes\": \"808d86faffff01\",\n      \"instruction\": \"OR byte ptr [RBP + -0x57a],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e62\",\n      \"bytes\": \"c78530ffffff04000080\",\n      \"instruction\": \"MOV dword ptr [RBP + -0xd0],0x80000004\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e6c\",\n      \"bytes\": \"4c8dbd70f5ffff\",\n      \"instruction\": \"LEA R15,[RBP + -0xa90]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e73\",\n      \"bytes\": \"488db540faffff\",\n      \"instruction\": \"LEA RSI,[RBP + -0x5c0]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e7a\",\n      \"bytes\": \"bad0040000\",\n      \"instruction\": \"MOV EDX,0x4d0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e7f\",\n      \"bytes\": \"4c89ff\",\n      \"instruction\": \"MOV RDI,R15\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e82\",\n      \"bytes\": \"e8976e0300\",\n      \"instruction\": \"CALL 0x0006fd1e\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e87\",\n      \"bytes\": \"c785a0f5ffff10001000\",\n      \"instruction\": \"MOV dword ptr [RBP + -0xa60],0x100010\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e91\",\n      \"bytes\": \"488d55d4\",\n      \"instruction\": \"LEA RDX,[RBP + -0x2c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e95\",\n      \"bytes\": \"48c7c7feffffff\",\n      \"instruction\": \"MOV RDI,-0x2\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e9c\",\n      \"bytes\": \"4c89fe\",\n      \"instruction\": \"MOV RSI,R15\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038e9f\",\n      \"bytes\": \"b964860000\",\n      \"instruction\": \"MOV ECX,0x8664\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ea4\",\n      \"bytes\": \"e8d7260200\",\n      \"instruction\": \"CALL 0x0005b580\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ea9\",\n      \"bytes\": \"f6058cb5040008\",\n      \"instruction\": \"TEST byte ptr [0x0008443c],0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038eb0\",\n      \"bytes\": \"0f8410ffffff\",\n      \"instruction\": \"JZ 0x00038dc6\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038eb6\",\n      \"bytes\": \"4c8b8da8faffff\",\n      \"instruction\": \"MOV R9,qword ptr [RBP + -0x558]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ebd\",\n      \"bytes\": \"4c8b8538fbffff\",\n      \"instruction\": \"MOV R8,qword ptr [RBP + -0x4c8]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ec4\",\n      \"bytes\": \"488d3571b50400\",\n      \"instruction\": \"LEA RSI,[0x8443c]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ecb\",\n      \"bytes\": \"488d15b9d30300\",\n      \"instruction\": \"LEA RDX,[0x7628b]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ed2\",\n      \"bytes\": \"488d0dbfd30300\",\n      \"instruction\": \"LEA RCX,[0x76298]\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ed9\",\n      \"bytes\": \"bf03000000\",\n      \"instruction\": \"MOV EDI,0x3\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ede\",\n      \"bytes\": \"31c0\",\n      \"instruction\": \"XOR EAX,EAX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ee0\",\n      \"bytes\": \"e81bd1ffff\",\n      \"instruction\": \"CALL 0x00036000\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ee5\",\n      \"bytes\": \"e9dcfeffff\",\n      \"instruction\": \"JMP 0x00038dc6\",\n      \"comment\": null\n    }\n  ],\n  \"offset\": 0,\n  \"limit\": 500,\n  \"total\": 507,\n  \"has_more\": true\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "items": [
+      {
+        "address": "00038520",
+        "bytes": "55",
+        "instruction": "PUSH RBP",
+        "comment": null
+      },
+      {
+        "address": "00038521",
+        "bytes": "4889e5",
+        "instruction": "MOV RBP,RSP",
+        "comment": null
+      },
+      {
+        "address": "00038524",
+        "bytes": "4157",
+        "instruction": "PUSH R15",
+        "comment": null
+      },
+      {
+        "address": "00038526",
+        "bytes": "4156",
+        "instruction": "PUSH R14",
+        "comment": null
+      },
+      {
+        "address": "00038528",
+        "bytes": "4155",
+        "instruction": "PUSH R13",
+        "comment": null
+      },
+      {
+        "address": "0003852a",
+        "bytes": "4154",
+        "instruction": "PUSH R12",
+        "comment": null
+      },
+      {
+        "address": "0003852c",
+        "bytes": "53",
+        "instruction": "PUSH RBX",
+        "comment": null
+      },
+      {
+        "address": "0003852d",
+        "bytes": "4881ec680a0000",
+        "instruction": "SUB RSP,0xa68",
+        "comment": null
+      },
+      {
+        "address": "00038534",
+        "bytes": "4889d3",
+        "instruction": "MOV RBX,RDX",
+        "comment": null
+      },
+      {
+        "address": "00038537",
+        "bytes": "4989f7",
+        "instruction": "MOV R15,RSI",
+        "comment": null
+      },
+      {
+        "address": "0003853a",
+        "bytes": "4989e6",
+        "instruction": "MOV R14,RSP",
+        "comment": null
+      },
+      {
+        "address": "0003853d",
+        "bytes": "4981e60000ffff",
+        "instruction": "AND R14,-0x10000",
+        "comment": null
+      },
+      {
+        "address": "00038544",
+        "bytes": "e867bcffff",
+        "instruction": "CALL 0x000341b0",
+        "comment": null
+      },
+      {
+        "address": "00038549",
+        "bytes": "498b06",
+        "instruction": "MOV RAX,qword ptr [R14]",
+        "comment": null
+      },
+      {
+        "address": "0003854c",
+        "bytes": "4885c0",
+        "instruction": "TEST RAX,RAX",
+        "comment": null
+      },
+      {
+        "address": "0003854f",
+        "bytes": "7428",
+        "instruction": "JZ 0x00038579",
+        "comment": null
+      },
+      {
+        "address": "00038551",
+        "bytes": "488bb820030000",
+        "instruction": "MOV RDI,qword ptr [RAX + 0x320]",
+        "comment": null
+      },
+      {
+        "address": "00038558",
+        "bytes": "e86f750300",
+        "instruction": "CALL 0x0006facc",
+        "comment": null
+      },
+      {
+        "address": "0003855d",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038561",
+        "bytes": "4883b8a000000007",
+        "instruction": "CMP qword ptr [RAX + 0xa0],0x7",
+        "comment": null
+      },
+      {
+        "address": "00038569",
+        "bytes": "750e",
+        "instruction": "JNZ 0x00038579",
+        "comment": null
+      },
+      {
+        "address": "0003856b",
+        "bytes": "0fb70d5ef50500",
+        "instruction": "MOVZX ECX,word ptr [0x00097ad0]",
+        "comment": null
+      },
+      {
+        "address": "00038572",
+        "bytes": "488988a0000000",
+        "instruction": "MOV qword ptr [RAX + 0xa0],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038579",
+        "bytes": "0f57c0",
+        "instruction": "XORPS XMM0,XMM0",
+        "comment": null
+      },
+      {
+        "address": "0003857c",
+        "bytes": "0f2945b0",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0x50],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038580",
+        "bytes": "0f2945a0",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0x60],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038584",
+        "bytes": "0f294590",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0x70],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038588",
+        "bytes": "0f294580",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0x80],XMM0",
+        "comment": null
+      },
+      {
+        "address": "0003858c",
+        "bytes": "0f298570ffffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0x90],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038593",
+        "bytes": "0f298560ffffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "0003859a",
+        "bytes": "0f298550ffffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xb0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000385a1",
+        "bytes": "0f298540ffffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xc0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000385a8",
+        "bytes": "0f298530ffffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xd0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000385af",
+        "bytes": "48c745c000000000",
+        "instruction": "MOV qword ptr [RBP + -0x40],0x0",
+        "comment": null
+      },
+      {
+        "address": "000385b7",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000385bb",
+        "bytes": "4c8b8090000000",
+        "instruction": "MOV R8,qword ptr [RAX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "000385c2",
+        "bytes": "4c898540ffffff",
+        "instruction": "MOV qword ptr [RBP + -0xc0],R8",
+        "comment": null
+      },
+      {
+        "address": "000385c9",
+        "bytes": "4d8b26",
+        "instruction": "MOV R12,qword ptr [R14]",
+        "comment": null
+      },
+      {
+        "address": "000385cc",
+        "bytes": "498d8c24f0020000",
+        "instruction": "LEA RCX,[R12 + 0x2f0]",
+        "comment": null
+      },
+      {
+        "address": "000385d4",
+        "bytes": "4d85e4",
+        "instruction": "TEST R12,R12",
+        "comment": null
+      },
+      {
+        "address": "000385d7",
+        "bytes": "490f44cc",
+        "instruction": "CMOVZ RCX,R12",
+        "comment": null
+      },
+      {
+        "address": "000385db",
+        "bytes": "7438",
+        "instruction": "JZ 0x00038615",
+        "comment": null
+      },
+      {
+        "address": "000385dd",
+        "bytes": "4180bc244203000000",
+        "instruction": "CMP byte ptr [R12 + 0x342],0x0",
+        "comment": null
+      },
+      {
+        "address": "000385e6",
+        "bytes": "742d",
+        "instruction": "JZ 0x00038615",
+        "comment": null
+      },
+      {
+        "address": "000385e8",
+        "bytes": "66833801",
+        "instruction": "CMP word ptr [RAX],0x1",
+        "comment": null
+      },
+      {
+        "address": "000385ec",
+        "bytes": "7527",
+        "instruction": "JNZ 0x00038615",
+        "comment": null
+      },
+      {
+        "address": "000385ee",
+        "bytes": "488d0dab7d0700",
+        "instruction": "LEA RCX,[0xb03a0]",
+        "comment": null
+      },
+      {
+        "address": "000385f5",
+        "bytes": "48833900",
+        "instruction": "CMP qword ptr [RCX],0x0",
+        "comment": null
+      },
+      {
+        "address": "000385f9",
+        "bytes": "0f8419070000",
+        "instruction": "JZ 0x00038d18",
+        "comment": null
+      },
+      {
+        "address": "000385ff",
+        "bytes": "0fb70de4f40500",
+        "instruction": "MOVZX ECX,word ptr [0x00097aea]",
+        "comment": null
+      },
+      {
+        "address": "00038606",
+        "bytes": "483988a0000000",
+        "instruction": "CMP qword ptr [RAX + 0xa0],RCX",
+        "comment": null
+      },
+      {
+        "address": "0003860d",
+        "bytes": "0f95c0",
+        "instruction": "SETNZ AL",
+        "comment": null
+      },
+      {
+        "address": "00038610",
+        "bytes": "e905070000",
+        "instruction": "JMP 0x00038d1a",
+        "comment": null
+      },
+      {
+        "address": "00038615",
+        "bytes": "833dc8f4050000",
+        "instruction": "CMP dword ptr [0x00097ae4],0x0",
+        "comment": null
+      },
+      {
+        "address": "0003861c",
+        "bytes": "7410",
+        "instruction": "JZ 0x0003862e",
+        "comment": null
+      },
+      {
+        "address": "0003861e",
+        "bytes": "80795100",
+        "instruction": "CMP byte ptr [RCX + 0x51],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038622",
+        "bytes": "740a",
+        "instruction": "JZ 0x0003862e",
+        "comment": null
+      },
+      {
+        "address": "00038624",
+        "bytes": "66833801",
+        "instruction": "CMP word ptr [RAX],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038628",
+        "bytes": "0f8434030000",
+        "instruction": "JZ 0x00038962",
+        "comment": null
+      },
+      {
+        "address": "0003862e",
+        "bytes": "4d85e4",
+        "instruction": "TEST R12,R12",
+        "comment": null
+      },
+      {
+        "address": "00038631",
+        "bytes": "740a",
+        "instruction": "JZ 0x0003863d",
+        "comment": null
+      },
+      {
+        "address": "00038633",
+        "bytes": "4d8bac2478030000",
+        "instruction": "MOV R13,qword ptr [R12 + 0x378]",
+        "comment": null
+      },
+      {
+        "address": "0003863b",
+        "bytes": "eb03",
+        "instruction": "JMP 0x00038640",
+        "comment": null
+      },
+      {
+        "address": "0003863d",
+        "bytes": "4531ed",
+        "instruction": "XOR R13D,R13D",
+        "comment": null
+      },
+      {
+        "address": "00038640",
+        "bytes": "4c3b05b9990400",
+        "instruction": "CMP R8,qword ptr [0x00082000]",
+        "comment": null
+      },
+      {
+        "address": "00038647",
+        "bytes": "0f95c1",
+        "instruction": "SETNZ CL",
+        "comment": null
+      },
+      {
+        "address": "0003864a",
+        "bytes": "4c3b05b7990400",
+        "instruction": "CMP R8,qword ptr [0x00082008]",
+        "comment": null
+      },
+      {
+        "address": "00038651",
+        "bytes": "0f95c2",
+        "instruction": "SETNZ DL",
+        "comment": null
+      },
+      {
+        "address": "00038654",
+        "bytes": "84d1",
+        "instruction": "TEST CL,DL",
+        "comment": null
+      },
+      {
+        "address": "00038656",
+        "bytes": "0f85af000000",
+        "instruction": "JNZ 0x0003870b",
+        "comment": null
+      },
+      {
+        "address": "0003865c",
+        "bytes": "488d0d75bd0400",
+        "instruction": "LEA RCX,[0x843d8]",
+        "comment": null
+      },
+      {
+        "address": "00038663",
+        "bytes": "488b09",
+        "instruction": "MOV RCX,qword ptr [RCX]",
+        "comment": null
+      },
+      {
+        "address": "00038666",
+        "bytes": "48898890000000",
+        "instruction": "MOV qword ptr [RAX + 0x90],RCX",
+        "comment": null
+      },
+      {
+        "address": "0003866d",
+        "bytes": "f605c8bd040008",
+        "instruction": "TEST byte ptr [0x0008443c],0x8",
+        "comment": null
+      },
+      {
+        "address": "00038674",
+        "bytes": "7433",
+        "instruction": "JZ 0x000386a9",
+        "comment": null
+      },
+      {
+        "address": "00038676",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "0003867a",
+        "bytes": "4c8b8090000000",
+        "instruction": "MOV R8,qword ptr [RAX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038681",
+        "bytes": "448b8898000000",
+        "instruction": "MOV R9D,dword ptr [RAX + 0x98]",
+        "comment": null
+      },
+      {
+        "address": "00038688",
+        "bytes": "488d35adbd0400",
+        "instruction": "LEA RSI,[0x8443c]",
+        "comment": null
+      },
+      {
+        "address": "0003868f",
+        "bytes": "488d1530dc0300",
+        "instruction": "LEA RDX,[0x762c6]",
+        "comment": null
+      },
+      {
+        "address": "00038696",
+        "bytes": "488d0d55dc0300",
+        "instruction": "LEA RCX,[0x762f2]",
+        "comment": null
+      },
+      {
+        "address": "0003869d",
+        "bytes": "bf03000000",
+        "instruction": "MOV EDI,0x3",
+        "comment": null
+      },
+      {
+        "address": "000386a2",
+        "bytes": "31c0",
+        "instruction": "XOR EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "000386a4",
+        "bytes": "e857d9ffff",
+        "instruction": "CALL 0x00036000",
+        "comment": null
+      },
+      {
+        "address": "000386a9",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000386ad",
+        "bytes": "488b4048",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "000386b1",
+        "bytes": "488b00",
+        "instruction": "MOV RAX,qword ptr [RAX]",
+        "comment": null
+      },
+      {
+        "address": "000386b4",
+        "bytes": "49894570",
+        "instruction": "MOV qword ptr [R13 + 0x70],RAX",
+        "comment": null
+      },
+      {
+        "address": "000386b8",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000386bc",
+        "bytes": "488b8098000000",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x98]",
+        "comment": null
+      },
+      {
+        "address": "000386c3",
+        "bytes": "49898580000000",
+        "instruction": "MOV qword ptr [R13 + 0x80],RAX",
+        "comment": null
+      },
+      {
+        "address": "000386ca",
+        "bytes": "31c0",
+        "instruction": "XOR EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "000386cc",
+        "bytes": "48833df4f3050000",
+        "instruction": "CMP qword ptr [0x00097ac8],0x0",
+        "comment": null
+      },
+      {
+        "address": "000386d4",
+        "bytes": "0f95c0",
+        "instruction": "SETNZ AL",
+        "comment": null
+      },
+      {
+        "address": "000386d7",
+        "bytes": "c1e010",
+        "instruction": "SHL EAX,0x10",
+        "comment": null
+      },
+      {
+        "address": "000386da",
+        "bytes": "0d01001000",
+        "instruction": "OR EAX,0x100001",
+        "comment": null
+      },
+      {
+        "address": "000386df",
+        "bytes": "418985b4000000",
+        "instruction": "MOV dword ptr [R13 + 0xb4],EAX",
+        "comment": null
+      },
+      {
+        "address": "000386e6",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000386ea",
+        "bytes": "4c896820",
+        "instruction": "MOV qword ptr [RAX + 0x20],R13",
+        "comment": null
+      },
+      {
+        "address": "000386ee",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000386f2",
+        "bytes": "4883404808",
+        "instruction": "ADD qword ptr [RAX + 0x48],0x8",
+        "comment": null
+      },
+      {
+        "address": "000386f7",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000386fb",
+        "bytes": "4881a098000000fffeffff",
+        "instruction": "AND qword ptr [RAX + 0x98],-0x101",
+        "comment": null
+      },
+      {
+        "address": "00038706",
+        "bytes": "e9d4060000",
+        "instruction": "JMP 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "0003870b",
+        "bytes": "4c3b05fe980400",
+        "instruction": "CMP R8,qword ptr [0x00082010]",
+        "comment": null
+      },
+      {
+        "address": "00038712",
+        "bytes": "0f85cc010000",
+        "instruction": "JNZ 0x000388e4",
+        "comment": null
+      },
+      {
+        "address": "00038718",
+        "bytes": "488d0dc9bc0400",
+        "instruction": "LEA RCX,[0x843e8]",
+        "comment": null
+      },
+      {
+        "address": "0003871f",
+        "bytes": "488b09",
+        "instruction": "MOV RCX,qword ptr [RCX]",
+        "comment": null
+      },
+      {
+        "address": "00038722",
+        "bytes": "48898890000000",
+        "instruction": "MOV qword ptr [RAX + 0x90],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038729",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "0003872d",
+        "bytes": "488b4820",
+        "instruction": "MOV RCX,qword ptr [RAX + 0x20]",
+        "comment": null
+      },
+      {
+        "address": "00038731",
+        "bytes": "48894860",
+        "instruction": "MOV qword ptr [RAX + 0x60],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038735",
+        "bytes": "410f2985f0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2f0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "0003873d",
+        "bytes": "410f2985e0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2e0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038745",
+        "bytes": "410f2985d0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2d0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "0003874d",
+        "bytes": "410f2985c0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2c0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038755",
+        "bytes": "488d0504c80400",
+        "instruction": "LEA RAX,[0x84f60]",
+        "comment": null
+      },
+      {
+        "address": "0003875c",
+        "bytes": "488b00",
+        "instruction": "MOV RAX,qword ptr [RAX]",
+        "comment": null
+      },
+      {
+        "address": "0003875f",
+        "bytes": "f680ec03000002",
+        "instruction": "TEST byte ptr [RAX + 0x3ec],0x2",
+        "comment": null
+      },
+      {
+        "address": "00038766",
+        "bytes": "7418",
+        "instruction": "JZ 0x00038780",
+        "comment": null
+      },
+      {
+        "address": "00038768",
+        "bytes": "48b90000000000000080",
+        "instruction": "MOV RCX,-0x8000000000000000",
+        "comment": null
+      },
+      {
+        "address": "00038772",
+        "bytes": "480b88d8030000",
+        "instruction": "OR RCX,qword ptr [RAX + 0x3d8]",
+        "comment": null
+      },
+      {
+        "address": "00038779",
+        "bytes": "49898dc8020000",
+        "instruction": "MOV qword ptr [R13 + 0x2c8],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038780",
+        "bytes": "488b4328",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x28]",
+        "comment": null
+      },
+      {
+        "address": "00038784",
+        "bytes": "4c8b7b30",
+        "instruction": "MOV R15,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038788",
+        "bytes": "41bce0000000",
+        "instruction": "MOV R12D,0xe0",
+        "comment": null
+      },
+      {
+        "address": "0003878e",
+        "bytes": "483de8020000",
+        "instruction": "CMP RAX,0x2e8",
+        "comment": null
+      },
+      {
+        "address": "00038794",
+        "bytes": "7416",
+        "instruction": "JZ 0x000387ac",
+        "comment": null
+      },
+      {
+        "address": "00038796",
+        "bytes": "483d28040000",
+        "instruction": "CMP RAX,0x428",
+        "comment": null
+      },
+      {
+        "address": "0003879c",
+        "bytes": "740e",
+        "instruction": "JZ 0x000387ac",
+        "comment": null
+      },
+      {
+        "address": "0003879e",
+        "bytes": "483d680a0000",
+        "instruction": "CMP RAX,0xa68",
+        "comment": null
+      },
+      {
+        "address": "000387a4",
+        "bytes": "7406",
+        "instruction": "JZ 0x000387ac",
+        "comment": null
+      },
+      {
+        "address": "000387a6",
+        "bytes": "41bcc0000000",
+        "instruction": "MOV R12D,0xc0",
+        "comment": null
+      },
+      {
+        "address": "000387ac",
+        "bytes": "4b8d3427",
+        "instruction": "LEA RSI,[R15 + R12*0x1]",
+        "comment": null
+      },
+      {
+        "address": "000387b0",
+        "bytes": "4883c61c",
+        "instruction": "ADD RSI,0x1c",
+        "comment": null
+      },
+      {
+        "address": "000387b4",
+        "bytes": "4c8db540faffff",
+        "instruction": "LEA R14,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "000387bb",
+        "bytes": "bae4000000",
+        "instruction": "MOV EDX,0xe4",
+        "comment": null
+      },
+      {
+        "address": "000387c0",
+        "bytes": "4c89f7",
+        "instruction": "MOV RDI,R14",
+        "comment": null
+      },
+      {
+        "address": "000387c3",
+        "bytes": "e856750300",
+        "instruction": "CALL 0x0006fd1e",
+        "comment": null
+      },
+      {
+        "address": "000387c8",
+        "bytes": "430f108427a0010000",
+        "instruction": "MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1a0]",
+        "comment": null
+      },
+      {
+        "address": "000387d1",
+        "bytes": "430f108c27b0010000",
+        "instruction": "MOVUPS XMM1,xmmword ptr [R15 + R12*0x1 + 0x1b0]",
+        "comment": null
+      },
+      {
+        "address": "000387da",
+        "bytes": "430f109427c0010000",
+        "instruction": "MOVUPS XMM2,xmmword ptr [R15 + R12*0x1 + 0x1c0]",
+        "comment": null
+      },
+      {
+        "address": "000387e3",
+        "bytes": "430f109c27d0010000",
+        "instruction": "MOVUPS XMM3,xmmword ptr [R15 + R12*0x1 + 0x1d0]",
+        "comment": null
+      },
+      {
+        "address": "000387ec",
+        "bytes": "0f298570f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa90],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000387f3",
+        "bytes": "0f298d80f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa80],XMM1",
+        "comment": null
+      },
+      {
+        "address": "000387fa",
+        "bytes": "0f299590f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa70],XMM2",
+        "comment": null
+      },
+      {
+        "address": "00038801",
+        "bytes": "0f299da0f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa60],XMM3",
+        "comment": null
+      },
+      {
+        "address": "00038808",
+        "bytes": "430f108427e0010000",
+        "instruction": "MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1e0]",
+        "comment": null
+      },
+      {
+        "address": "00038811",
+        "bytes": "0f2985b0f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa50],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038818",
+        "bytes": "430f108427f0010000",
+        "instruction": "MOVUPS XMM0,xmmword ptr [R15 + R12*0x1 + 0x1f0]",
+        "comment": null
+      },
+      {
+        "address": "00038821",
+        "bytes": "0f2985c0f5ffff",
+        "instruction": "MOVAPS xmmword ptr [RBP + -0xa40],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038828",
+        "bytes": "498db5c0010000",
+        "instruction": "LEA RSI,[R13 + 0x1c0]",
+        "comment": null
+      },
+      {
+        "address": "0003882f",
+        "bytes": "488dbd24fbffff",
+        "instruction": "LEA RDI,[RBP + -0x4dc]",
+        "comment": null
+      },
+      {
+        "address": "00038836",
+        "bytes": "baa0000000",
+        "instruction": "MOV EDX,0xa0",
+        "comment": null
+      },
+      {
+        "address": "0003883b",
+        "bytes": "e8de740300",
+        "instruction": "CALL 0x0006fd1e",
+        "comment": null
+      },
+      {
+        "address": "00038840",
+        "bytes": "4b8b442710",
+        "instruction": "MOV RAX,qword ptr [R15 + R12*0x1 + 0x10]",
+        "comment": null
+      },
+      {
+        "address": "00038845",
+        "bytes": "430f100427",
+        "instruction": "MOVUPS XMM0,xmmword ptr [R15 + R12*0x1]",
+        "comment": null
+      },
+      {
+        "address": "0003884a",
+        "bytes": "410f1185c0000000",
+        "instruction": "MOVUPS xmmword ptr [R13 + 0xc0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038852",
+        "bytes": "498985d0000000",
+        "instruction": "MOV qword ptr [R13 + 0xd0],RAX",
+        "comment": null
+      },
+      {
+        "address": "00038859",
+        "bytes": "498dbddc000000",
+        "instruction": "LEA RDI,[R13 + 0xdc]",
+        "comment": null
+      },
+      {
+        "address": "00038860",
+        "bytes": "ba84010000",
+        "instruction": "MOV EDX,0x184",
+        "comment": null
+      },
+      {
+        "address": "00038865",
+        "bytes": "4c89f6",
+        "instruction": "MOV RSI,R14",
+        "comment": null
+      },
+      {
+        "address": "00038868",
+        "bytes": "e8b1740300",
+        "instruction": "CALL 0x0006fd1e",
+        "comment": null
+      },
+      {
+        "address": "0003886d",
+        "bytes": "0f288570f5ffff",
+        "instruction": "MOVAPS XMM0,xmmword ptr [RBP + -0xa90]",
+        "comment": null
+      },
+      {
+        "address": "00038874",
+        "bytes": "0f288d80f5ffff",
+        "instruction": "MOVAPS XMM1,xmmword ptr [RBP + -0xa80]",
+        "comment": null
+      },
+      {
+        "address": "0003887b",
+        "bytes": "0f289590f5ffff",
+        "instruction": "MOVAPS XMM2,xmmword ptr [RBP + -0xa70]",
+        "comment": null
+      },
+      {
+        "address": "00038882",
+        "bytes": "0f289da0f5ffff",
+        "instruction": "MOVAPS XMM3,xmmword ptr [RBP + -0xa60]",
+        "comment": null
+      },
+      {
+        "address": "00038889",
+        "bytes": "410f298560020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x260],XMM0",
+        "comment": null
+      },
+      {
+        "address": "00038891",
+        "bytes": "410f298d70020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x270],XMM1",
+        "comment": null
+      },
+      {
+        "address": "00038899",
+        "bytes": "410f299580020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x280],XMM2",
+        "comment": null
+      },
+      {
+        "address": "000388a1",
+        "bytes": "410f299d90020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x290],XMM3",
+        "comment": null
+      },
+      {
+        "address": "000388a9",
+        "bytes": "0f2885b0f5ffff",
+        "instruction": "MOVAPS XMM0,xmmword ptr [RBP + -0xa50]",
+        "comment": null
+      },
+      {
+        "address": "000388b0",
+        "bytes": "410f2985a0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2a0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000388b8",
+        "bytes": "0f2885c0f5ffff",
+        "instruction": "MOVAPS XMM0,xmmword ptr [RBP + -0xa40]",
+        "comment": null
+      },
+      {
+        "address": "000388bf",
+        "bytes": "410f2985b0020000",
+        "instruction": "MOVAPS xmmword ptr [R13 + 0x2b0],XMM0",
+        "comment": null
+      },
+      {
+        "address": "000388c7",
+        "bytes": "49c785c002000003000000",
+        "instruction": "MOV qword ptr [R13 + 0x2c0],0x3",
+        "comment": null
+      },
+      {
+        "address": "000388d2",
+        "bytes": "f60563bb040008",
+        "instruction": "TEST byte ptr [0x0008443c],0x8",
+        "comment": null
+      },
+      {
+        "address": "000388d9",
+        "bytes": "0f8597fdffff",
+        "instruction": "JNZ 0x00038676",
+        "comment": null
+      },
+      {
+        "address": "000388df",
+        "bytes": "e9c5fdffff",
+        "instruction": "JMP 0x000386a9",
+        "comment": null
+      },
+      {
+        "address": "000388e4",
+        "bytes": "41837f0804",
+        "instruction": "CMP dword ptr [R15 + 0x8],0x4",
+        "comment": null
+      },
+      {
+        "address": "000388e9",
+        "bytes": "7577",
+        "instruction": "JNZ 0x00038962",
+        "comment": null
+      },
+      {
+        "address": "000388eb",
+        "bytes": "4d85e4",
+        "instruction": "TEST R12,R12",
+        "comment": null
+      },
+      {
+        "address": "000388ee",
+        "bytes": "7433",
+        "instruction": "JZ 0x00038923",
+        "comment": null
+      },
+      {
+        "address": "000388f0",
+        "bytes": "488b4848",
+        "instruction": "MOV RCX,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "000388f4",
+        "bytes": "498d9600000100",
+        "instruction": "LEA RDX,[R14 + 0x10000]",
+        "comment": null
+      },
+      {
+        "address": "000388fb",
+        "bytes": "4839ca",
+        "instruction": "CMP RDX,RCX",
+        "comment": null
+      },
+      {
+        "address": "000388fe",
+        "bytes": "770a",
+        "instruction": "JA 0x0003890a",
+        "comment": null
+      },
+      {
+        "address": "00038900",
+        "bytes": "49398c2478030000",
+        "instruction": "CMP qword ptr [R12 + 0x378],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038908",
+        "bytes": "7319",
+        "instruction": "JNC 0x00038923",
+        "comment": null
+      },
+      {
+        "address": "0003890a",
+        "bytes": "498db658080000",
+        "instruction": "LEA RSI,[R14 + 0x858]",
+        "comment": null
+      },
+      {
+        "address": "00038911",
+        "bytes": "4839ce",
+        "instruction": "CMP RSI,RCX",
+        "comment": null
+      },
+      {
+        "address": "00038914",
+        "bytes": "400f97c6",
+        "instruction": "SETA SIL",
+        "comment": null
+      },
+      {
+        "address": "00038918",
+        "bytes": "4839ca",
+        "instruction": "CMP RDX,RCX",
+        "comment": null
+      },
+      {
+        "address": "0003891b",
+        "bytes": "0f96c1",
+        "instruction": "SETBE CL",
+        "comment": null
+      },
+      {
+        "address": "0003891e",
+        "bytes": "4008f1",
+        "instruction": "OR CL,SIL",
+        "comment": null
+      },
+      {
+        "address": "00038921",
+        "bytes": "7548",
+        "instruction": "JNZ 0x0003896b",
+        "comment": null
+      },
+      {
+        "address": "00038923",
+        "bytes": "f60512bb040008",
+        "instruction": "TEST byte ptr [0x0008443c],0x8",
+        "comment": null
+      },
+      {
+        "address": "0003892a",
+        "bytes": "0f84af040000",
+        "instruction": "JZ 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "00038930",
+        "bytes": "488d3505bb0400",
+        "instruction": "LEA RSI,[0x8443c]",
+        "comment": null
+      },
+      {
+        "address": "00038937",
+        "bytes": "488d1588d90300",
+        "instruction": "LEA RDX,[0x762c6]",
+        "comment": null
+      },
+      {
+        "address": "0003893e",
+        "bytes": "488d0d95d90300",
+        "instruction": "LEA RCX,[0x762da]",
+        "comment": null
+      },
+      {
+        "address": "00038945",
+        "bytes": "bf03000000",
+        "instruction": "MOV EDI,0x3",
+        "comment": null
+      },
+      {
+        "address": "0003894a",
+        "bytes": "31c0",
+        "instruction": "XOR EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "0003894c",
+        "bytes": "4881c4680a0000",
+        "instruction": "ADD RSP,0xa68",
+        "comment": null
+      },
+      {
+        "address": "00038953",
+        "bytes": "5b",
+        "instruction": "POP RBX",
+        "comment": null
+      },
+      {
+        "address": "00038954",
+        "bytes": "415c",
+        "instruction": "POP R12",
+        "comment": null
+      },
+      {
+        "address": "00038956",
+        "bytes": "415d",
+        "instruction": "POP R13",
+        "comment": null
+      },
+      {
+        "address": "00038958",
+        "bytes": "415e",
+        "instruction": "POP R14",
+        "comment": null
+      },
+      {
+        "address": "0003895a",
+        "bytes": "415f",
+        "instruction": "POP R15",
+        "comment": null
+      },
+      {
+        "address": "0003895c",
+        "bytes": "5d",
+        "instruction": "POP RBP",
+        "comment": null
+      },
+      {
+        "address": "0003895d",
+        "bytes": "e99ed6ffff",
+        "instruction": "JMP 0x00036000",
+        "comment": null
+      },
+      {
+        "address": "00038962",
+        "bytes": "4d85e4",
+        "instruction": "TEST R12,R12",
+        "comment": null
+      },
+      {
+        "address": "00038965",
+        "bytes": "0f8468010000",
+        "instruction": "JZ 0x00038ad3",
+        "comment": null
+      },
+      {
+        "address": "0003896b",
+        "bytes": "4180bc244103000000",
+        "instruction": "CMP byte ptr [R12 + 0x341],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038974",
+        "bytes": "0f8459010000",
+        "instruction": "JZ 0x00038ad3",
+        "comment": null
+      },
+      {
+        "address": "0003897a",
+        "bytes": "66833801",
+        "instruction": "CMP word ptr [RAX],0x1",
+        "comment": null
+      },
+      {
+        "address": "0003897e",
+        "bytes": "0f854f010000",
+        "instruction": "JNZ 0x00038ad3",
+        "comment": null
+      },
+      {
+        "address": "00038984",
+        "bytes": "833d69f1050000",
+        "instruction": "CMP dword ptr [0x00097af4],0x0",
+        "comment": null
+      },
+      {
+        "address": "0003898b",
+        "bytes": "0f84d6000000",
+        "instruction": "JZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038991",
+        "bytes": "0fb70d52f10500",
+        "instruction": "MOVZX ECX,word ptr [0x00097aea]",
+        "comment": null
+      },
+      {
+        "address": "00038998",
+        "bytes": "483988a0000000",
+        "instruction": "CMP qword ptr [RAX + 0xa0],RCX",
+        "comment": null
+      },
+      {
+        "address": "0003899f",
+        "bytes": "0f85c2000000",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "000389a5",
+        "bytes": "6641398c2468030000",
+        "instruction": "CMP word ptr [R12 + 0x368],CX",
+        "comment": null
+      },
+      {
+        "address": "000389ae",
+        "bytes": "0f85b3000000",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "000389b4",
+        "bytes": "488b4048",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "000389b8",
+        "bytes": "4883c008",
+        "instruction": "ADD RAX,0x8",
+        "comment": null
+      },
+      {
+        "address": "000389bc",
+        "bytes": "4939842460030000",
+        "instruction": "CMP qword ptr [R12 + 0x360],RAX",
+        "comment": null
+      },
+      {
+        "address": "000389c4",
+        "bytes": "0f859d000000",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "000389ca",
+        "bytes": "498bbc2458030000",
+        "instruction": "MOV RDI,qword ptr [R12 + 0x358]",
+        "comment": null
+      },
+      {
+        "address": "000389d2",
+        "bytes": "488db570f5ffff",
+        "instruction": "LEA RSI,[RBP + -0xa90]",
+        "comment": null
+      },
+      {
+        "address": "000389d9",
+        "bytes": "ba05000000",
+        "instruction": "MOV EDX,0x5",
+        "comment": null
+      },
+      {
+        "address": "000389de",
+        "bytes": "e83de40200",
+        "instruction": "CALL 0x00066e20",
+        "comment": null
+      },
+      {
+        "address": "000389e3",
+        "bytes": "4883f805",
+        "instruction": "CMP RAX,0x5",
+        "comment": null
+      },
+      {
+        "address": "000389e7",
+        "bytes": "757e",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "000389e9",
+        "bytes": "80bd70f5ffffe8",
+        "instruction": "CMP byte ptr [RBP + -0xa90],0xe8",
+        "comment": null
+      },
+      {
+        "address": "000389f0",
+        "bytes": "7575",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "000389f2",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "000389f6",
+        "bytes": "488b7848",
+        "instruction": "MOV RDI,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "000389fa",
+        "bytes": "488db540faffff",
+        "instruction": "LEA RSI,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038a01",
+        "bytes": "ba08000000",
+        "instruction": "MOV EDX,0x8",
+        "comment": null
+      },
+      {
+        "address": "00038a06",
+        "bytes": "e815e40200",
+        "instruction": "CALL 0x00066e20",
+        "comment": null
+      },
+      {
+        "address": "00038a0b",
+        "bytes": "4883f808",
+        "instruction": "CMP RAX,0x8",
+        "comment": null
+      },
+      {
+        "address": "00038a0f",
+        "bytes": "7556",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038a11",
+        "bytes": "8b8540faffff",
+        "instruction": "MOV EAX,dword ptr [RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038a17",
+        "bytes": "418b8c2458030000",
+        "instruction": "MOV ECX,dword ptr [R12 + 0x358]",
+        "comment": null
+      },
+      {
+        "address": "00038a1f",
+        "bytes": "83c105",
+        "instruction": "ADD ECX,0x5",
+        "comment": null
+      },
+      {
+        "address": "00038a22",
+        "bytes": "39c8",
+        "instruction": "CMP EAX,ECX",
+        "comment": null
+      },
+      {
+        "address": "00038a24",
+        "bytes": "7541",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038a26",
+        "bytes": "83bd44faffff00",
+        "instruction": "CMP dword ptr [RBP + -0x5bc],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038a2d",
+        "bytes": "7538",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038a2f",
+        "bytes": "038571f5ffff",
+        "instruction": "ADD EAX,dword ptr [RBP + -0xa8f]",
+        "comment": null
+      },
+      {
+        "address": "00038a35",
+        "bytes": "488b4b30",
+        "instruction": "MOV RCX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038a39",
+        "bytes": "3b8190000000",
+        "instruction": "CMP EAX,dword ptr [RCX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038a3f",
+        "bytes": "7526",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038a41",
+        "bytes": "488b7948",
+        "instruction": "MOV RDI,qword ptr [RCX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "00038a45",
+        "bytes": "4883c704",
+        "instruction": "ADD RDI,0x4",
+        "comment": null
+      },
+      {
+        "address": "00038a49",
+        "bytes": "488db540faffff",
+        "instruction": "LEA RSI,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038a50",
+        "bytes": "ba04000000",
+        "instruction": "MOV EDX,0x4",
+        "comment": null
+      },
+      {
+        "address": "00038a55",
+        "bytes": "e826e50200",
+        "instruction": "CALL 0x00066f80",
+        "comment": null
+      },
+      {
+        "address": "00038a5a",
+        "bytes": "85c0",
+        "instruction": "TEST EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "00038a5c",
+        "bytes": "7509",
+        "instruction": "JNZ 0x00038a67",
+        "comment": null
+      },
+      {
+        "address": "00038a5e",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038a62",
+        "bytes": "4883404804",
+        "instruction": "ADD qword ptr [RAX + 0x48],0x4",
+        "comment": null
+      },
+      {
+        "address": "00038a67",
+        "bytes": "4180bc244303000000",
+        "instruction": "CMP byte ptr [R12 + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038a70",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038a74",
+        "bytes": "742a",
+        "instruction": "JZ 0x00038aa0",
+        "comment": null
+      },
+      {
+        "address": "00038a76",
+        "bytes": "410fb78c2450030000",
+        "instruction": "MOVZX ECX,word ptr [R12 + 0x350]",
+        "comment": null
+      },
+      {
+        "address": "00038a7f",
+        "bytes": "483988a0000000",
+        "instruction": "CMP qword ptr [RAX + 0xa0],RCX",
+        "comment": null
+      },
+      {
+        "address": "00038a86",
+        "bytes": "7518",
+        "instruction": "JNZ 0x00038aa0",
+        "comment": null
+      },
+      {
+        "address": "00038a88",
+        "bytes": "6641398c2468030000",
+        "instruction": "CMP word ptr [R12 + 0x368],CX",
+        "comment": null
+      },
+      {
+        "address": "00038a91",
+        "bytes": "750d",
+        "instruction": "JNZ 0x00038aa0",
+        "comment": null
+      },
+      {
+        "address": "00038a93",
+        "bytes": "41c684244303000000",
+        "instruction": "MOV byte ptr [R12 + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038a9c",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038aa0",
+        "bytes": "488b8090000000",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038aa7",
+        "bytes": "4989842458030000",
+        "instruction": "MOV qword ptr [R12 + 0x358],RAX",
+        "comment": null
+      },
+      {
+        "address": "00038aaf",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038ab3",
+        "bytes": "488b4048",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "00038ab7",
+        "bytes": "4989842460030000",
+        "instruction": "MOV qword ptr [R12 + 0x360],RAX",
+        "comment": null
+      },
+      {
+        "address": "00038abf",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038ac3",
+        "bytes": "0fb780a0000000",
+        "instruction": "MOVZX EAX,word ptr [RAX + 0xa0]",
+        "comment": null
+      },
+      {
+        "address": "00038aca",
+        "bytes": "664189842468030000",
+        "instruction": "MOV word ptr [R12 + 0x368],AX",
+        "comment": null
+      },
+      {
+        "address": "00038ad3",
+        "bytes": "488db540faffff",
+        "instruction": "LEA RSI,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038ada",
+        "bytes": "4c89f7",
+        "instruction": "MOV RDI,R14",
+        "comment": null
+      },
+      {
+        "address": "00038add",
+        "bytes": "4889da",
+        "instruction": "MOV RDX,RBX",
+        "comment": null
+      },
+      {
+        "address": "00038ae0",
+        "bytes": "e8bbab0000",
+        "instruction": "CALL 0x000436a0",
+        "comment": null
+      },
+      {
+        "address": "00038ae5",
+        "bytes": "498b06",
+        "instruction": "MOV RAX,qword ptr [R14]",
+        "comment": null
+      },
+      {
+        "address": "00038ae8",
+        "bytes": "4885c0",
+        "instruction": "TEST RAX,RAX",
+        "comment": null
+      },
+      {
+        "address": "00038aeb",
+        "bytes": "0f84a9010000",
+        "instruction": "JZ 0x00038c9a",
+        "comment": null
+      },
+      {
+        "address": "00038af1",
+        "bytes": "80b84103000000",
+        "instruction": "CMP byte ptr [RAX + 0x341],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038af8",
+        "bytes": "488b4b30",
+        "instruction": "MOV RCX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038afc",
+        "bytes": "0f849c010000",
+        "instruction": "JZ 0x00038c9e",
+        "comment": null
+      },
+      {
+        "address": "00038b02",
+        "bytes": "0fb711",
+        "instruction": "MOVZX EDX,word ptr [RCX]",
+        "comment": null
+      },
+      {
+        "address": "00038b05",
+        "bytes": "6683fa01",
+        "instruction": "CMP DX,0x1",
+        "comment": null
+      },
+      {
+        "address": "00038b09",
+        "bytes": "0f8592010000",
+        "instruction": "JNZ 0x00038ca1",
+        "comment": null
+      },
+      {
+        "address": "00038b0f",
+        "bytes": "488bb018030000",
+        "instruction": "MOV RSI,qword ptr [RAX + 0x318]",
+        "comment": null
+      },
+      {
+        "address": "00038b16",
+        "bytes": "40f6c603",
+        "instruction": "TEST SIL,0x3",
+        "comment": null
+      },
+      {
+        "address": "00038b1a",
+        "bytes": "400f94c7",
+        "instruction": "SETZ DIL",
+        "comment": null
+      },
+      {
+        "address": "00038b1e",
+        "bytes": "f7c600000f00",
+        "instruction": "TEST ESI,0xf0000",
+        "comment": null
+      },
+      {
+        "address": "00038b24",
+        "bytes": "410f95c0",
+        "instruction": "SETNZ R8B",
+        "comment": null
+      },
+      {
+        "address": "00038b28",
+        "bytes": "31d2",
+        "instruction": "XOR EDX,EDX",
+        "comment": null
+      },
+      {
+        "address": "00038b2a",
+        "bytes": "4108f8",
+        "instruction": "OR R8B,DIL",
+        "comment": null
+      },
+      {
+        "address": "00038b2d",
+        "bytes": "7541",
+        "instruction": "JNZ 0x00038b70",
+        "comment": null
+      },
+      {
+        "address": "00038b2f",
+        "bytes": "488bb8f0020000",
+        "instruction": "MOV RDI,qword ptr [RAX + 0x2f0]",
+        "comment": null
+      },
+      {
+        "address": "00038b36",
+        "bytes": "483bb990000000",
+        "instruction": "CMP RDI,qword ptr [RCX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038b3d",
+        "bytes": "7531",
+        "instruction": "JNZ 0x00038b70",
+        "comment": null
+      },
+      {
+        "address": "00038b3f",
+        "bytes": "f6819a00000001",
+        "instruction": "TEST byte ptr [RCX + 0x9a],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038b46",
+        "bytes": "7528",
+        "instruction": "JNZ 0x00038b70",
+        "comment": null
+      },
+      {
+        "address": "00038b48",
+        "bytes": "80b84303000000",
+        "instruction": "CMP byte ptr [RAX + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038b4f",
+        "bytes": "741a",
+        "instruction": "JZ 0x00038b6b",
+        "comment": null
+      },
+      {
+        "address": "00038b51",
+        "bytes": "440fb78050030000",
+        "instruction": "MOVZX R8D,word ptr [RAX + 0x350]",
+        "comment": null
+      },
+      {
+        "address": "00038b59",
+        "bytes": "4c3981a0000000",
+        "instruction": "CMP qword ptr [RCX + 0xa0],R8",
+        "comment": null
+      },
+      {
+        "address": "00038b60",
+        "bytes": "7509",
+        "instruction": "JNZ 0x00038b6b",
+        "comment": null
+      },
+      {
+        "address": "00038b62",
+        "bytes": "4839b848030000",
+        "instruction": "CMP qword ptr [RAX + 0x348],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038b69",
+        "bytes": "7405",
+        "instruction": "JZ 0x00038b70",
+        "comment": null
+      },
+      {
+        "address": "00038b6b",
+        "bytes": "ba01000000",
+        "instruction": "MOV EDX,0x1",
+        "comment": null
+      },
+      {
+        "address": "00038b70",
+        "bytes": "40f6c60c",
+        "instruction": "TEST SIL,0xc",
+        "comment": null
+      },
+      {
+        "address": "00038b74",
+        "bytes": "400f94c7",
+        "instruction": "SETZ DIL",
+        "comment": null
+      },
+      {
+        "address": "00038b78",
+        "bytes": "f7c60000f000",
+        "instruction": "TEST ESI,0xf00000",
+        "comment": null
+      },
+      {
+        "address": "00038b7e",
+        "bytes": "410f95c0",
+        "instruction": "SETNZ R8B",
+        "comment": null
+      },
+      {
+        "address": "00038b82",
+        "bytes": "4108f8",
+        "instruction": "OR R8B,DIL",
+        "comment": null
+      },
+      {
+        "address": "00038b85",
+        "bytes": "753f",
+        "instruction": "JNZ 0x00038bc6",
+        "comment": null
+      },
+      {
+        "address": "00038b87",
+        "bytes": "488bb8f8020000",
+        "instruction": "MOV RDI,qword ptr [RAX + 0x2f8]",
+        "comment": null
+      },
+      {
+        "address": "00038b8e",
+        "bytes": "483bb990000000",
+        "instruction": "CMP RDI,qword ptr [RCX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038b95",
+        "bytes": "752f",
+        "instruction": "JNZ 0x00038bc6",
+        "comment": null
+      },
+      {
+        "address": "00038b97",
+        "bytes": "f6819a00000001",
+        "instruction": "TEST byte ptr [RCX + 0x9a],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038b9e",
+        "bytes": "7526",
+        "instruction": "JNZ 0x00038bc6",
+        "comment": null
+      },
+      {
+        "address": "00038ba0",
+        "bytes": "80b84303000000",
+        "instruction": "CMP byte ptr [RAX + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038ba7",
+        "bytes": "741a",
+        "instruction": "JZ 0x00038bc3",
+        "comment": null
+      },
+      {
+        "address": "00038ba9",
+        "bytes": "440fb78050030000",
+        "instruction": "MOVZX R8D,word ptr [RAX + 0x350]",
+        "comment": null
+      },
+      {
+        "address": "00038bb1",
+        "bytes": "4c3981a0000000",
+        "instruction": "CMP qword ptr [RCX + 0xa0],R8",
+        "comment": null
+      },
+      {
+        "address": "00038bb8",
+        "bytes": "7509",
+        "instruction": "JNZ 0x00038bc3",
+        "comment": null
+      },
+      {
+        "address": "00038bba",
+        "bytes": "4839b848030000",
+        "instruction": "CMP qword ptr [RAX + 0x348],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038bc1",
+        "bytes": "7403",
+        "instruction": "JZ 0x00038bc6",
+        "comment": null
+      },
+      {
+        "address": "00038bc3",
+        "bytes": "83ca02",
+        "instruction": "OR EDX,0x2",
+        "comment": null
+      },
+      {
+        "address": "00038bc6",
+        "bytes": "40f6c630",
+        "instruction": "TEST SIL,0x30",
+        "comment": null
+      },
+      {
+        "address": "00038bca",
+        "bytes": "400f94c7",
+        "instruction": "SETZ DIL",
+        "comment": null
+      },
+      {
+        "address": "00038bce",
+        "bytes": "f7c60000000f",
+        "instruction": "TEST ESI,0xf000000",
+        "comment": null
+      },
+      {
+        "address": "00038bd4",
+        "bytes": "410f95c0",
+        "instruction": "SETNZ R8B",
+        "comment": null
+      },
+      {
+        "address": "00038bd8",
+        "bytes": "4108f8",
+        "instruction": "OR R8B,DIL",
+        "comment": null
+      },
+      {
+        "address": "00038bdb",
+        "bytes": "753f",
+        "instruction": "JNZ 0x00038c1c",
+        "comment": null
+      },
+      {
+        "address": "00038bdd",
+        "bytes": "488bb800030000",
+        "instruction": "MOV RDI,qword ptr [RAX + 0x300]",
+        "comment": null
+      },
+      {
+        "address": "00038be4",
+        "bytes": "483bb990000000",
+        "instruction": "CMP RDI,qword ptr [RCX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038beb",
+        "bytes": "752f",
+        "instruction": "JNZ 0x00038c1c",
+        "comment": null
+      },
+      {
+        "address": "00038bed",
+        "bytes": "f6819a00000001",
+        "instruction": "TEST byte ptr [RCX + 0x9a],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038bf4",
+        "bytes": "7526",
+        "instruction": "JNZ 0x00038c1c",
+        "comment": null
+      },
+      {
+        "address": "00038bf6",
+        "bytes": "80b84303000000",
+        "instruction": "CMP byte ptr [RAX + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038bfd",
+        "bytes": "741a",
+        "instruction": "JZ 0x00038c19",
+        "comment": null
+      },
+      {
+        "address": "00038bff",
+        "bytes": "440fb78050030000",
+        "instruction": "MOVZX R8D,word ptr [RAX + 0x350]",
+        "comment": null
+      },
+      {
+        "address": "00038c07",
+        "bytes": "4c3981a0000000",
+        "instruction": "CMP qword ptr [RCX + 0xa0],R8",
+        "comment": null
+      },
+      {
+        "address": "00038c0e",
+        "bytes": "7509",
+        "instruction": "JNZ 0x00038c19",
+        "comment": null
+      },
+      {
+        "address": "00038c10",
+        "bytes": "4839b848030000",
+        "instruction": "CMP qword ptr [RAX + 0x348],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038c17",
+        "bytes": "7403",
+        "instruction": "JZ 0x00038c1c",
+        "comment": null
+      },
+      {
+        "address": "00038c19",
+        "bytes": "83ca04",
+        "instruction": "OR EDX,0x4",
+        "comment": null
+      },
+      {
+        "address": "00038c1c",
+        "bytes": "40f6c6c0",
+        "instruction": "TEST SIL,0xc0",
+        "comment": null
+      },
+      {
+        "address": "00038c20",
+        "bytes": "400f94c7",
+        "instruction": "SETZ DIL",
+        "comment": null
+      },
+      {
+        "address": "00038c24",
+        "bytes": "f7c6000000f0",
+        "instruction": "TEST ESI,0xf0000000",
+        "comment": null
+      },
+      {
+        "address": "00038c2a",
+        "bytes": "400f95c6",
+        "instruction": "SETNZ SIL",
+        "comment": null
+      },
+      {
+        "address": "00038c2e",
+        "bytes": "4008fe",
+        "instruction": "OR SIL,DIL",
+        "comment": null
+      },
+      {
+        "address": "00038c31",
+        "bytes": "7547",
+        "instruction": "JNZ 0x00038c7a",
+        "comment": null
+      },
+      {
+        "address": "00038c33",
+        "bytes": "488bb008030000",
+        "instruction": "MOV RSI,qword ptr [RAX + 0x308]",
+        "comment": null
+      },
+      {
+        "address": "00038c3a",
+        "bytes": "483bb190000000",
+        "instruction": "CMP RSI,qword ptr [RCX + 0x90]",
+        "comment": null
+      },
+      {
+        "address": "00038c41",
+        "bytes": "7537",
+        "instruction": "JNZ 0x00038c7a",
+        "comment": null
+      },
+      {
+        "address": "00038c43",
+        "bytes": "f6819a00000001",
+        "instruction": "TEST byte ptr [RCX + 0x9a],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038c4a",
+        "bytes": "752e",
+        "instruction": "JNZ 0x00038c7a",
+        "comment": null
+      },
+      {
+        "address": "00038c4c",
+        "bytes": "80b84303000000",
+        "instruction": "CMP byte ptr [RAX + 0x343],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038c53",
+        "bytes": "0f84a8020000",
+        "instruction": "JZ 0x00038f01",
+        "comment": null
+      },
+      {
+        "address": "00038c59",
+        "bytes": "0fb7b850030000",
+        "instruction": "MOVZX EDI,word ptr [RAX + 0x350]",
+        "comment": null
+      },
+      {
+        "address": "00038c60",
+        "bytes": "4839b9a0000000",
+        "instruction": "CMP qword ptr [RCX + 0xa0],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038c67",
+        "bytes": "0f8594020000",
+        "instruction": "JNZ 0x00038f01",
+        "comment": null
+      },
+      {
+        "address": "00038c6d",
+        "bytes": "4839b048030000",
+        "instruction": "CMP qword ptr [RAX + 0x348],RSI",
+        "comment": null
+      },
+      {
+        "address": "00038c74",
+        "bytes": "0f8587020000",
+        "instruction": "JNZ 0x00038f01",
+        "comment": null
+      },
+      {
+        "address": "00038c7a",
+        "bytes": "85d2",
+        "instruction": "TEST EDX,EDX",
+        "comment": null
+      },
+      {
+        "address": "00038c7c",
+        "bytes": "0f848f010000",
+        "instruction": "JZ 0x00038e11",
+        "comment": null
+      },
+      {
+        "address": "00038c82",
+        "bytes": "31c9",
+        "instruction": "XOR ECX,ECX",
+        "comment": null
+      },
+      {
+        "address": "00038c84",
+        "bytes": "80b85203000000",
+        "instruction": "CMP byte ptr [RAX + 0x352],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038c8b",
+        "bytes": "0f95c1",
+        "instruction": "SETNZ CL",
+        "comment": null
+      },
+      {
+        "address": "00038c8e",
+        "bytes": "c1e10e",
+        "instruction": "SHL ECX,0xe",
+        "comment": null
+      },
+      {
+        "address": "00038c91",
+        "bytes": "89d6",
+        "instruction": "MOV ESI,EDX",
+        "comment": null
+      },
+      {
+        "address": "00038c93",
+        "bytes": "31d2",
+        "instruction": "XOR EDX,EDX",
+        "comment": null
+      },
+      {
+        "address": "00038c95",
+        "bytes": "e98d010000",
+        "instruction": "JMP 0x00038e27",
+        "comment": null
+      },
+      {
+        "address": "00038c9a",
+        "bytes": "488b4b30",
+        "instruction": "MOV RCX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038c9e",
+        "bytes": "0fb711",
+        "instruction": "MOVZX EDX,word ptr [RCX]",
+        "comment": null
+      },
+      {
+        "address": "00038ca1",
+        "bytes": "6683fa03",
+        "instruction": "CMP DX,0x3",
+        "comment": null
+      },
+      {
+        "address": "00038ca5",
+        "bytes": "0f84f5000000",
+        "instruction": "JZ 0x00038da0",
+        "comment": null
+      },
+      {
+        "address": "00038cab",
+        "bytes": "0fb7c2",
+        "instruction": "MOVZX EAX,DX",
+        "comment": null
+      },
+      {
+        "address": "00038cae",
+        "bytes": "83f801",
+        "instruction": "CMP EAX,0x1",
+        "comment": null
+      },
+      {
+        "address": "00038cb1",
+        "bytes": "0f85f0000000",
+        "instruction": "JNZ 0x00038da7",
+        "comment": null
+      },
+      {
+        "address": "00038cb7",
+        "bytes": "c78530ffffff04000080",
+        "instruction": "MOV dword ptr [RBP + -0xd0],0x80000004",
+        "comment": null
+      },
+      {
+        "address": "00038cc1",
+        "bytes": "8b8584faffff",
+        "instruction": "MOV EAX,dword ptr [RBP + -0x57c]",
+        "comment": null
+      },
+      {
+        "address": "00038cc7",
+        "bytes": "a900010000",
+        "instruction": "TEST EAX,0x100",
+        "comment": null
+      },
+      {
+        "address": "00038ccc",
+        "bytes": "7409",
+        "instruction": "JZ 0x00038cd7",
+        "comment": null
+      },
+      {
+        "address": "00038cce",
+        "bytes": "80bdb0faffff00",
+        "instruction": "CMP byte ptr [RBP + -0x550],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038cd5",
+        "bytes": "7431",
+        "instruction": "JZ 0x00038d08",
+        "comment": null
+      },
+      {
+        "address": "00038cd7",
+        "bytes": "448bbd70faffff",
+        "instruction": "MOV R15D,dword ptr [RBP + -0x590]",
+        "comment": null
+      },
+      {
+        "address": "00038cde",
+        "bytes": "c78570faffff10001000",
+        "instruction": "MOV dword ptr [RBP + -0x590],0x100010",
+        "comment": null
+      },
+      {
+        "address": "00038ce8",
+        "bytes": "488db540faffff",
+        "instruction": "LEA RSI,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038cef",
+        "bytes": "48c7c7feffffff",
+        "instruction": "MOV RDI,-0x2",
+        "comment": null
+      },
+      {
+        "address": "00038cf6",
+        "bytes": "e8d5d3ffff",
+        "instruction": "CALL 0x000360d0",
+        "comment": null
+      },
+      {
+        "address": "00038cfb",
+        "bytes": "4409bd70faffff",
+        "instruction": "OR dword ptr [RBP + -0x590],R15D",
+        "comment": null
+      },
+      {
+        "address": "00038d02",
+        "bytes": "8b8584faffff",
+        "instruction": "MOV EAX,dword ptr [RBP + -0x57c]",
+        "comment": null
+      },
+      {
+        "address": "00038d08",
+        "bytes": "25fffeffff",
+        "instruction": "AND EAX,0xfffffeff",
+        "comment": null
+      },
+      {
+        "address": "00038d0d",
+        "bytes": "898584faffff",
+        "instruction": "MOV dword ptr [RBP + -0x57c],EAX",
+        "comment": null
+      },
+      {
+        "address": "00038d13",
+        "bytes": "e9ae000000",
+        "instruction": "JMP 0x00038dc6",
+        "comment": null
+      },
+      {
+        "address": "00038d18",
+        "bytes": "31c0",
+        "instruction": "XOR EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "00038d1a",
+        "bytes": "4188842442030000",
+        "instruction": "MOV byte ptr [R12 + 0x342],AL",
+        "comment": null
+      },
+      {
+        "address": "00038d22",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038d26",
+        "bytes": "4881a098000000fffeffff",
+        "instruction": "AND qword ptr [RAX + 0x98],-0x101",
+        "comment": null
+      },
+      {
+        "address": "00038d31",
+        "bytes": "498b3e",
+        "instruction": "MOV RDI,qword ptr [R14]",
+        "comment": null
+      },
+      {
+        "address": "00038d34",
+        "bytes": "4885ff",
+        "instruction": "TEST RDI,RDI",
+        "comment": null
+      },
+      {
+        "address": "00038d37",
+        "bytes": "0f84a2000000",
+        "instruction": "JZ 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "00038d3d",
+        "bytes": "488b4330",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038d41",
+        "bytes": "488b4048",
+        "instruction": "MOV RAX,qword ptr [RAX + 0x48]",
+        "comment": null
+      },
+      {
+        "address": "00038d45",
+        "bytes": "498d8e58080000",
+        "instruction": "LEA RCX,[R14 + 0x858]",
+        "comment": null
+      },
+      {
+        "address": "00038d4c",
+        "bytes": "4839c1",
+        "instruction": "CMP RCX,RAX",
+        "comment": null
+      },
+      {
+        "address": "00038d4f",
+        "bytes": "0f97c1",
+        "instruction": "SETA CL",
+        "comment": null
+      },
+      {
+        "address": "00038d52",
+        "bytes": "4981c600000100",
+        "instruction": "ADD R14,0x10000",
+        "comment": null
+      },
+      {
+        "address": "00038d59",
+        "bytes": "4939c6",
+        "instruction": "CMP R14,RAX",
+        "comment": null
+      },
+      {
+        "address": "00038d5c",
+        "bytes": "0f96c2",
+        "instruction": "SETBE DL",
+        "comment": null
+      },
+      {
+        "address": "00038d5f",
+        "bytes": "08ca",
+        "instruction": "OR DL,CL",
+        "comment": null
+      },
+      {
+        "address": "00038d61",
+        "bytes": "80fa01",
+        "instruction": "CMP DL,0x1",
+        "comment": null
+      },
+      {
+        "address": "00038d64",
+        "bytes": "7513",
+        "instruction": "JNZ 0x00038d79",
+        "comment": null
+      },
+      {
+        "address": "00038d66",
+        "bytes": "4939c6",
+        "instruction": "CMP R14,RAX",
+        "comment": null
+      },
+      {
+        "address": "00038d69",
+        "bytes": "7709",
+        "instruction": "JA 0x00038d74",
+        "comment": null
+      },
+      {
+        "address": "00038d6b",
+        "bytes": "48398778030000",
+        "instruction": "CMP qword ptr [RDI + 0x378],RAX",
+        "comment": null
+      },
+      {
+        "address": "00038d72",
+        "bytes": "7305",
+        "instruction": "JNC 0x00038d79",
+        "comment": null
+      },
+      {
+        "address": "00038d74",
+        "bytes": "e8536d0300",
+        "instruction": "CALL 0x0006facc",
+        "comment": null
+      },
+      {
+        "address": "00038d79",
+        "bytes": "488b4328",
+        "instruction": "MOV RAX,qword ptr [RBX + 0x28]",
+        "comment": null
+      },
+      {
+        "address": "00038d7d",
+        "bytes": "483de8020000",
+        "instruction": "CMP RAX,0x2e8",
+        "comment": null
+      },
+      {
+        "address": "00038d83",
+        "bytes": "7410",
+        "instruction": "JZ 0x00038d95",
+        "comment": null
+      },
+      {
+        "address": "00038d85",
+        "bytes": "483d680a0000",
+        "instruction": "CMP RAX,0xa68",
+        "comment": null
+      },
+      {
+        "address": "00038d8b",
+        "bytes": "7408",
+        "instruction": "JZ 0x00038d95",
+        "comment": null
+      },
+      {
+        "address": "00038d8d",
+        "bytes": "483d28040000",
+        "instruction": "CMP RAX,0x428",
+        "comment": null
+      },
+      {
+        "address": "00038d93",
+        "bytes": "755c",
+        "instruction": "JNZ 0x00038df1",
+        "comment": null
+      },
+      {
+        "address": "00038d95",
+        "bytes": "b8c8000000",
+        "instruction": "MOV EAX,0xc8",
+        "comment": null
+      },
+      {
+        "address": "00038d9a",
+        "bytes": "48034330",
+        "instruction": "ADD RAX,qword ptr [RBX + 0x30]",
+        "comment": null
+      },
+      {
+        "address": "00038d9e",
+        "bytes": "eb58",
+        "instruction": "JMP 0x00038df8",
+        "comment": null
+      },
+      {
+        "address": "00038da0",
+        "bytes": "48ff8d40ffffff",
+        "instruction": "DEC qword ptr [RBP + -0xc0]",
+        "comment": null
+      },
+      {
+        "address": "00038da7",
+        "bytes": "c78530ffffff03000080",
+        "instruction": "MOV dword ptr [RBP + -0xd0],0x80000003",
+        "comment": null
+      },
+      {
+        "address": "00038db1",
+        "bytes": "c78548ffffff01000000",
+        "instruction": "MOV dword ptr [RBP + -0xb8],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038dbb",
+        "bytes": "48c78550ffffff00000000",
+        "instruction": "MOV qword ptr [RBP + -0xb0],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038dc6",
+        "bytes": "488d9530ffffff",
+        "instruction": "LEA RDX,[RBP + -0xd0]",
+        "comment": null
+      },
+      {
+        "address": "00038dcd",
+        "bytes": "488d8d40faffff",
+        "instruction": "LEA RCX,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038dd4",
+        "bytes": "4c89f7",
+        "instruction": "MOV RDI,R14",
+        "comment": null
+      },
+      {
+        "address": "00038dd7",
+        "bytes": "4889de",
+        "instruction": "MOV RSI,RBX",
+        "comment": null
+      },
+      {
+        "address": "00038dda",
+        "bytes": "e8b1ab0000",
+        "instruction": "CALL 0x00043990",
+        "comment": null
+      },
+      {
+        "address": "00038ddf",
+        "bytes": "4881c4680a0000",
+        "instruction": "ADD RSP,0xa68",
+        "comment": null
+      },
+      {
+        "address": "00038de6",
+        "bytes": "5b",
+        "instruction": "POP RBX",
+        "comment": null
+      },
+      {
+        "address": "00038de7",
+        "bytes": "415c",
+        "instruction": "POP R12",
+        "comment": null
+      },
+      {
+        "address": "00038de9",
+        "bytes": "415d",
+        "instruction": "POP R13",
+        "comment": null
+      },
+      {
+        "address": "00038deb",
+        "bytes": "415e",
+        "instruction": "POP R14",
+        "comment": null
+      },
+      {
+        "address": "00038ded",
+        "bytes": "415f",
+        "instruction": "POP R15",
+        "comment": null
+      },
+      {
+        "address": "00038def",
+        "bytes": "5d",
+        "instruction": "POP RBP",
+        "comment": null
+      },
+      {
+        "address": "00038df0",
+        "bytes": "c3",
+        "instruction": "RET",
+        "comment": null
+      },
+      {
+        "address": "00038df1",
+        "bytes": "488d05f0ec0500",
+        "instruction": "LEA RAX,[0x97ae8]",
+        "comment": null
+      },
+      {
+        "address": "00038df8",
+        "bytes": "0fb700",
+        "instruction": "MOVZX EAX,word ptr [RAX]",
+        "comment": null
+      },
+      {
+        "address": "00038dfb",
+        "bytes": "663b05e6ec0500",
+        "instruction": "CMP AX,word ptr [0x00097ae8]",
+        "comment": null
+      },
+      {
+        "address": "00038e02",
+        "bytes": "75db",
+        "instruction": "JNZ 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "00038e04",
+        "bytes": "8ed8",
+        "instruction": "MOV EAX,DS",
+        "comment": null
+      },
+      {
+        "address": "00038e06",
+        "bytes": "0fb705dbec0500",
+        "instruction": "MOVZX EAX,word ptr [0x00097ae8]",
+        "comment": null
+      },
+      {
+        "address": "00038e0d",
+        "bytes": "8ec0",
+        "instruction": "MOV EAX,ES",
+        "comment": null
+      },
+      {
+        "address": "00038e0f",
+        "bytes": "ebce",
+        "instruction": "JMP 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "00038e11",
+        "bytes": "80b85203000000",
+        "instruction": "CMP byte ptr [RAX + 0x352],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038e18",
+        "bytes": "0f84cc000000",
+        "instruction": "JZ 0x00038eea",
+        "comment": null
+      },
+      {
+        "address": "00038e1e",
+        "bytes": "b900400000",
+        "instruction": "MOV ECX,0x4000",
+        "comment": null
+      },
+      {
+        "address": "00038e23",
+        "bytes": "b201",
+        "instruction": "MOV DL,0x1",
+        "comment": null
+      },
+      {
+        "address": "00038e25",
+        "bytes": "31f6",
+        "instruction": "XOR ESI,ESI",
+        "comment": null
+      },
+      {
+        "address": "00038e27",
+        "bytes": "80a585fafffffe",
+        "instruction": "AND byte ptr [RBP + -0x57b],0xfe",
+        "comment": null
+      },
+      {
+        "address": "00038e2e",
+        "bytes": "48c7c7f0bfffff",
+        "instruction": "MOV RDI,-0x4010",
+        "comment": null
+      },
+      {
+        "address": "00038e35",
+        "bytes": "4823b810030000",
+        "instruction": "AND RDI,qword ptr [RAX + 0x310]",
+        "comment": null
+      },
+      {
+        "address": "00038e3c",
+        "bytes": "4809f7",
+        "instruction": "OR RDI,RSI",
+        "comment": null
+      },
+      {
+        "address": "00038e3f",
+        "bytes": "4809cf",
+        "instruction": "OR RDI,RCX",
+        "comment": null
+      },
+      {
+        "address": "00038e42",
+        "bytes": "4889b810030000",
+        "instruction": "MOV qword ptr [RAX + 0x310],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038e49",
+        "bytes": "4889bda8faffff",
+        "instruction": "MOV qword ptr [RBP + -0x558],RDI",
+        "comment": null
+      },
+      {
+        "address": "00038e50",
+        "bytes": "c6804103000000",
+        "instruction": "MOV byte ptr [RAX + 0x341],0x0",
+        "comment": null
+      },
+      {
+        "address": "00038e57",
+        "bytes": "84d2",
+        "instruction": "TEST DL,DL",
+        "comment": null
+      },
+      {
+        "address": "00038e59",
+        "bytes": "7507",
+        "instruction": "JNZ 0x00038e62",
+        "comment": null
+      },
+      {
+        "address": "00038e5b",
+        "bytes": "808d86faffff01",
+        "instruction": "OR byte ptr [RBP + -0x57a],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038e62",
+        "bytes": "c78530ffffff04000080",
+        "instruction": "MOV dword ptr [RBP + -0xd0],0x80000004",
+        "comment": null
+      },
+      {
+        "address": "00038e6c",
+        "bytes": "4c8dbd70f5ffff",
+        "instruction": "LEA R15,[RBP + -0xa90]",
+        "comment": null
+      },
+      {
+        "address": "00038e73",
+        "bytes": "488db540faffff",
+        "instruction": "LEA RSI,[RBP + -0x5c0]",
+        "comment": null
+      },
+      {
+        "address": "00038e7a",
+        "bytes": "bad0040000",
+        "instruction": "MOV EDX,0x4d0",
+        "comment": null
+      },
+      {
+        "address": "00038e7f",
+        "bytes": "4c89ff",
+        "instruction": "MOV RDI,R15",
+        "comment": null
+      },
+      {
+        "address": "00038e82",
+        "bytes": "e8976e0300",
+        "instruction": "CALL 0x0006fd1e",
+        "comment": null
+      },
+      {
+        "address": "00038e87",
+        "bytes": "c785a0f5ffff10001000",
+        "instruction": "MOV dword ptr [RBP + -0xa60],0x100010",
+        "comment": null
+      },
+      {
+        "address": "00038e91",
+        "bytes": "488d55d4",
+        "instruction": "LEA RDX,[RBP + -0x2c]",
+        "comment": null
+      },
+      {
+        "address": "00038e95",
+        "bytes": "48c7c7feffffff",
+        "instruction": "MOV RDI,-0x2",
+        "comment": null
+      },
+      {
+        "address": "00038e9c",
+        "bytes": "4c89fe",
+        "instruction": "MOV RSI,R15",
+        "comment": null
+      },
+      {
+        "address": "00038e9f",
+        "bytes": "b964860000",
+        "instruction": "MOV ECX,0x8664",
+        "comment": null
+      },
+      {
+        "address": "00038ea4",
+        "bytes": "e8d7260200",
+        "instruction": "CALL 0x0005b580",
+        "comment": null
+      },
+      {
+        "address": "00038ea9",
+        "bytes": "f6058cb5040008",
+        "instruction": "TEST byte ptr [0x0008443c],0x8",
+        "comment": null
+      },
+      {
+        "address": "00038eb0",
+        "bytes": "0f8410ffffff",
+        "instruction": "JZ 0x00038dc6",
+        "comment": null
+      },
+      {
+        "address": "00038eb6",
+        "bytes": "4c8b8da8faffff",
+        "instruction": "MOV R9,qword ptr [RBP + -0x558]",
+        "comment": null
+      },
+      {
+        "address": "00038ebd",
+        "bytes": "4c8b8538fbffff",
+        "instruction": "MOV R8,qword ptr [RBP + -0x4c8]",
+        "comment": null
+      },
+      {
+        "address": "00038ec4",
+        "bytes": "488d3571b50400",
+        "instruction": "LEA RSI,[0x8443c]",
+        "comment": null
+      },
+      {
+        "address": "00038ecb",
+        "bytes": "488d15b9d30300",
+        "instruction": "LEA RDX,[0x7628b]",
+        "comment": null
+      },
+      {
+        "address": "00038ed2",
+        "bytes": "488d0dbfd30300",
+        "instruction": "LEA RCX,[0x76298]",
+        "comment": null
+      },
+      {
+        "address": "00038ed9",
+        "bytes": "bf03000000",
+        "instruction": "MOV EDI,0x3",
+        "comment": null
+      },
+      {
+        "address": "00038ede",
+        "bytes": "31c0",
+        "instruction": "XOR EAX,EAX",
+        "comment": null
+      },
+      {
+        "address": "00038ee0",
+        "bytes": "e81bd1ffff",
+        "instruction": "CALL 0x00036000",
+        "comment": null
+      },
+      {
+        "address": "00038ee5",
+        "bytes": "e9dcfeffff",
+        "instruction": "JMP 0x00038dc6",
+        "comment": null
+      }
+    ],
+    "offset": 0,
+    "limit": 500,
+    "total": 507,
+    "has_more": true
+  },
+  "isError": false
+}

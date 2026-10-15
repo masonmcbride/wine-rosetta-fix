@@ -1,0 +1,843 @@
+{
+  "samples": 1657,
+  "stats": {
+    "wall_seconds": 10.002544,
+    "window_user_seconds": 3.971013,
+    "window_system_seconds": 6.896544,
+    "collector_cpu_us": 61798,
+    "interval_us": 5000,
+    "samples": 1657,
+    "skipped_not_running": 4915,
+    "failures": 0,
+    "overflow": 0,
+    "threads": [
+      {
+        "tid": 49131,
+        "cpu_us": 5520151,
+        "first_user_us": 605969,
+        "first_system_us": 1032720,
+        "last_user_us": 2646780,
+        "last_system_us": 4512060,
+        "seen": 1643,
+        "running": 538,
+        "samples": 538
+      },
+      {
+        "tid": 49109,
+        "cpu_us": 0,
+        "first_user_us": 9352,
+        "first_system_us": 4155,
+        "last_user_us": 9352,
+        "last_system_us": 4155,
+        "seen": 1643,
+        "running": 0,
+        "samples": 0
+      },
+      {
+        "tid": 49112,
+        "cpu_us": 0,
+        "first_user_us": 67,
+        "first_system_us": 43,
+        "last_user_us": 67,
+        "last_system_us": 43,
+        "seen": 1643,
+        "running": 0,
+        "samples": 0
+      },
+      {
+        "tid": 49130,
+        "cpu_us": 5279324,
+        "first_user_us": 598556,
+        "first_system_us": 1018304,
+        "last_user_us": 2507743,
+        "last_system_us": 4388441,
+        "seen": 1643,
+        "running": 1119,
+        "samples": 1119
+      }
+    ]
+  },
+  "observed_thread_cpu_us": 10799475,
+  "attributed_cpu_us": 10795358,
+  "unattributed_cpu_us": 4117,
+  "unresolved_attributed_cpu_us": 30109,
+  "raw_counts": [
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 10",
+      1161
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 10",
+      229
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 269",
+      153
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 26",
+      16
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 444",
+      14
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 378",
+      12
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 8",
+      6
+    ],
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 8",
+      6
+    ],
+    [
+      "UNKNOWN",
+      4
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 392",
+      4
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 252",
+      3
+    ],
+    [
+      "signal_all (in ntdll.so) + 76",
+      3
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 341",
+      2
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 293",
+      2
+    ],
+    [
+      "pthread_getspecific (in libsystem_pthread.dylib) + 0",
+      2
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 412",
+      2
+    ],
+    [
+      "NtSetEvent (in ntdll.so) + 0",
+      2
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 838",
+      2
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 44",
+      2
+    ],
+    [
+      "DYLD-STUB$$clock_gettime (in ntdll.so) + 0",
+      2
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 232",
+      2
+    ],
+    [
+      "0x0000000140002bef (in wine)",
+      2
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 450",
+      2
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 0",
+      1
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 433",
+      1
+    ],
+    [
+      "_tlv_get_addr (in libdyld.dylib) + 3",
+      1
+    ],
+    [
+      "get_cached_inproc_sync (in ntdll.so) + 84",
+      1
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 108",
+      1
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 24",
+      1
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 286",
+      1
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 0",
+      1
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 91",
+      1
+    ],
+    [
+      "0x00000001400014df (in wine)",
+      1
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 994",
+      1
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 409",
+      1
+    ],
+    [
+      "sysv_NtSetEvent (in ntdll.so) + 180",
+      1
+    ],
+    [
+      "DYLD-STUB$$__ulock_wake (in ntdll.so) + 0",
+      1
+    ],
+    [
+      "get_shm (in ntdll.so) + 508",
+      1
+    ],
+    [
+      "NtQuerySystemTime (in ntdll.so) + 14",
+      1
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 158",
+      1
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 16",
+      1
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 20",
+      1
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 429",
+      1
+    ],
+    [
+      "__commpage_gettimeofday_internal (in libsystem_kernel.dylib) + 0",
+      1
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 0",
+      1
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 183",
+      1
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 294",
+      1
+    ]
+  ],
+  "weighted_cpu_us": [
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 10",
+      7859033
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 10",
+      1317184
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 269",
+      946231
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 26",
+      104202
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 378",
+      76532
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 444",
+      62528
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 8",
+      46883
+    ],
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 8",
+      31776
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 392",
+      24177
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 16",
+      23353
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 252",
+      23009
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 838",
+      22072
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 994",
+      20057
+    ],
+    [
+      "DYLD-STUB$$clock_gettime (in ntdll.so) + 0",
+      18460
+    ],
+    [
+      "NtSetEvent (in ntdll.so) + 0",
+      16833
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 24",
+      15334
+    ],
+    [
+      "UNKNOWN",
+      13847
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 433",
+      12237
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 20",
+      10935
+    ],
+    [
+      "signal_all (in ntdll.so) + 76",
+      10252
+    ],
+    [
+      "0x0000000140002bef (in wine)",
+      10113
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 158",
+      8865
+    ],
+    [
+      "pthread_getspecific (in libsystem_pthread.dylib) + 0",
+      8314
+    ],
+    [
+      "_tlv_get_addr (in libdyld.dylib) + 3",
+      7709
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 232",
+      7088
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 341",
+      7053
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 429",
+      6881
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 409",
+      6859
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 450",
+      6452
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 0",
+      6153
+    ],
+    [
+      "0x00000001400014df (in wine)",
+      6149
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 412",
+      5821
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 293",
+      5750
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 44",
+      5326
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 108",
+      5254
+    ],
+    [
+      "get_shm (in ntdll.so) + 508",
+      3395
+    ],
+    [
+      "get_cached_inproc_sync (in ntdll.so) + 84",
+      3388
+    ],
+    [
+      "__commpage_gettimeofday_internal (in libsystem_kernel.dylib) + 0",
+      3372
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 0",
+      3192
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 286",
+      3153
+    ],
+    [
+      "DYLD-STUB$$__ulock_wake (in ntdll.so) + 0",
+      3116
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 91",
+      3054
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 0",
+      2859
+    ],
+    [
+      "NtQuerySystemTime (in ntdll.so) + 14",
+      2856
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 294",
+      2790
+    ],
+    [
+      "sysv_NtSetEvent (in ntdll.so) + 180",
+      2762
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 183",
+      2699
+    ]
+  ],
+  "user_cpu_us": [
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 10",
+      2874312
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 10",
+      479859
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 269",
+      347708
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 26",
+      38154
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 378",
+      27701
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 444",
+      23992
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 8",
+      18208
+    ],
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 8",
+      11491
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 392",
+      8700
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 16",
+      8478
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 252",
+      8259
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 838",
+      7895
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 994",
+      7306
+    ],
+    [
+      "DYLD-STUB$$clock_gettime (in ntdll.so) + 0",
+      6707
+    ],
+    [
+      "NtSetEvent (in ntdll.so) + 0",
+      6012
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 24",
+      5544
+    ],
+    [
+      "UNKNOWN",
+      5051
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 433",
+      4533
+    ],
+    [
+      "signal_all (in ntdll.so) + 76",
+      4074
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 20",
+      3930
+    ],
+    [
+      "0x0000000140002bef (in wine)",
+      3599
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 158",
+      3188
+    ],
+    [
+      "pthread_getspecific (in libsystem_pthread.dylib) + 0",
+      2970
+    ],
+    [
+      "_tlv_get_addr (in libdyld.dylib) + 3",
+      2834
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 232",
+      2555
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 429",
+      2535
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 341",
+      2529
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 409",
+      2479
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 450",
+      2329
+    ],
+    [
+      "0x00000001400014df (in wine)",
+      2264
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 0",
+      2186
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 412",
+      2054
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 293",
+      2026
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 44",
+      1885
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 108",
+      1849
+    ],
+    [
+      "__commpage_gettimeofday_internal (in libsystem_kernel.dylib) + 0",
+      1215
+    ],
+    [
+      "get_shm (in ntdll.so) + 508",
+      1210
+    ],
+    [
+      "get_cached_inproc_sync (in ntdll.so) + 84",
+      1188
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 0",
+      1115
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 286",
+      1106
+    ],
+    [
+      "DYLD-STUB$$__ulock_wake (in ntdll.so) + 0",
+      1102
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 91",
+      1091
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 294",
+      1029
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 0",
+      1025
+    ],
+    [
+      "sysv_NtSetEvent (in ntdll.so) + 180",
+      987
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 183",
+      987
+    ],
+    [
+      "NtQuerySystemTime (in ntdll.so) + 14",
+      961
+    ]
+  ],
+  "system_cpu_us": [
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 10",
+      4984721
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 10",
+      837325
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 269",
+      598523
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 26",
+      66048
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 378",
+      48831
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 444",
+      38536
+    ],
+    [
+      "__ulock_wake (in libsystem_kernel.dylib) + 8",
+      28675
+    ],
+    [
+      "__ulock_wait2 (in libsystem_kernel.dylib) + 8",
+      20285
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 392",
+      15477
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 16",
+      14875
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 252",
+      14750
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 838",
+      14177
+    ],
+    [
+      "msync_wait_objs (in ntdll.so) + 994",
+      12751
+    ],
+    [
+      "DYLD-STUB$$clock_gettime (in ntdll.so) + 0",
+      11753
+    ],
+    [
+      "NtSetEvent (in ntdll.so) + 0",
+      10821
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 24",
+      9790
+    ],
+    [
+      "UNKNOWN",
+      8796
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 433",
+      7704
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 20",
+      7005
+    ],
+    [
+      "0x0000000140002bef (in wine)",
+      6514
+    ],
+    [
+      "signal_all (in ntdll.so) + 76",
+      6178
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 158",
+      5677
+    ],
+    [
+      "pthread_getspecific (in libsystem_pthread.dylib) + 0",
+      5344
+    ],
+    [
+      "_tlv_get_addr (in libdyld.dylib) + 3",
+      4875
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 232",
+      4533
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 341",
+      4524
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 409",
+      4380
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 429",
+      4346
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 450",
+      4123
+    ],
+    [
+      "get_inproc_sync (in ntdll.so) + 0",
+      3967
+    ],
+    [
+      "0x00000001400014df (in wine)",
+      3885
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 412",
+      3767
+    ],
+    [
+      "inproc_wait (in ntdll.so) + 293",
+      3724
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 44",
+      3441
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 108",
+      3405
+    ],
+    [
+      "get_cached_inproc_sync (in ntdll.so) + 84",
+      2200
+    ],
+    [
+      "get_shm (in ntdll.so) + 508",
+      2185
+    ],
+    [
+      "__commpage_gettimeofday_internal (in libsystem_kernel.dylib) + 0",
+      2157
+    ],
+    [
+      "clock_gettime (in libsystem_c.dylib) + 0",
+      2077
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 286",
+      2047
+    ],
+    [
+      "DYLD-STUB$$__ulock_wake (in ntdll.so) + 0",
+      2014
+    ],
+    [
+      "__wine_syscall_dispatcher (in ntdll.so) + 91",
+      1963
+    ],
+    [
+      "NtQuerySystemTime (in ntdll.so) + 14",
+      1895
+    ],
+    [
+      "mach_absolute_time (in libsystem_kernel.dylib) + 0",
+      1834
+    ],
+    [
+      "sysv_NtSetEvent (in ntdll.so) + 180",
+      1775
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 294",
+      1761
+    ],
+    [
+      "NtWaitForSingleObject (in ntdll.so) + 183",
+      1712
+    ]
+  ],
+  "per_thread": {
+    "49131": {
+      "user_us": 2040811,
+      "system_us": 3479340
+    },
+    "49109": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "49112": {
+      "user_us": 0,
+      "system_us": 0
+    },
+    "49130": {
+      "user_us": 1907401,
+      "system_us": 3367806
+    }
+  },
+  "interpretation": "Endpoint snapshots weighted by preceding CPU deltas. Time between different functions can alias; kernel CPU is charged to a userspace context, not a kernel stack. No exact per-function-time claim."
+}

@@ -1,0 +1,62 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"items\": [\n    {\n      \"address\": \"00038eea\",\n      \"bytes\": \"80899900000001\",\n      \"instruction\": \"OR byte ptr [RCX + 0x99],0x1\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ef1\",\n      \"bytes\": \"4c89f7\",\n      \"instruction\": \"MOV RDI,R14\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ef4\",\n      \"bytes\": \"4889de\",\n      \"instruction\": \"MOV RSI,RBX\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038ef7\",\n      \"bytes\": \"e8f4a60000\",\n      \"instruction\": \"CALL 0x000435f0\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038efc\",\n      \"bytes\": \"e9defeffff\",\n      \"instruction\": \"JMP 0x00038ddf\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038f01\",\n      \"bytes\": \"83ca08\",\n      \"instruction\": \"OR EDX,0x8\",\n      \"comment\": null\n    },\n    {\n      \"address\": \"00038f04\",\n      \"bytes\": \"e979fdffff\",\n      \"instruction\": \"JMP 0x00038c82\",\n      \"comment\": null\n    }\n  ],\n  \"offset\": 500,\n  \"limit\": 500,\n  \"total\": 507,\n  \"has_more\": false\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "items": [
+      {
+        "address": "00038eea",
+        "bytes": "80899900000001",
+        "instruction": "OR byte ptr [RCX + 0x99],0x1",
+        "comment": null
+      },
+      {
+        "address": "00038ef1",
+        "bytes": "4c89f7",
+        "instruction": "MOV RDI,R14",
+        "comment": null
+      },
+      {
+        "address": "00038ef4",
+        "bytes": "4889de",
+        "instruction": "MOV RSI,RBX",
+        "comment": null
+      },
+      {
+        "address": "00038ef7",
+        "bytes": "e8f4a60000",
+        "instruction": "CALL 0x000435f0",
+        "comment": null
+      },
+      {
+        "address": "00038efc",
+        "bytes": "e9defeffff",
+        "instruction": "JMP 0x00038ddf",
+        "comment": null
+      },
+      {
+        "address": "00038f01",
+        "bytes": "83ca08",
+        "instruction": "OR EDX,0x8",
+        "comment": null
+      },
+      {
+        "address": "00038f04",
+        "bytes": "e979fdffff",
+        "instruction": "JMP 0x00038c82",
+        "comment": null
+      }
+    ],
+    "offset": 500,
+    "limit": 500,
+    "total": 507,
+    "has_more": false
+  },
+  "isError": false
+}

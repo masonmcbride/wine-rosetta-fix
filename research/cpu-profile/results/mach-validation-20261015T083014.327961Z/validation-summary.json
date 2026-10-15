@@ -1,0 +1,44 @@
+[
+  {
+    "workload": "shares",
+    "interval_us": 5000,
+    "reference": 0.17677586159457373,
+    "measured": 0.17446860681921855,
+    "runs": 2
+  },
+  {
+    "workload": "shares",
+    "interval_us": 10000,
+    "reference": 0.176591814198695,
+    "measured": 0.17459798685910372,
+    "runs": 2
+  },
+  {
+    "workload": "shares",
+    "interval_us": 17000,
+    "reference": 0.17633030817839404,
+    "measured": 0.17285324119820608,
+    "runs": 2
+  },
+  {
+    "workload": "mix",
+    "interval_us": 5000,
+    "reference": 0.2047939234336913,
+    "measured": 0.19989881263208537,
+    "runs": 2
+  },
+  {
+    "workload": "mix",
+    "interval_us": 10000,
+    "reference": 0.20490180205659905,
+    "measured": 0.21256405960661084,
+    "runs": 2
+  },
+  {
+    "workload": "mix",
+    "interval_us": 17000,
+    "reference": 0.20477854204297458,
+    "measured": 0.22740940587565173,
+    "runs": 2
+  }
+]

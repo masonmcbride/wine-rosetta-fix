@@ -1,0 +1,28 @@
+{
+  "meta": null,
+  "protocolVersion": "2025-11-25",
+  "capabilities": {
+    "experimental": {},
+    "logging": null,
+    "prompts": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "tools": {
+      "listChanged": false
+    },
+    "completions": null,
+    "tasks": null
+  },
+  "serverInfo": {
+    "name": "ghidra-mcp",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "instructions": "Tools for reverse engineering the program open in Ghidra. Call get_program_info first to confirm\nwhich binary you are working on. Addresses are hex strings such as \"0x401000\". List tools are\npaginated: pass offset/limit and check has_more. This local build exposes read-only analysis tools. Decompiler pseudocode is not authoritative semantics.\n"
+}
