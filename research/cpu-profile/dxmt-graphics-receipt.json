@@ -1,0 +1,568 @@
+{
+  "scope": "Offscreen buffer-copy smoke only; no shader, presentation or gameplay validation",
+  "probe_sha256": "54a6b6180301894ff87ba69ef48b9a43b10a30fc89be6b576f569a1ebf1b5210",
+  "probe_source_sha256": "0540a0c44d33e5a722928813ffed08da5f2052350e0377cf301197d340b75e01",
+  "runs": [
+    {
+      "variant": "release",
+      "round": 0,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":367584,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 367584,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.7584
+    },
+    {
+      "variant": "gcc",
+      "round": 0,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":361152,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 361152,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.1152
+    },
+    {
+      "variant": "llvm",
+      "round": 0,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":100775,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 100775,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.0775
+    },
+    {
+      "variant": "release",
+      "round": 1,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":371094,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 371094,
+        "frequency": 10000000
+      },
+      "ns_per_call": 37.1094
+    },
+    {
+      "variant": "llvm",
+      "round": 1,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":103174,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 103174,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.3174
+    },
+    {
+      "variant": "gcc",
+      "round": 1,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":370251,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 370251,
+        "frequency": 10000000
+      },
+      "ns_per_call": 37.0251
+    },
+    {
+      "variant": "gcc",
+      "round": 2,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":362044,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 362044,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.2044
+    },
+    {
+      "variant": "release",
+      "round": 2,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":369735,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 369735,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.9735
+    },
+    {
+      "variant": "llvm",
+      "round": 2,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":106225,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 106225,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.6225
+    },
+    {
+      "variant": "gcc",
+      "round": 3,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":354504,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 354504,
+        "frequency": 10000000
+      },
+      "ns_per_call": 35.4504
+    },
+    {
+      "variant": "llvm",
+      "round": 3,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":106145,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 106145,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.6145
+    },
+    {
+      "variant": "release",
+      "round": 3,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":364819,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 364819,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.4819
+    },
+    {
+      "variant": "llvm",
+      "round": 4,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":104486,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 104486,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.4486
+    },
+    {
+      "variant": "release",
+      "round": 4,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":367941,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 367941,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.7941
+    },
+    {
+      "variant": "gcc",
+      "round": 4,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":364889,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 364889,
+        "frequency": 10000000
+      },
+      "ns_per_call": 36.4889
+    },
+    {
+      "variant": "llvm",
+      "round": 5,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "d3d11.dll": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "dxgi.dll": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":109140,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\llvm\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 109140,
+        "frequency": 10000000
+      },
+      "ns_per_call": 10.914
+    },
+    {
+      "variant": "gcc",
+      "round": 5,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "d3d11.dll": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "dxgi.dll": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":357992,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\gcc\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 357992,
+        "frequency": 10000000
+      },
+      "ns_per_call": 35.7992
+    },
+    {
+      "variant": "release",
+      "round": 5,
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke-verified.exe",
+        "Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release",
+        "1000000"
+      ],
+      "dlls": {
+        "d3d10core.dll": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "d3d11.dll": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "dxgi.dll": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd"
+      },
+      "exit_code": 0,
+      "output": "info:  Maximum supported feature level: D3D_FEATURE_LEVEL_11_1\ninfo:  Using feature level D3D_FEATURE_LEVEL_11_0\n{\"benchmark\":\"IAGetVertexBuffers\",\"iterations\":1000000,\"ticks\":373132,\"frequency\":10000000}\nloaded_d3d11=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\d3d11.dll\nloaded_dxgi=Z:\\private\\tmp\\wine-compileiq-audit\\graphics-smoke\\release\\DXGI.DLL\n{\"passed\":true,\"feature_level\":45056,\"copy_bytes\":4096}\n",
+      "measurement": {
+        "passed": true,
+        "feature_level": 45056,
+        "copy_bytes": 4096
+      },
+      "passed": true,
+      "benchmark": {
+        "benchmark": "IAGetVertexBuffers",
+        "iterations": 1000000,
+        "ticks": 373132,
+        "frequency": 10000000
+      },
+      "ns_per_call": 37.3132
+    }
+  ],
+  "prefix": "/private/tmp/wine-compileiq-audit/runtime-study/prefix",
+  "summary": {
+    "release": {
+      "median_ns_per_call": 36.8838
+    },
+    "gcc": {
+      "median_ns_per_call": 36.159800000000004
+    },
+    "llvm": {
+      "median_ns_per_call": 10.53155
+    }
+  },
+  "timing_scope": "CPU getter microbenchmark; different complete build/runtime configurations, not isolated exception-mode causation",
+  "paired_release_minus_llvm_ns": [
+    26.6809,
+    26.792,
+    26.351,
+    25.867400000000004,
+    26.3455,
+    26.3992
+  ]
+}

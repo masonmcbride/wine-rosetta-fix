@@ -6,6 +6,24 @@ the working debug-register implementation remains unchanged.
 
 ## Start here
 
+- [Compiler/runtime experiment and interview evidence](compileiq-interview.md):
+  coherent DWARF DXMT build, exception-cleanup checks, offscreen graphics tests,
+  balanced API timings, and independent Ghidra instruction verification.
+  The targeted API result is not a demonstrated gameplay improvement.
+
+- [Validated original PE32 address recovery](pe32-address-recovery.md):
+  WOW64 worker selection, module identity, exact bytes and source mapping.
+  A short gameplay pilot is prepared but has not been run.
+
+- [Whole-run recurring pacing analysis](recurring-pacing-findings.md): recurrent
+  request-stage associations and explicit unresolved function-level CPU time.
+- [Mandatory assembly attribution gate](assembly-attribution-contract.md):
+  requirements before optimization and a scoped synthetic mapping proof.
+
+- [Scheduler correlation findings](zombies-scheduling-findings.md): a later
+  request gap aligns with overlapping game-thread blocks, reduced DXMT encoding,
+  and sparse recorded GPU work. Exact dependency remains unidentified.
+
 - [Current findings and next investigation](zombies-stall-findings.md): DXMT
   submits Metal work; the largest recorded display gaps have sparse present
   requests and sparse target GPU work, alongside a workload phase change.
@@ -52,7 +70,7 @@ python3 try_wine_mach.py
 Offline checks, from this directory:
 
 ```sh
-python3 -m unittest test_mach_analysis test_metal_analysis test_stalls
+python3 -m unittest discover -p 'test_*.py'
 ```
 
 Superseded profiler scripts, generated manifests and full exploratory results

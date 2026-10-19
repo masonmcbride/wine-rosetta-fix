@@ -1,0 +1,31 @@
+{
+  "release_tag": "20251216",
+  "release_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251216",
+  "asset": "llvm-mingw-20251216-ucrt-macos-universal.tar.xz",
+  "download_url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20251216/llvm-mingw-20251216-ucrt-macos-universal.tar.xz",
+  "archive_sha256": "38bb5e48ec3e0ce95fb901f4efff0bd6ffa966d1b32539a6510af816a959d160",
+  "published_digest": "sha256:38bb5e48ec3e0ce95fb901f4efff0bd6ffa966d1b32539a6510af816a959d160",
+  "digest_matches": true,
+  "llvm_version": "21.1.8",
+  "target": "i686-w64-windows-gnu",
+  "exception_model": "DWARF (toolchain default, confirmed by linked runtime symbols)",
+  "source_commit": "589adb780354b461645b29999cefaf533594ee99",
+  "directx_headers_commit": "9df86f2341616ef1888ae59919feaa6d4fad693d",
+  "nvapi_submodule": "uninitialized; not part of these targets",
+  "cross_file": "[binaries]\nc = '/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang'\ncpp = '/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++'\nar = '/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/llvm-ar'\nstrip = '/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/llvm-strip'\nwindres = '/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-windres'\n\n[properties]\nneeds_exe_wrapper = true\n\n[host_machine]\nsystem = 'windows'\ncpu_family = 'x86'\ncpu = 'x86'\nendian = 'little'\n",
+  "scope": "Toolchain/package provenance and local build only; not release-build reproduction",
+  "artifacts": {
+    "dxgi": {
+      "sha256": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13",
+      "bytes": 1609728
+    },
+    "d3d11": {
+      "sha256": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+      "bytes": 5169152
+    },
+    "d3d10core": {
+      "sha256": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+      "bytes": 1310720
+    }
+  }
+}

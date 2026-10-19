@@ -1,0 +1,642 @@
+{
+  "scope": "Static PE32 audit; matching names do not establish ABI compatibility",
+  "variants": {
+    "release": {
+      "d3d11": {
+        "sha256": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "bytes": 5689830,
+        "exports": [
+          {
+            "name": "D3D11CoreCreateDevice",
+            "ordinal": 18
+          },
+          {
+            "name": "",
+            "ordinal": 19
+          },
+          {
+            "name": "",
+            "ordinal": 20
+          },
+          {
+            "name": "",
+            "ordinal": 21
+          },
+          {
+            "name": "D3D11CreateDevice",
+            "ordinal": 22
+          },
+          {
+            "name": "D3D11CreateDeviceAndSwapChain",
+            "ordinal": 23
+          },
+          {
+            "name": "D3D11On12CreateDevice",
+            "ordinal": 24
+          }
+        ],
+        "imports": [
+          "GDI32.dll",
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "USER32.dll",
+          "DXGI.DLL",
+          "winemetal.dll"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ]
+      },
+      "dxgi": {
+        "sha256": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd",
+        "bytes": 1901340,
+        "exports": [
+          {
+            "name": "CreateDXGIFactory",
+            "ordinal": 9
+          },
+          {
+            "name": "CreateDXGIFactory1",
+            "ordinal": 10
+          },
+          {
+            "name": "CreateDXGIFactory2",
+            "ordinal": 11
+          },
+          {
+            "name": "",
+            "ordinal": 12
+          },
+          {
+            "name": "",
+            "ordinal": 13
+          },
+          {
+            "name": "",
+            "ordinal": 14
+          },
+          {
+            "name": "",
+            "ordinal": 15
+          },
+          {
+            "name": "",
+            "ordinal": 16
+          },
+          {
+            "name": "DXGIGetDebugInterface1",
+            "ordinal": 17
+          }
+        ],
+        "imports": [
+          "GDI32.dll",
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "USER32.dll",
+          "winemetal.dll"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ]
+      },
+      "d3d10core": {
+        "sha256": "e867d24efe319bbc5e54da8732cc67d4bf975a291a57782d0cf8517af11fca22",
+        "bytes": 1506849,
+        "exports": [
+          {
+            "name": "D3D10CoreCreateDevice",
+            "ordinal": 1
+          },
+          {
+            "name": "D3D10CoreRegisterLayers",
+            "ordinal": 2
+          }
+        ],
+        "imports": [
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "D3D11.DLL"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ]
+      }
+    },
+    "gcc": {
+      "d3d11": {
+        "sha256": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+        "bytes": 20363600,
+        "exports": [
+          {
+            "name": "D3D11CoreCreateDevice",
+            "ordinal": 18
+          },
+          {
+            "name": "",
+            "ordinal": 19
+          },
+          {
+            "name": "",
+            "ordinal": 20
+          },
+          {
+            "name": "",
+            "ordinal": 21
+          },
+          {
+            "name": "D3D11CreateDevice",
+            "ordinal": 22
+          },
+          {
+            "name": "D3D11CreateDeviceAndSwapChain",
+            "ordinal": 23
+          },
+          {
+            "name": "D3D11On12CreateDevice",
+            "ordinal": 24
+          }
+        ],
+        "imports": [
+          "GDI32.dll",
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "USER32.dll",
+          "winemetal.dll",
+          "DXGI.DLL"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      },
+      "dxgi": {
+        "sha256": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2",
+        "bytes": 13062724,
+        "exports": [
+          {
+            "name": "CreateDXGIFactory",
+            "ordinal": 9
+          },
+          {
+            "name": "CreateDXGIFactory1",
+            "ordinal": 10
+          },
+          {
+            "name": "CreateDXGIFactory2",
+            "ordinal": 11
+          },
+          {
+            "name": "",
+            "ordinal": 12
+          },
+          {
+            "name": "",
+            "ordinal": 13
+          },
+          {
+            "name": "",
+            "ordinal": 14
+          },
+          {
+            "name": "",
+            "ordinal": 15
+          },
+          {
+            "name": "",
+            "ordinal": 16
+          },
+          {
+            "name": "DXGIGetDebugInterface1",
+            "ordinal": 17
+          }
+        ],
+        "imports": [
+          "GDI32.dll",
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "USER32.dll",
+          "winemetal.dll"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      },
+      "d3d10core": {
+        "sha256": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+        "bytes": 12029693,
+        "exports": [
+          {
+            "name": "D3D10CoreCreateDevice",
+            "ordinal": 1
+          },
+          {
+            "name": "D3D10CoreRegisterLayers",
+            "ordinal": 2
+          }
+        ],
+        "imports": [
+          "KERNEL32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "D3D11.DLL"
+        ],
+        "unwind_symbols": [
+          "__Unwind_Backtrace",
+          "__Unwind_DeleteException",
+          "__Unwind_FindEnclosingFunction",
+          "__Unwind_GetCFA",
+          "__Unwind_GetDataRelBase",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetIPInfo",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_GetTextRelBase",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__Unwind_SjLj_ForcedUnwind",
+          "__Unwind_SjLj_RaiseException",
+          "__Unwind_SjLj_Register",
+          "__Unwind_SjLj_Resume",
+          "__Unwind_SjLj_Resume_or_Rethrow",
+          "__Unwind_SjLj_Unregister",
+          "___gxx_personality_sj0"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      }
+    },
+    "llvm": {
+      "d3d11": {
+        "sha256": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "bytes": 5169152,
+        "exports": [
+          {
+            "name": "D3D11CoreCreateDevice",
+            "ordinal": 18
+          },
+          {
+            "name": "",
+            "ordinal": 19
+          },
+          {
+            "name": "",
+            "ordinal": 20
+          },
+          {
+            "name": "",
+            "ordinal": 21
+          },
+          {
+            "name": "D3D11CreateDevice",
+            "ordinal": 22
+          },
+          {
+            "name": "D3D11CreateDeviceAndSwapChain",
+            "ordinal": 23
+          },
+          {
+            "name": "D3D11On12CreateDevice",
+            "ordinal": 24
+          }
+        ],
+        "imports": [
+          "winemetal.dll",
+          "KERNEL32.dll",
+          "USER32.dll",
+          "GDI32.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-multibyte-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "DXGI.DLL"
+        ],
+        "unwind_symbols": [
+          "__Unwind_DeleteException",
+          "__Unwind_ForcedUnwind",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_RaiseException",
+          "__Unwind_Resume",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv119__setExceptionClassEP17_Unwind_Exceptiony",
+          "__ZN10__cxxabiv121__isOurExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv1L22exception_cleanup_funcE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "__ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj",
+          "__ZN10__cxxabiv1L27dependent_exception_cleanupE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "___func__._Unwind_Resume",
+          "___gxx_personality_v0",
+          "_switch.table._ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      },
+      "dxgi": {
+        "sha256": "de2ba48e1c84f6ff99fc2d9d1ff4d81b7eb4c4c90895406cf5a389fa0876de13",
+        "bytes": 1609728,
+        "exports": [
+          {
+            "name": "CreateDXGIFactory",
+            "ordinal": 9
+          },
+          {
+            "name": "CreateDXGIFactory1",
+            "ordinal": 10
+          },
+          {
+            "name": "CreateDXGIFactory2",
+            "ordinal": 11
+          },
+          {
+            "name": "",
+            "ordinal": 12
+          },
+          {
+            "name": "",
+            "ordinal": 13
+          },
+          {
+            "name": "",
+            "ordinal": 14
+          },
+          {
+            "name": "",
+            "ordinal": 15
+          },
+          {
+            "name": "",
+            "ordinal": 16
+          },
+          {
+            "name": "DXGIGetDebugInterface1",
+            "ordinal": 17
+          }
+        ],
+        "imports": [
+          "winemetal.dll",
+          "KERNEL32.dll",
+          "GDI32.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "USER32.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-multibyte-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll"
+        ],
+        "unwind_symbols": [
+          "__Unwind_DeleteException",
+          "__Unwind_ForcedUnwind",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_RaiseException",
+          "__Unwind_Resume",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv119__setExceptionClassEP17_Unwind_Exceptiony",
+          "__ZN10__cxxabiv121__isOurExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv1L22exception_cleanup_funcE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "__ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj",
+          "__ZN10__cxxabiv1L27dependent_exception_cleanupE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "___func__._Unwind_Resume",
+          "___gxx_personality_v0",
+          "_switch.table._ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      },
+      "d3d10core": {
+        "sha256": "1dc939a09126991bef0d25ae3ef92b1d33b7420cf668dff2815f2daf9453bca1",
+        "bytes": 1310720,
+        "exports": [
+          {
+            "name": "D3D10CoreCreateDevice",
+            "ordinal": 1
+          },
+          {
+            "name": "D3D10CoreRegisterLayers",
+            "ordinal": 2
+          }
+        ],
+        "imports": [
+          "KERNEL32.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-multibyte-l1-1-0.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "D3D11.DLL"
+        ],
+        "unwind_symbols": [
+          "__Unwind_DeleteException",
+          "__Unwind_ForcedUnwind",
+          "__Unwind_GetGR",
+          "__Unwind_GetIP",
+          "__Unwind_GetLanguageSpecificData",
+          "__Unwind_GetRegionStart",
+          "__Unwind_RaiseException",
+          "__Unwind_Resume",
+          "__Unwind_SetGR",
+          "__Unwind_SetIP",
+          "__ZN10__cxxabiv119__getExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv119__setExceptionClassEP17_Unwind_Exceptiony",
+          "__ZN10__cxxabiv121__isOurExceptionClassEPK17_Unwind_Exception",
+          "__ZN10__cxxabiv1L22exception_cleanup_funcE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "__ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj",
+          "__ZN10__cxxabiv1L27dependent_exception_cleanupE19_Unwind_Reason_CodeP17_Unwind_Exception",
+          "___func__._Unwind_Resume",
+          "___gxx_personality_v0",
+          "_switch.table._ZN10__cxxabiv1L24exception_spec_can_catchExPKhhPKNS_16__shim_type_infoEPvP17_Unwind_Exceptionj"
+        ],
+        "missing_release_export_names": [],
+        "additional_export_names": []
+      }
+    }
+  }
+}

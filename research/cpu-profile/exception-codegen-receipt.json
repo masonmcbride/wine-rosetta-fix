@@ -1,0 +1,112 @@
+{
+  "fixture_sha256": "6f754eb23b2b83d0d42b1932b447289ba81642b28e05f0d38729bbeb91a525f3",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)",
+  "target": "i686-w64-windows-gnu",
+  "variants": {
+    "sjlj": {
+      "command": [
+        "clang",
+        "--target=i686-w64-windows-gnu",
+        "-O2",
+        "-S",
+        "-fexceptions",
+        "-fsjlj-exceptions",
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception_codegen_fixture.cpp",
+        "-o",
+        "/private/tmp/wine-compileiq-audit/codegen/sjlj.s"
+      ],
+      "assembly_sha256": "95a27b35e94d5ea6bd488658be93a4de95e5b24495b9cfbb65725458f89d7594",
+      "static_call_sites": [
+        "__ZN5GuardC1Ev",
+        "__Unwind_SjLj_Register",
+        "__Z11encode_workv",
+        "__ZN5GuardD1Ev",
+        "__Unwind_SjLj_Unregister",
+        "__ZN5GuardD1Ev",
+        "__Unwind_SjLj_Resume"
+      ],
+      "sjlj_registration": true,
+      "sjlj_unregistration": true,
+      "exception_cleanup_present": true,
+      "link_screen": {
+        "command": [
+          "i686-w64-mingw32-g++",
+          "-static",
+          "/private/tmp/wine-compileiq-audit/codegen/link_support.cpp",
+          "/private/tmp/wine-compileiq-audit/codegen/sjlj.o",
+          "-o",
+          "/private/tmp/wine-compileiq-audit/codegen/sjlj.exe"
+        ],
+        "exit_code": 0,
+        "diagnostic": "",
+        "scope": "Empty support functions; no execution or exception-correctness validation"
+      }
+    },
+    "dwarf": {
+      "command": [
+        "clang",
+        "--target=i686-w64-windows-gnu",
+        "-O2",
+        "-S",
+        "-fexceptions",
+        "-fdwarf-exceptions",
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception_codegen_fixture.cpp",
+        "-o",
+        "/private/tmp/wine-compileiq-audit/codegen/dwarf.s"
+      ],
+      "assembly_sha256": "0dc6e2d0981e7317062b3f224e503085d152de6d3b965f80a98911c1f83572ca",
+      "static_call_sites": [
+        "__ZN5GuardC1Ev",
+        "__Z11encode_workv",
+        "__ZN5GuardD1Ev",
+        "__ZN5GuardD1Ev",
+        "__Unwind_Resume"
+      ],
+      "sjlj_registration": false,
+      "sjlj_unregistration": false,
+      "exception_cleanup_present": true,
+      "link_screen": {
+        "command": [
+          "i686-w64-mingw32-g++",
+          "-static",
+          "/private/tmp/wine-compileiq-audit/codegen/link_support.cpp",
+          "/private/tmp/wine-compileiq-audit/codegen/dwarf.o",
+          "-o",
+          "/private/tmp/wine-compileiq-audit/codegen/dwarf.exe"
+        ],
+        "exit_code": 1,
+        "diagnostic": "/opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-i686/bin/i686-w64-mingw32-ld: /private/tmp/wine-compileiq-audit/codegen/dwarf.o:exception_codegen_fixture.cpp:(.text+0x2b): undefined reference to `_Unwind_Resume'\n/opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-i686/bin/i686-w64-mingw32-ld: /private/tmp/wine-compileiq-audit/codegen/dwarf.o:exception_codegen_fixture.cpp:(.eh_frame+0x13): undefined reference to `__gxx_personality_v0'\ncollect2: error: ld returned 1 exit status\n",
+        "scope": "Empty support functions; no execution or exception-correctness validation"
+      }
+    }
+  },
+  "scope": "Static codegen only; no runtime correctness or performance claim",
+  "installed_runtime": {
+    "archive": "/opt/homebrew/Cellar/mingw-w64/14.0.0_3/toolchain-i686/lib/gcc/i686-w64-mingw32/16.2.0/libgcc_eh.a",
+    "sha256": "dde61d5fe936952c69fb62b315bb33379320b68a65a3c3d47c75ddc65c9b47b6",
+    "unwind_definitions": [
+      "__Unwind_Backtrace",
+      "__Unwind_DeleteException",
+      "__Unwind_FindEnclosingFunction",
+      "__Unwind_Find_FDE",
+      "__Unwind_GetCFA",
+      "__Unwind_GetDataRelBase",
+      "__Unwind_GetGR",
+      "__Unwind_GetIP",
+      "__Unwind_GetIPInfo",
+      "__Unwind_GetLanguageSpecificData",
+      "__Unwind_GetRegionStart",
+      "__Unwind_GetTextRelBase",
+      "__Unwind_SetGR",
+      "__Unwind_SetIP",
+      "__Unwind_SjLj_ForcedUnwind",
+      "__Unwind_SjLj_RaiseException",
+      "__Unwind_SjLj_Register",
+      "__Unwind_SjLj_Resume",
+      "__Unwind_SjLj_Resume_or_Rethrow",
+      "__Unwind_SjLj_Unregister",
+      "___gcc_personality_sj0"
+    ],
+    "note": "Archive symbols are a compatibility screen, not a full C++ ABI/link test"
+  }
+}

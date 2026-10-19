@@ -1,0 +1,486 @@
+{
+  "scope": "Synthetic PE32 runtime configurations; no graphics or gameplay claim",
+  "compiler": "clang version 21.1.8 (https://github.com/llvm/llvm-project.git 2078da43e25a4623cab2d0d60decddf709aaea28)\nTarget: i686-w64-windows-gnu\nThread model: posix\nInstalledDir: /private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin\nConfiguration file: /private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-windows-gnu.cfg\n",
+  "sources": {
+    "main.cpp": "995b1048a5119d3c95d3d96a092eb6fe8e0226c565dd22bed683b08ae38d99f8",
+    "work.cpp": "f2a0e1935583471bc30b71657780679c878198d2406998a30cb217d875c6971d"
+  },
+  "builds": {
+    "sjlj": {
+      "steps": [
+        {
+          "command": [
+            "/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++",
+            "-std=c++20",
+            "-O2",
+            "-fexceptions",
+            "-fsjlj-exceptions",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/work.cpp",
+            "-c",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-work.o"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.04214245899999999,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-build-0.log"
+        },
+        {
+          "command": [
+            "/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++",
+            "-std=c++20",
+            "-O2",
+            "-fexceptions",
+            "-fsjlj-exceptions",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/work.cpp",
+            "-S",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-work.s"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.045323584,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-build-1.log"
+        },
+        {
+          "command": [
+            "i686-w64-mingw32-g++",
+            "-std=c++20",
+            "-O2",
+            "-static",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/main.cpp",
+            "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-work.o",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.182540333,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/sjlj-build-2.log"
+        }
+      ],
+      "runtime": "GCC libstdc++/libgcc",
+      "executable_sha256": "6468055f4398dbffcb4af244a90d5fcec52769a026ea4255bb02a95300329446",
+      "assembly_sha256": "34799b6ad31eab6b2a902ffde41000ee083da2d22e409fd15df2fba40a63a663"
+    },
+    "dwarf": {
+      "steps": [
+        {
+          "command": [
+            "/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++",
+            "-std=c++20",
+            "-O2",
+            "-fexceptions",
+            "-fdwarf-exceptions",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/work.cpp",
+            "-c",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-work.o"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.04491870800000003,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-build-0.log"
+        },
+        {
+          "command": [
+            "/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++",
+            "-std=c++20",
+            "-O2",
+            "-fexceptions",
+            "-fdwarf-exceptions",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/work.cpp",
+            "-S",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-work.s"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.041421292,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-build-1.log"
+        },
+        {
+          "command": [
+            "/private/tmp/wine-compileiq-audit/toolchains/llvm-mingw-20251216-ucrt-macos-universal/bin/i686-w64-mingw32-clang++",
+            "-std=c++20",
+            "-O2",
+            "-static",
+            "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/exception-runtime/main.cpp",
+            "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-work.o",
+            "-o",
+            "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.15808200000000006,
+          "log": "/private/tmp/wine-compileiq-audit/runtime-study/dwarf-build-2.log"
+        }
+      ],
+      "runtime": "LLVM libc++/libunwind",
+      "executable_sha256": "7720e231bb44c0d5fdd3a78c939927c43928c0314f10d60f710d4d7d5f28c10f",
+      "assembly_sha256": "c1fac978b7dbc578813bb384fc9fa987e261a1102045729e828aeb8c6d1c3523"
+    }
+  },
+  "runs": [
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.312489084000001,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-00-sjlj.log",
+      "pair": 0,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1948103,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 64.93676666666667
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.121871417000001,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-00-dwarf.log",
+      "pair": 0,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 88795,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.9598333333333335
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.138588792,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-01-dwarf.log",
+      "pair": 1,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 87137,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.9045666666666667
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.297181625,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-01-sjlj.log",
+      "pair": 1,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1953787,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 65.12623333333333
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.309449291,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-02-sjlj.log",
+      "pair": 2,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1950828,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 65.0276
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.129651833000004,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-02-dwarf.log",
+      "pair": 2,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 86749,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.8916333333333335
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.1194725000000005,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-03-dwarf.log",
+      "pair": 3,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 84816,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.8272
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.286328707999999,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-03-sjlj.log",
+      "pair": 3,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1946995,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 64.89983333333333
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.295599582999998,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-04-sjlj.log",
+      "pair": 4,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1948213,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 64.94043333333333
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.121969833999991,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-04-dwarf.log",
+      "pair": 4,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 85953,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.8651
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.107053667000002,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-05-dwarf.log",
+      "pair": 5,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 86614,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.8871333333333333
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.2938905829999925,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-05-sjlj.log",
+      "pair": 5,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1939746,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 64.6582
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.2818831669999895,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-06-sjlj.log",
+      "pair": 6,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1951153,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 65.03843333333333
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.131338708000001,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-06-dwarf.log",
+      "pair": 6,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 101295,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 3.3765
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/dwarf.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.120600374999995,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-07-dwarf.log",
+      "pair": 7,
+      "mode": "dwarf",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 86396,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 2.8798666666666666
+    },
+    {
+      "command": [
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+        "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.333540625000012,
+      "log": "/private/tmp/wine-compileiq-audit/runtime-study/pair-07-sjlj.log",
+      "pair": 7,
+      "mode": "sjlj",
+      "measurement": {
+        "correctness": true,
+        "iterations": 3000000,
+        "ticks": 1952409,
+        "frequency": 10000000,
+        "checksum": 3217742094
+      },
+      "ns_per_iteration": 65.0803
+    }
+  ],
+  "pairs": 8,
+  "iterations": 3000000,
+  "runtime_environment": {
+    "WINEPREFIX": "/private/tmp/wine-compileiq-audit/runtime-study/prefix",
+    "WINESERVER": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wineserver",
+    "WINELOADER": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+    "DYLD_FALLBACK_LIBRARY_PATH": "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/lib:/usr/lib",
+    "WINEDEBUG": "-all",
+    "WINEMSYNC": "0",
+    "WINEESYNC": "0",
+    "WINEFSYNC": "0",
+    "WINEDLLOVERRIDES": "winemenubuilder.exe=d",
+    "WINE_ROSETTA_EXEC_BREAKPOINTS": "0",
+    "WINE_ROSETTA_WOW64_BREAKPOINTS": "0",
+    "WINE_ROSETTA_CALL_WORKAROUND": "0"
+  },
+  "engine_loader_sha256": "184b709fb104cc680a65c51fa65e19b743bdb4e2165ffcac1dfedcd25edaaf57",
+  "prefix_initialization": {
+    "command": [
+      "/Users/mason/w/cs/fun/wine-rosetta-debugregs/bo2-local/engine/bin/wine64",
+      "/private/tmp/wine-compileiq-audit/runtime-study/sjlj.exe",
+      "10000"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 12.676271542,
+    "log": "/private/tmp/wine-compileiq-audit/runtime-study/prefix-init.log"
+  },
+  "summary": {
+    "sjlj": {
+      "median_ns_per_iteration": 64.98401666666666
+    },
+    "dwarf": {
+      "median_ns_per_iteration": 2.8893833333333334
+    }
+  },
+  "paired_sjlj_minus_dwarf_ns": [
+    61.976933333333335,
+    62.221666666666664,
+    62.135966666666675,
+    62.072633333333336,
+    62.07533333333333,
+    61.77106666666666,
+    61.66193333333333,
+    62.20043333333333
+  ],
+  "median_paired_difference_ns": 62.07398333333333
+}

@@ -1,0 +1,49 @@
+--- a/meson.options
++++ b/meson.options
+@@ -7,4 +7,5 @@
+ option('wine_builtin_dll', type : 'boolean', value : true)
+ option('enable_tests', type : 'boolean', value : false)
+ option('enable_nvapi', type : 'boolean', value : false)
+-option('enable_nvngx', type : 'boolean', value : false)+option('enable_nvngx', type : 'boolean', value : false)
++option('external_winemetal_import', type : 'string', value : '')
+--- a/src/winemetal/meson.build
++++ b/src/winemetal/meson.build
+@@ -1,3 +1,14 @@
++# Optional boundary: retain the installed Wine/Metal bridge and shader translator.
++external_bridge = get_option('external_winemetal_import')
++if external_bridge != ''
++  if cpu_family != 'x86' or wine_builtin_dll
++    error('External bridge mode requires native i386 PE DLLs')
++  endif
++  winemetal_dep = declare_dependency(
++    link_args : [external_bridge],
++    include_directories : [include_directories('.')],
++  )
++else
+ winemetal_src = [
+   'main.c',
+   'airconv_thunks.c',
+@@ -59,4 +70,5 @@
+ 
+ if cpu_family == 'x86_64' or cpu_family == 'aarch64'
+   subdir('unix')
+-endif+endif
++endif
+--- a/meson.build
++++ b/meson.build
+@@ -116,7 +116,7 @@
+ 
+ metalir_generator = generator(xcrun,
+   output    : [ '@BASENAME@.air'],
+-  arguments : [ '-sdk', 'macosx', 'metal', '-o', '@OUTPUT@', '-c', '@INPUT@', '@EXTRA_ARGS@'],
++  arguments : [ '-sdk', 'macosx', 'metal', '-fmodules-cache-path=/private/tmp/wine-compileiq-audit/module-cache', '-o', '@OUTPUT@', '-c', '@INPUT@', '@EXTRA_ARGS@'],
+ )
+ 
+ metallib_generator = generator(xcrun,
+--- a/src/util/com/com_guid.cpp
++++ b/src/util/com/com_guid.cpp
+@@ -1,3 +1,4 @@
++#include <iomanip>
+ /*
+  * This file is part of DXMT, Copyright (c) 2023 Feifan He
+  *

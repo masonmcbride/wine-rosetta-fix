@@ -1,0 +1,148 @@
+{
+  "sha256": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+  "language": "x86:LE:32:default",
+  "image_base": "10000000",
+  "start": "1005a800",
+  "byte_window": 128,
+  "scope": "Independent entry-window decode; not function-cost or gameplay attribution",
+  "instructions": [
+    {
+      "address": "1005a800",
+      "bytes": "53",
+      "text": "PUSH EBX",
+      "call_targets": []
+    },
+    {
+      "address": "1005a801",
+      "bytes": "57",
+      "text": "PUSH EDI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a802",
+      "bytes": "56",
+      "text": "PUSH ESI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a803",
+      "bytes": "83ec14",
+      "text": "SUB ESP,0x14",
+      "call_targets": []
+    },
+    {
+      "address": "1005a806",
+      "bytes": "8b5c2438",
+      "text": "MOV EBX,dword ptr [ESP + 0x38]",
+      "call_targets": []
+    },
+    {
+      "address": "1005a80a",
+      "bytes": "8b7c2424",
+      "text": "MOV EDI,dword ptr [ESP + 0x24]",
+      "call_targets": []
+    },
+    {
+      "address": "1005a80e",
+      "bytes": "8b7734",
+      "text": "MOV ESI,dword ptr [EDI + 0x34]",
+      "call_targets": []
+    },
+    {
+      "address": "1005a811",
+      "bytes": "89f1",
+      "text": "MOV ECX,ESI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a813",
+      "bytes": "e838580600",
+      "text": "CALL 0x100c0050",
+      "call_targets": [
+        "100c0050"
+      ]
+    },
+    {
+      "address": "1005a818",
+      "bytes": "895c2410",
+      "text": "MOV dword ptr [ESP + 0x10],EBX",
+      "call_targets": []
+    },
+    {
+      "address": "1005a81c",
+      "bytes": "0f10442428",
+      "text": "MOVUPS XMM0,xmmword ptr [ESP + 0x28]",
+      "call_targets": []
+    },
+    {
+      "address": "1005a821",
+      "bytes": "0f110424",
+      "text": "MOVUPS xmmword ptr [ESP],XMM0",
+      "call_targets": []
+    },
+    {
+      "address": "1005a825",
+      "bytes": "89f9",
+      "text": "MOV ECX,EDI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a827",
+      "bytes": "e884920200",
+      "text": "CALL 0x10083ab0",
+      "call_targets": [
+        "10083ab0"
+      ]
+    },
+    {
+      "address": "1005a82c",
+      "bytes": "83ec14",
+      "text": "SUB ESP,0x14",
+      "call_targets": []
+    },
+    {
+      "address": "1005a82f",
+      "bytes": "89f1",
+      "text": "MOV ECX,ESI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a831",
+      "bytes": "e86a580600",
+      "text": "CALL 0x100c00a0",
+      "call_targets": [
+        "100c00a0"
+      ]
+    },
+    {
+      "address": "1005a836",
+      "bytes": "83c414",
+      "text": "ADD ESP,0x14",
+      "call_targets": []
+    },
+    {
+      "address": "1005a839",
+      "bytes": "5e",
+      "text": "POP ESI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a83a",
+      "bytes": "5f",
+      "text": "POP EDI",
+      "call_targets": []
+    },
+    {
+      "address": "1005a83b",
+      "bytes": "5b",
+      "text": "POP EBX",
+      "call_targets": []
+    },
+    {
+      "address": "1005a83c",
+      "bytes": "c21800",
+      "text": "RET 0x18",
+      "call_targets": []
+    }
+  ]
+}

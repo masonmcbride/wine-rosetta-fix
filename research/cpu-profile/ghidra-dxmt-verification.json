@@ -1,0 +1,149 @@
+{
+  "scope": "Independent static entry-window decode, not gameplay function-cost attribution",
+  "variants": {
+    "release": {
+      "sha256": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+      "verified_instructions": 36,
+      "relative_calls": [
+        {
+          "address": "0x6a6a1b1a",
+          "target": "0x6a5ed100"
+        },
+        {
+          "address": "0x6a6a1b31",
+          "target": "0x6a57e2e0"
+        },
+        {
+          "address": "0x6a6a1b48",
+          "target": "0x6a57e2e0"
+        }
+      ],
+      "command": [
+        "/Users/mason/w/ghidra/jdk/jdk-21.0.12.1+1/Contents/Home/bin/java",
+        "-Djava.system.class.loader=ghidra.GhidraClassLoader",
+        "-Dfile.encoding=UTF8",
+        "-Duser.country=US",
+        "-Duser.language=en",
+        "-Duser.variant=",
+        "-Dsun.java2d.opengl=false",
+        "-Djdk.tls.client.protocols=TLSv1.2,TLSv1.3",
+        "-Dcpu.core.limit=",
+        "-Dcpu.core.override=",
+        "-Dfont.size.override=",
+        "-Dpython.console.encoding=UTF-8",
+        "-Declipse.filelock.disable=true",
+        "-Dapple.laf.useScreenMenuBar=false",
+        "-Dapple.awt.application.appearance=system",
+        "-Xshare:off",
+        "-Djavax.xml.accessExternalDTD=",
+        "-Djavax.xml.accessExternalSchema=",
+        "-Djavax.xml.accessExternalStylesheet=",
+        "--enable-native-access=ALL-UNNAMED",
+        "-Dapplication.settingsdir=/private/tmp/wine-compileiq-audit/ghidra-verified/settings",
+        "-Dapplication.cachedir=/private/tmp/wine-compileiq-audit/ghidra-verified/cache",
+        "-Djava.util.prefs.userRoot=/private/tmp/wine-compileiq-audit/ghidra-verified/prefs",
+        "-Xmx2G",
+        "-XX:ParallelGCThreads=2",
+        "-XX:CICompilerCount=2",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "/Users/mason/w/ghidra/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Utility/lib/Utility.jar",
+        "ghidra.Ghidra",
+        "ghidra.app.util.headless.AnalyzeHeadless",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified",
+        "entry-release",
+        "-import",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke/release/d3d11.dll",
+        "-readOnly",
+        "-noanalysis",
+        "-scriptPath",
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/ghidra",
+        "-postScript",
+        "AuditDxmtEntry.java",
+        "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+        "0x6a6a1af0",
+        "128",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/release-entry.json",
+        "-max-cpu",
+        "2",
+        "-log",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/release-application.log",
+        "-scriptlog",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/release-script.log"
+      ],
+      "raw_receipt": "/private/tmp/wine-compileiq-audit/ghidra-verified/release-entry.json"
+    },
+    "llvm": {
+      "sha256": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+      "verified_instructions": 22,
+      "relative_calls": [
+        {
+          "address": "0x1005a813",
+          "target": "0x100c0050"
+        },
+        {
+          "address": "0x1005a827",
+          "target": "0x10083ab0"
+        },
+        {
+          "address": "0x1005a831",
+          "target": "0x100c00a0"
+        }
+      ],
+      "command": [
+        "/Users/mason/w/ghidra/jdk/jdk-21.0.12.1+1/Contents/Home/bin/java",
+        "-Djava.system.class.loader=ghidra.GhidraClassLoader",
+        "-Dfile.encoding=UTF8",
+        "-Duser.country=US",
+        "-Duser.language=en",
+        "-Duser.variant=",
+        "-Dsun.java2d.opengl=false",
+        "-Djdk.tls.client.protocols=TLSv1.2,TLSv1.3",
+        "-Dcpu.core.limit=",
+        "-Dcpu.core.override=",
+        "-Dfont.size.override=",
+        "-Dpython.console.encoding=UTF-8",
+        "-Declipse.filelock.disable=true",
+        "-Dapple.laf.useScreenMenuBar=false",
+        "-Dapple.awt.application.appearance=system",
+        "-Xshare:off",
+        "-Djavax.xml.accessExternalDTD=",
+        "-Djavax.xml.accessExternalSchema=",
+        "-Djavax.xml.accessExternalStylesheet=",
+        "--enable-native-access=ALL-UNNAMED",
+        "-Dapplication.settingsdir=/private/tmp/wine-compileiq-audit/ghidra-verified/settings",
+        "-Dapplication.cachedir=/private/tmp/wine-compileiq-audit/ghidra-verified/cache",
+        "-Djava.util.prefs.userRoot=/private/tmp/wine-compileiq-audit/ghidra-verified/prefs",
+        "-Xmx2G",
+        "-XX:ParallelGCThreads=2",
+        "-XX:CICompilerCount=2",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "/Users/mason/w/ghidra/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Utility/lib/Utility.jar",
+        "ghidra.Ghidra",
+        "ghidra.app.util.headless.AnalyzeHeadless",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified",
+        "entry-llvm",
+        "-import",
+        "/private/tmp/wine-compileiq-audit/graphics-smoke/llvm/d3d11.dll",
+        "-readOnly",
+        "-noanalysis",
+        "-scriptPath",
+        "/Users/mason/w/cs/fun/wine-rosetta-debugregs/wine-rosetta-fix/research/cpu-profile/ghidra",
+        "-postScript",
+        "AuditDxmtEntry.java",
+        "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+        "0x1005a800",
+        "128",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/llvm-entry.json",
+        "-max-cpu",
+        "2",
+        "-log",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/llvm-application.log",
+        "-scriptlog",
+        "/private/tmp/wine-compileiq-audit/ghidra-verified/llvm-script.log"
+      ],
+      "raw_receipt": "/private/tmp/wine-compileiq-audit/ghidra-verified/llvm-entry.json"
+    }
+  }
+}

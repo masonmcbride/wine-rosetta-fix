@@ -46,8 +46,7 @@ def analyze(events, toc, pid):
                 continue
             start = value(row.find('start-time'))
             duration = row.find('duration')
-            if duration is not None:
-                data.append((start, start + value(duration)))
+            data.append((start, start + value(duration) if duration is not None else start))
             if name == 'displayed-surfaces-interval':
                 displays[label(row.find('display-name'))].append(start)
             if name == 'metal-application-command-buffer-submissions':

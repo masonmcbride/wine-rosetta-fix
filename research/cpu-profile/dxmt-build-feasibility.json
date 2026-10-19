@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "source_commit": "589adb780354b461645b29999cefaf533594ee99",
+  "build_root": "/private/tmp/wine-compileiq-audit",
+  "artifacts": {
+    "src/dxgi/dxgi.dll": {
+      "sha256": "c76d17dc7ae8ee20c7a5e69b1109c34212c95dc2f51ec13813965f566d17aba2",
+      "bytes": 13062724
+    },
+    "src/d3d11/d3d11.dll": {
+      "sha256": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+      "bytes": 20363600
+    },
+    "src/d3d10/d3d10core.dll": {
+      "sha256": "1c6dba9f40d9d20c488531f613cb2f1d8eca627ff0dfce75b100a7ee5c3f8295",
+      "bytes": 12029693
+    }
+  },
+  "compiler": "i686-w64-mingw32-g++ (GCC) 16.2.0",
+  "patch_sha256": "e520d8399d25464c1079ec5361b35a07da5c2055e04a2e37d33be78bfb9255df",
+  "bridge_import_archive_sha256": "d64bebd5314f0e9a59935bc294e86642045f78b839740fd4a7fdc19460c745f8",
+  "scope": "GCC SjLj build feasibility only; not a DWARF variant, reproduced release, runtime validation or performance measurement",
+  "engine_modified": false
+}

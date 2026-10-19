@@ -1,0 +1,26 @@
+{
+  "scope": "Synthetic MIT event workload only; not gameplay attribution or a hotness claim",
+  "source_csv": "research/cpu-profile/results/wine-mach-20261015T083307.994792Z/profile1.csv",
+  "architecture": "original x86-64 PC from validated in-process Mach sampler",
+  "sha256": "c21bfbe3bcd2aea74a8143a4d69cbb7b59017adc9471e43afd08536487a77591",
+  "runtime_pc": "0x20893017a",
+  "runtime_image_base": "0x208913000",
+  "ghidra_image_base": "0x0",
+  "static_address": "0x1d17a",
+  "file_offset": "0x1d17a",
+  "function": "_msync_wait_objs",
+  "function_start": "0x1d000",
+  "function_offset": "0x17a",
+  "bytes": "0f84f0050000",
+  "instruction": "JZ 0x1d770",
+  "preceding_instruction": {
+    "address": "0x1d175",
+    "bytes": "f0440fb131",
+    "instruction": "LOCK CMPXCHG dword ptr [RCX],R14D"
+  },
+  "not_proven": [
+    "instruction CPU cost",
+    "instruction causality for Zombies stalls",
+    "mapping of Rosetta-translated gameplay PCs"
+  ]
+}

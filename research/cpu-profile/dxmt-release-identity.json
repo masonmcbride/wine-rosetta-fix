@@ -1,0 +1,28 @@
+{
+  "release": "https://github.com/3Shain/dxmt/releases/tag/v0.80",
+  "tag_commit": "589adb780354b461645b29999cefaf533594ee99",
+  "archive_sha256": "8f260e36b5739e68f3bad613381441385c4dc7b85b78ba8de653d5a6a264529d",
+  "upstream_digest_matches": true,
+  "files": [
+    {
+      "file": "d3d11.dll",
+      "bytes": 5689830,
+      "installed_sha256": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+      "release_sha256": "9afc2b3419818618c4c87274435a28935b0df002caa4b9a8d3a88d3dc846b17d",
+      "differing_offsets": "0x40..0x4f only",
+      "all_other_bytes_identical": true
+    },
+    {
+      "file": "dxgi.dll",
+      "bytes": 1901340,
+      "installed_sha256": "4ca0246cc6aac9f1d36ac4da495f31adca33c5a02bb42b3231bd84b940514fdd",
+      "release_sha256": "7df8cdf66e12a108410002abc77b01f70aa59b8a36a70fa0bc6ae3b056841319",
+      "differing_offsets": "0x40..0x4f only",
+      "all_other_bytes_identical": true
+    }
+  ],
+  "limits": [
+    "Proves release binary code identity outside header marker, not a reproduced build or gameplay speedup",
+    "Downloaded research copies only; installed files unchanged"
+  ]
+}

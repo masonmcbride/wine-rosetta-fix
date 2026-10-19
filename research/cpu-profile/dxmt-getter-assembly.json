@@ -1,0 +1,59 @@
+{
+  "scope": "Exact immediate-context getter symbols; static call sites are not runtime call counts",
+  "variants": {
+    "release": {
+      "binary_sha256": "7002dac2b38c757109c2a661832d90f391a0f5cee9bda469cae539de75ff6eec",
+      "symbol": "__ZN4dxmt29MTLD3D11DeviceContextImplBaseINS_20ContextInternalStateEE18IAGetVertexBuffersEjjPP12ID3D11BufferPjS6_@24",
+      "static_address": "0x6a6a1af0",
+      "disassembly_sha256": "ed7d5277bade598ccde0b5f7a05bbb3ef07b762f80d43dbba01c0615326043de",
+      "call_sites": [
+        "6a6a1b1a: e8 e1 b5 f4 ff               \tcalll\t0x6a5ed100 <__Unwind_SjLj_Register>",
+        "6a6a1b31: e8 aa c7 ed ff               \tcalll\t0x6a57e2e0 <__ZN4dxmt18d3d11_device_mutex4lockEv>",
+        "6a6a1b48: e8 93 c7 ed ff               \tcalll\t0x6a57e2e0 <__ZN4dxmt18d3d11_device_mutex4lockEv>",
+        "6a6a1bb7: ff d0                        \tcalll\t*%eax",
+        "6a6a1c63: e8 d8 c6 ed ff               \tcalll\t0x6a57e340 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6a1c6b: e8 d0 c6 ed ff               \tcalll\t0x6a57e340 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6a1c76: e8 15 b5 f4 ff               \tcalll\t0x6a5ed190 <__Unwind_SjLj_Unregister>",
+        "6a6a1ce0: ff d0                        \tcalll\t*%eax",
+        "6a6a1dd6: e8 65 c5 ed ff               \tcalll\t0x6a57e340 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6a1de8: e8 d3 b6 f4 ff               \tcalll\t0x6a5ed4c0 <__Unwind_SjLj_Resume>",
+        "6a6a1df5: e8 46 c5 ed ff               \tcalll\t0x6a57e340 <__ZN4dxmt18d3d11_device_mutex6unlockEv>"
+      ],
+      "assembly_path": "/private/tmp/wine-compileiq-audit/release-getter.asm"
+    },
+    "gcc": {
+      "binary_sha256": "b475c7c37efcbd18726c2af8a487ee3df5e95ae09d7f0ad7092cdbf071de13a7",
+      "symbol": "__ZN4dxmt29MTLD3D11DeviceContextImplBaseINS_20ContextInternalStateEE18IAGetVertexBuffersEjjPP12ID3D11BufferPjS6_@24",
+      "static_address": "0x6a6aa2b0",
+      "disassembly_sha256": "7dff7c7cf014f74fb5ee4fe4eb83bb30cc27c5d1bc502513f61e1704f1d044ca",
+      "call_sites": [
+        "6a6aa2d7: e8 84 12 f4 ff               \tcalll\t0x6a5eb560 <__Unwind_SjLj_Register>",
+        "6a6aa2ee: e8 cd 0b ed ff               \tcalll\t0x6a57aec0 <__ZN4dxmt18d3d11_device_mutex4lockEv>",
+        "6a6aa305: e8 b6 0b ed ff               \tcalll\t0x6a57aec0 <__ZN4dxmt18d3d11_device_mutex4lockEv>",
+        "6a6aa371: ff d0                        \tcalll\t*%eax",
+        "6a6aa49e: e8 6d 0a ed ff               \tcalll\t0x6a57af10 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6aa4a6: e8 65 0a ed ff               \tcalll\t0x6a57af10 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6aa4b1: e8 3a 11 f4 ff               \tcalll\t0x6a5eb5f0 <__Unwind_SjLj_Unregister>",
+        "6a6aa510: ff d0                        \tcalll\t*%eax",
+        "6a6aa5a5: e8 66 09 ed ff               \tcalll\t0x6a57af10 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "6a6aa5b7: e8 84 13 f4 ff               \tcalll\t0x6a5eb940 <__Unwind_SjLj_Resume>",
+        "6a6aa5c4: e8 47 09 ed ff               \tcalll\t0x6a57af10 <__ZN4dxmt18d3d11_device_mutex6unlockEv>"
+      ],
+      "assembly_path": "/private/tmp/wine-compileiq-audit/gcc-getter.asm"
+    },
+    "llvm": {
+      "binary_sha256": "118d4d2a6428a245f0bec1116912a4cea1ec8285dd26009ba528ef59277729d6",
+      "symbol": "__ZN4dxmt29MTLD3D11DeviceContextImplBaseINS_20ContextInternalStateEE18IAGetVertexBuffersEjjPP12ID3D11BufferPjS6_@24",
+      "static_address": "0x1005a800",
+      "disassembly_sha256": "d3970b71ea0a3d88fc825dc1f4cd95943b1859c6007be9cfdf914ef07463f035",
+      "call_sites": [
+        "1005a813: e8 38 58 06 00               \tcalll\t0x100c0050 <__ZN4dxmt18d3d11_device_mutex4lockEv>",
+        "1005a827: e8 84 92 02 00               \tcalll\t0x10083ab0 <__ZN4dxmt29MTLD3D11DeviceContextImplBaseINS_20ContextInternalStateEE16GetVertexBuffersEjjPP12ID3D11BufferPjS6_>",
+        "1005a831: e8 6a 58 06 00               \tcalll\t0x100c00a0 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "1005a843: e8 58 58 06 00               \tcalll\t0x100c00a0 <__ZN4dxmt18d3d11_device_mutex6unlockEv>",
+        "1005a84b: e8 80 5f 11 00               \tcalll\t0x101707d0 <__Unwind_Resume>"
+      ],
+      "assembly_path": "/private/tmp/wine-compileiq-audit/llvm-getter.asm"
+    }
+  }
+}
